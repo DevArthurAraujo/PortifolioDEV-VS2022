@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>Arthur | Personal Portfolio</title>
+
+    <!-- Font-Awesome CSS -->
+    <link rel="stylesheet" href="~/vendors/font-awesome/css/all.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="~/vendors/swiper/swiper.css" />
+
+    <!-- Magnific-Popup CSS -->
+    <link rel="stylesheet" href="~/vendors/magnific-popup/magnific-popup.css" />
+
+    <!-- Custom Stylesheets -->
+    <link rel="stylesheet" href="~/css/main.css" />
+    <link rel="stylesheet" href="~/css/responsive.css" />
+    <link rel="stylesheet" href="~/css/submenu.css">
+</head>
+<body>
+    <!-------------------- Header Area (Start) -------------------->
+    <header class="header">
+
+        <!-- Logo -->
+        <a class="logo" href="#home" style="display: flex; align-items: center; text-decoration: none;">
+            <img src="~/images/Portfolio/Arthur logo A.png" alt="About-Image" style="width: 75px; height: 75px; margin-right: 10px;">
+            <h2 style="margin: 0; font-size: 24px;">Arthur Tech</h2>
+        </a>
+
+        <!-- Logo End -->
+        <!-- Navbar -->
+        <nav class="navbar" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+            <span style="display: flex; align-items: center; margin-right: 9px;">
+                <i class="fas fa-home fa-lg" aria-hidden="true" style="color: #ac0404;"></i>
+                <a href="#home" style="margin-left: 10px;">Inicio</a>
+            </span>
+
+            <span style="display: flex; align-items: center; margin-right: 20px;">
+                <i class="fas fa-info-circle fa-lg" aria-hidden="true" style="color: #ac0404;"></i>
+                <a href="#about" style="margin-left: 10px;">sobre</a>
+            </span>
+
+            <span style="display: flex; align-items: center; margin-right: 20px;">
+                <i class="fas fa-gavel fa-lg" aria-hidden="true" style="color: #ac0404;"></i>
+                <a href="#service" style="margin-left: 10px;">Serviço</a>
+            </span>
+
+            <span style="display: flex; align-items: center; margin-right: 20px;">
+                <i class="fas fa-window-restore fa-lg" aria-hidden="true" style="color: #ac0404;"></i>
+                <a href="#portfolio" style="margin-left: 10px;">Portfolio</a>
+            </span>
+
+            <span style="display: flex; align-items: center; margin-right: 20px;">
+                <i class="fa fa-users fa-lg" aria-hidden="true" style="color: #ac0404;"></i>
+                <a href="#testimonial" style="margin-left: 10px;">Depoimento</a>
+            </span>
+
+            <span style="display: flex; align-items: center; margin-right: 20px;">
+                <i class="fa fa-file fa-lg" aria-hidden="true" style="color: #ac0404;"></i>
+                <a href="#blog" style="margin-left: 10px;">Noticias</a>
+            </span>
+
+            <span style="display: flex; align-items: center; margin-right: 20px;">
+                <i class="fa fa-phone-square fa-lg" aria-hidden="true" style="color: #ac0404;"></i>
+                <a href="#contact" style="margin-left: 10px;">Contato</a>
+            </span>
+
+            <div class="dropdown">
+                <span style="display: flex; align-items: center; margin-right: 20px;">
+                    <i class="fa fa-user" aria-hidden="true" style="color: #ac0404;"></i>
+                    <a href="Login.html" style="margin-left: 10px;">Login</a>
+                </span>
+                <div class="dropdown-content">
+                    <a href="UsuarioIndex.html">
+                        <i class="fa fa-users" aria-hidden="true" style="margin-right: 20px; color: #ac0404;"></i>
+                        Usuarios
+                    </a>
+                    <a href="AgendamentoIndex.html">
+                        <i class="fa fa-calendar" aria-hidden="true" style="margin-right: 20px; color: #ac0404;"></i>
+                        Agendamento Admin
+                    </a>
+                    <a href="AgendamentoIndex.html">
+                        <i class="fa fa-calendar" aria-hidden="true" style="margin-right: 20px; color: #ac0404;"></i>
+                        Agendamento User
+                    </a>
+                    <a href="AgendamentoCliente.html">
+                        <i class="fa fa-address-book" aria-hidden="true" style="margin-right: 20px; color: #ac0404;"></i>
+                        Cadastro Agendamento
+                    </a>
+                    <a href="ServiçoIndex.html">
+                        <i class="fa fa-file-archive" aria-hidden="true" style="margin-right: 20px; color: #ac0404;"></i>
+                        Gerenciamento de Serviço
+                    </a>
+                    <a href="#logout">
+                        <i class="fa fa-file-archive" aria-hidden="true" style="margin-right: 20px; color: #ac0404;"></i>
+                        Relatório
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Menubar -->
+        <div class="fas fa-bars" id="menu-btn"></div>
+
+    </header>
+    <!-------------------- Header Area (End) -------------------->
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-------------------- Footer Area (Start) -------------------->
+    <footer>
+        <div class="social">
+            <a href="https://facebook.com" class="fab fa-facebook-f"></a>
+            <a href="https://twitter.com" class="fab fa-twitter"></a>
+            <a href="https://instagram.com" class="fab fa-instagram"></a>
+            <a href="https://linkedin.com" class="fab fa-linkedin-in"></a>
+        </div>
+
+        <div class="content">
+            <p>created by <span>AS_Designs</span> | all rights reserved</p>
+        </div>
+    </footer>
+    <!-------------------- Footer Area (End) -------------------->
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Magnific-Popup JS -->
+    <script src="~/vendors/magnific-popup/jquery.magnific-popup.js"></script>
+
+    <!-- SWIPER JS -->
+    <script src="~/vendors/swiper/swiper.js"></script>
+
+    <!-- Magnific-Popup JS -->
+    <script src="~/vendors/magnific-popup/jquery.magnific-popup.js"></script>
+
+
+
+    <!-- Custom Script File -->
+    <script src="~/js/script.js"></script>
+    <script src="~/js/scroll-spy.js"></script>
+    <script src="~/js/counter-up.js"></script>
+    <script src="~/js/portfolio.js"></script>
+    <script src="~/js/testi-slider.js"></script>
+    <script src="~/js/blog-slider.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

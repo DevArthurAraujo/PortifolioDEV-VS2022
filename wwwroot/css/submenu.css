@@ -1,0 +1,53 @@
+:root {
+    --red: #ac0404;
+    --black: #F7F5F2;
+    --white: #000000;
+    --grey: #222222;
+   
+}
+
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--black);
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px var(--red);
+    z-index: 1;
+    padding: 8px;
+    border-radius: 3%;
+    right: 0; /* Alinha o submenu à direita */
+}
+    
+.dropdown-content a {
+    color: var(--white);
+    padding: 7px; /* Adiciona padding */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin: 5px; /* Adiciona a margem */
+}
+
+.dropdown-content a:hover {
+    background-color: var(--red) !important; /* Muda a cor do fundo para vermelho ao passar o mouse */
+    color: var(--black)!important; /* Muda a cor da letra para branco ao passar o mouse */
+    border:var(--red) solid 2px;    
+    text-decoration: none !important;
+}
+
+.dropdown-content a:hover .fa{
+    color: var(--black)!important; /* Muda a cor do icone para branco ao passar o mouse */
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
