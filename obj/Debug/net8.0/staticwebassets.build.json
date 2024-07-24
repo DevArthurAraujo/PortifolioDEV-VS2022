@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LhYZkFZksShFSvNqx3Ci9lc2BUoNXotbAN/FiHwN/6w=",
+  "Hash": "zSrDbGpVHWeK/VzE2XjPVyHIL2/SCfo/iwhAdP40e0M=",
   "Source": "PortifolioDEV",
   "BasePath": "_content/PortifolioDEV",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "PortifolioDEV\\wwwroot",
       "Source": "PortifolioDEV",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\obj\\Debug\\net8.0\\scopedcss\\bundle\\PortifolioDEV.styles.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\obj\\Debug\\net8.0\\scopedcss\\bundle\\PortifolioDEV.styles.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "PortifolioDEV.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\obj\\Debug\\net8.0\\scopedcss\\bundle\\PortifolioDEV.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\obj\\Debug\\net8.0\\scopedcss\\bundle\\PortifolioDEV.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PortifolioDEV.bundle.scp.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PortifolioDEV.bundle.scp.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "PortifolioDEV.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PortifolioDEV.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PortifolioDEV.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\css\\gerenciamento_index.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\css\\gerenciamento_index.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "css/gerenciamento_index.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\gerenciamento_index.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\css\\login.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\css\\login.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "css/login.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\css\\login.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\css\\main.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\css\\main.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "css/main.css",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\css\\main.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\css\\responsive.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\css\\responsive.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "css/responsive.css",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\css\\responsive.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\css\\site.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\css\\submenu.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\css\\submenu.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "css/submenu.css",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\css\\submenu.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\favicon.ico",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\About\\About-Image.png",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\About\\About-Image.png",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/About/About-Image.png",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\images\\About\\About-Image.png"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Blogs\\analise-de-dados.jpg",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\analise-de-dados.jpg",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Blogs/analise-de-dados.jpg",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Blogs\\analise-de-dados.jpg"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Blogs\\blog-1.png",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\blog-1.png",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Blogs/blog-1.png",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Blogs\\blog-1.png"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Blogs\\blog-2.png",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\blog-2.png",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Blogs/blog-2.png",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Blogs\\blog-2.png"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Blogs\\blog-3.png",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\blog-3.png",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Blogs/blog-3.png",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Blogs\\blog-3.png"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Blogs\\blog-4.png",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\blog-4.png",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Blogs/blog-4.png",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Blogs\\blog-4.png"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Blogs\\blog-5.png",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\blog-5.png",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Blogs/blog-5.png",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Blogs\\blog-5.png"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Blogs\\construcao.webp",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\construcao.webp",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Blogs/construcao.webp",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Blogs\\construcao.webp"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Blogs\\construcao-resize.jpg",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\construcao-resize.jpg",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Blogs/construcao-resize.jpg",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Blogs\\construcao-resize.jpg"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Blogs\\dashboard.webp",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\dashboard.webp",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Blogs/dashboard.webp",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Blogs\\dashboard.webp"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Blogs\\fullstack.png",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\fullstack.png",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Blogs/fullstack.png",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Blogs\\fullstack.png"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Blogs\\migrar-nuvem.webp",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\migrar-nuvem.webp",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Blogs/migrar-nuvem.webp",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Blogs\\migrar-nuvem.webp"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Blogs\\migrar-nuvem-resize.jpg",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\migrar-nuvem-resize.jpg",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Blogs/migrar-nuvem-resize.jpg",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Blogs\\migrar-nuvem-resize.jpg"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Blogs\\suporte-ao-cliente.jpg",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\suporte-ao-cliente.jpg",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Blogs/suporte-ao-cliente.jpg",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Blogs\\suporte-ao-cliente.jpg"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Home\\Arthur-2-resize.jpg",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Home\\Arthur-2-resize.jpg",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Home/Arthur-2-resize.jpg",
       "AssetKind": "All",
@@ -473,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Home\\Arthur-2-resize.jpg"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Home\\Arthur-3.jpg",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Home\\Arthur-3.jpg",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Home/Arthur-3.jpg",
       "AssetKind": "All",
@@ -492,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Home\\Arthur-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Home\\Home-Image.png",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Home\\Home-Image.png",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Home/Home-Image.png",
       "AssetKind": "All",
@@ -511,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Home\\Home-Image.png"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Portfolio\\AnaliseDados.jpg",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\AnaliseDados.jpg",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Portfolio/AnaliseDados.jpg",
       "AssetKind": "All",
@@ -530,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Portfolio\\AnaliseDados.jpg"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Portfolio\\Arthur-1.jpg",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\Arthur-1.jpg",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Portfolio/Arthur-1.jpg",
       "AssetKind": "All",
@@ -549,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Portfolio\\Arthur-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Portfolio\\Arthur-2.jpg",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\Arthur-2.jpg",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Portfolio/Arthur-2.jpg",
       "AssetKind": "All",
@@ -568,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Portfolio\\Arthur-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Portfolio\\Arthur-3.jpg",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\Arthur-3.jpg",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Portfolio/Arthur-3.jpg",
       "AssetKind": "All",
@@ -587,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Portfolio\\Arthur-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Portfolio\\Arthur-A.webp",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\Arthur-A.webp",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Portfolio/Arthur-A.webp",
       "AssetKind": "All",
@@ -606,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Portfolio\\Arthur-A.webp"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Portfolio\\Arthur-logo-A.png",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\Arthur-logo-A.png",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Portfolio/Arthur-logo-A.png",
       "AssetKind": "All",
@@ -625,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Portfolio\\Arthur-logo-A.png"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Portfolio\\backend.webp",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\backend.webp",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Portfolio/backend.webp",
       "AssetKind": "All",
@@ -644,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Portfolio\\backend.webp"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Portfolio\\backend-resize.jpg",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\backend-resize.jpg",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Portfolio/backend-resize.jpg",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Portfolio\\backend-resize.jpg"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Portfolio\\construcao.webp",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\construcao.webp",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Portfolio/construcao.webp",
       "AssetKind": "All",
@@ -682,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Portfolio\\construcao.webp"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Portfolio\\dashboard.jpg",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\dashboard.jpg",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Portfolio/dashboard.jpg",
       "AssetKind": "All",
@@ -701,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Portfolio\\dashboard.jpg"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Portfolio\\DBA.jpg",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\DBA.jpg",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Portfolio/DBA.jpg",
       "AssetKind": "All",
@@ -720,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Portfolio\\DBA.jpg"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Portfolio\\DBA-resize.jpg",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\DBA-resize.jpg",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Portfolio/DBA-resize.jpg",
       "AssetKind": "All",
@@ -739,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Portfolio\\DBA-resize.jpg"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Portfolio\\Design-Grafico.jpg",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\Design-Grafico.jpg",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Portfolio/Design-Grafico.jpg",
       "AssetKind": "All",
@@ -758,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Portfolio\\Design-Grafico.jpg"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Portfolio\\frontend.png",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\frontend.png",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Portfolio/frontend.png",
       "AssetKind": "All",
@@ -777,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Portfolio\\frontend.png"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Portfolio\\frontend-resize.png",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\frontend-resize.png",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Portfolio/frontend-resize.png",
       "AssetKind": "All",
@@ -796,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Portfolio\\frontend-resize.png"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Portfolio\\migrar-nuvem.webp",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\migrar-nuvem.webp",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Portfolio/migrar-nuvem.webp",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Portfolio\\migrar-nuvem.webp"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Portfolio\\portfolio-1.png",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\portfolio-1.png",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Portfolio/portfolio-1.png",
       "AssetKind": "All",
@@ -834,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Portfolio\\portfolio-1.png"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Portfolio\\portfolio-2.png",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\portfolio-2.png",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Portfolio/portfolio-2.png",
       "AssetKind": "All",
@@ -853,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Portfolio\\portfolio-2.png"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Portfolio\\portfolio-3.png",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\portfolio-3.png",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Portfolio/portfolio-3.png",
       "AssetKind": "All",
@@ -872,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Portfolio\\portfolio-3.png"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Portfolio\\portfolio-4.png",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\portfolio-4.png",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Portfolio/portfolio-4.png",
       "AssetKind": "All",
@@ -891,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Portfolio\\portfolio-4.png"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Portfolio\\portfolio-5.png",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\portfolio-5.png",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Portfolio/portfolio-5.png",
       "AssetKind": "All",
@@ -910,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Portfolio\\portfolio-5.png"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Portfolio\\portfolio-6.png",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\portfolio-6.png",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Portfolio/portfolio-6.png",
       "AssetKind": "All",
@@ -929,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Portfolio\\portfolio-6.png"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Portfolio\\projetar.png",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\projetar.png",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Portfolio/projetar.png",
       "AssetKind": "All",
@@ -948,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Portfolio\\projetar.png"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Portfolio\\suporte.jpg",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\suporte.jpg",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Portfolio/suporte.jpg",
       "AssetKind": "All",
@@ -967,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Portfolio\\suporte.jpg"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Portfolio\\suporte-resize.jpg",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\suporte-resize.jpg",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Portfolio/suporte-resize.jpg",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Portfolio\\suporte-resize.jpg"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Testimonials\\pessoa-1.jpg",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Testimonials\\pessoa-1.jpg",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Testimonials/pessoa-1.jpg",
       "AssetKind": "All",
@@ -1005,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Testimonials\\pessoa-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Testimonials\\pessoa-2.jpg",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Testimonials\\pessoa-2.jpg",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Testimonials/pessoa-2.jpg",
       "AssetKind": "All",
@@ -1024,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Testimonials\\pessoa-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Testimonials\\pessoa-3.png",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Testimonials\\pessoa-3.png",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Testimonials/pessoa-3.png",
       "AssetKind": "All",
@@ -1043,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Testimonials\\pessoa-3.png"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Testimonials\\pessoa-4.jpg",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Testimonials\\pessoa-4.jpg",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Testimonials/pessoa-4.jpg",
       "AssetKind": "All",
@@ -1062,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Testimonials\\pessoa-4.jpg"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Testimonials\\pessoa-5.jpg",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Testimonials\\pessoa-5.jpg",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Testimonials/pessoa-5.jpg",
       "AssetKind": "All",
@@ -1081,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Testimonials\\pessoa-5.jpg"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Testimonials\\pessoa-6.jpg",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Testimonials\\pessoa-6.jpg",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Testimonials/pessoa-6.jpg",
       "AssetKind": "All",
@@ -1100,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Testimonials\\pessoa-6.jpg"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Testimonials\\pic-1.png",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Testimonials\\pic-1.png",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Testimonials/pic-1.png",
       "AssetKind": "All",
@@ -1119,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Testimonials\\pic-1.png"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Testimonials\\pic-2.png",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Testimonials\\pic-2.png",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Testimonials/pic-2.png",
       "AssetKind": "All",
@@ -1138,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Testimonials\\pic-2.png"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Testimonials\\pic-3.png",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Testimonials\\pic-3.png",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Testimonials/pic-3.png",
       "AssetKind": "All",
@@ -1157,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Testimonials\\pic-3.png"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Testimonials\\pic-4.png",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Testimonials\\pic-4.png",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Testimonials/pic-4.png",
       "AssetKind": "All",
@@ -1176,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Testimonials\\pic-4.png"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\images\\Testimonials\\pic-5.png",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Testimonials\\pic-5.png",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "images/Testimonials/pic-5.png",
       "AssetKind": "All",
@@ -1195,10 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Testimonials\\pic-5.png"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\js\\blog-slider.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\js\\blog-slider.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "js/blog-slider.js",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\js\\blog-slider.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\js\\counter-up.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\js\\counter-up.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "js/counter-up.js",
       "AssetKind": "All",
@@ -1233,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\js\\counter-up.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\js\\portfolio.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\js\\portfolio.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "js/portfolio.js",
       "AssetKind": "All",
@@ -1252,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\js\\portfolio.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\js\\script.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\js\\script.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "js/script.js",
       "AssetKind": "All",
@@ -1271,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\js\\script.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\js\\scroll-spy.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\js\\scroll-spy.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "js/scroll-spy.js",
       "AssetKind": "All",
@@ -1290,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\js\\scroll-spy.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\js\\site.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\js\\testi-slider.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\js\\testi-slider.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "js/testi-slider.js",
       "AssetKind": "All",
@@ -1328,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\js\\testi-slider.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -1347,10 +1347,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1366,10 +1366,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1385,10 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1404,10 +1404,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1423,10 +1423,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1442,10 +1442,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1461,10 +1461,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1480,10 +1480,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1499,10 +1499,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1518,10 +1518,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1537,10 +1537,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1556,10 +1556,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1575,10 +1575,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1594,10 +1594,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1613,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1651,10 +1651,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1670,10 +1670,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1689,10 +1689,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1708,10 +1708,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1727,10 +1727,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1746,10 +1746,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1765,10 +1765,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1784,10 +1784,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1803,10 +1803,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1822,10 +1822,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1841,10 +1841,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1860,10 +1860,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1879,10 +1879,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1898,10 +1898,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1917,10 +1917,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1936,10 +1936,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1955,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1974,10 +1974,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1993,10 +1993,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -2012,10 +2012,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2031,10 +2031,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2050,10 +2050,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2069,10 +2069,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -2088,10 +2088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -2107,10 +2107,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -2126,10 +2126,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -2145,10 +2145,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -2164,10 +2164,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2183,10 +2183,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap-icons/bootstrap-icons.css",
       "AssetKind": "All",
@@ -2202,10 +2202,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.json",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.json",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap-icons/bootstrap-icons.json",
       "AssetKind": "All",
@@ -2221,10 +2221,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.json"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.min.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.min.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap-icons/bootstrap-icons.min.css",
       "AssetKind": "All",
@@ -2240,10 +2240,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.min.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.scss",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.scss",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap-icons/bootstrap-icons.scss",
       "AssetKind": "All",
@@ -2259,10 +2259,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.scss"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap-icons/fonts/bootstrap-icons.woff",
       "AssetKind": "All",
@@ -2278,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff2",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff2",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/bootstrap-icons/fonts/bootstrap-icons.woff2",
       "AssetKind": "All",
@@ -2297,10 +2297,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff2"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\boxicons\\css\\animations.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\boxicons\\css\\animations.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/boxicons/css/animations.css",
       "AssetKind": "All",
@@ -2316,10 +2316,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\boxicons\\css\\animations.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\boxicons\\css\\boxicons.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\boxicons\\css\\boxicons.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/boxicons/css/boxicons.css",
       "AssetKind": "All",
@@ -2335,10 +2335,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\boxicons\\css\\boxicons.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\boxicons\\css\\boxicons.min.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\boxicons\\css\\boxicons.min.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/boxicons/css/boxicons.min.css",
       "AssetKind": "All",
@@ -2354,10 +2354,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\boxicons\\css\\boxicons.min.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\boxicons\\css\\transformations.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\boxicons\\css\\transformations.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/boxicons/css/transformations.css",
       "AssetKind": "All",
@@ -2373,10 +2373,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\boxicons\\css\\transformations.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\boxicons\\fonts\\boxicons.eot",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\boxicons\\fonts\\boxicons.eot",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/boxicons/fonts/boxicons.eot",
       "AssetKind": "All",
@@ -2392,10 +2392,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\boxicons\\fonts\\boxicons.eot"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\boxicons\\fonts\\boxicons.svg",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\boxicons\\fonts\\boxicons.svg",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/boxicons/fonts/boxicons.svg",
       "AssetKind": "All",
@@ -2411,10 +2411,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\boxicons\\fonts\\boxicons.svg"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\boxicons\\fonts\\boxicons.ttf",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\boxicons\\fonts\\boxicons.ttf",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/boxicons/fonts/boxicons.ttf",
       "AssetKind": "All",
@@ -2430,10 +2430,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\boxicons\\fonts\\boxicons.ttf"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\boxicons\\fonts\\boxicons.woff",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\boxicons\\fonts\\boxicons.woff",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/boxicons/fonts/boxicons.woff",
       "AssetKind": "All",
@@ -2449,10 +2449,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\boxicons\\fonts\\boxicons.woff"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\boxicons\\fonts\\boxicons.woff2",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\boxicons\\fonts\\boxicons.woff2",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/boxicons/fonts/boxicons.woff2",
       "AssetKind": "All",
@@ -2468,10 +2468,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\boxicons\\fonts\\boxicons.woff2"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\glightbox\\css\\glightbox.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\glightbox\\css\\glightbox.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/glightbox/css/glightbox.css",
       "AssetKind": "All",
@@ -2487,10 +2487,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\glightbox\\css\\glightbox.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\glightbox\\css\\glightbox.min.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\glightbox\\css\\glightbox.min.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/glightbox/css/glightbox.min.css",
       "AssetKind": "All",
@@ -2506,10 +2506,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\glightbox\\css\\glightbox.min.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\glightbox\\css\\plyr.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\glightbox\\css\\plyr.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/glightbox/css/plyr.css",
       "AssetKind": "All",
@@ -2525,10 +2525,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\glightbox\\css\\plyr.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\glightbox\\css\\plyr.min.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\glightbox\\css\\plyr.min.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/glightbox/css/plyr.min.css",
       "AssetKind": "All",
@@ -2544,10 +2544,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\glightbox\\css\\plyr.min.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\glightbox\\js\\glightbox.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\glightbox\\js\\glightbox.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/glightbox/js/glightbox.js",
       "AssetKind": "All",
@@ -2563,10 +2563,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\glightbox\\js\\glightbox.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\glightbox\\js\\glightbox.min.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\glightbox\\js\\glightbox.min.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/glightbox/js/glightbox.min.js",
       "AssetKind": "All",
@@ -2582,10 +2582,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\glightbox\\js\\glightbox.min.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2601,10 +2601,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2620,10 +2620,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2639,10 +2639,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -2658,10 +2658,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2677,10 +2677,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2696,10 +2696,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2715,10 +2715,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2734,10 +2734,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2753,10 +2753,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2772,10 +2772,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2791,10 +2791,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -2810,10 +2810,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\swiper\\swiper-bundle.min.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\swiper\\swiper-bundle.min.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/swiper/swiper-bundle.min.css",
       "AssetKind": "All",
@@ -2829,10 +2829,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\swiper\\swiper-bundle.min.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\swiper\\swiper-bundle.min.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\swiper\\swiper-bundle.min.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/swiper/swiper-bundle.min.js",
       "AssetKind": "All",
@@ -2848,10 +2848,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\swiper\\swiper-bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\lib\\swiper\\swiper-bundle.min.js.map",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\swiper\\swiper-bundle.min.js.map",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "lib/swiper/swiper-bundle.min.js.map",
       "AssetKind": "All",
@@ -2867,10 +2867,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\swiper\\swiper-bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\css\\all.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\all.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/css/all.css",
       "AssetKind": "All",
@@ -2886,10 +2886,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\css\\all.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\css\\all.min.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\all.min.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/css/all.min.css",
       "AssetKind": "All",
@@ -2905,10 +2905,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\css\\all.min.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\css\\brands.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\brands.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/css/brands.css",
       "AssetKind": "All",
@@ -2924,10 +2924,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\css\\brands.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\css\\brands.min.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\brands.min.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/css/brands.min.css",
       "AssetKind": "All",
@@ -2943,10 +2943,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\css\\brands.min.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\css\\fontawesome.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\fontawesome.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/css/fontawesome.css",
       "AssetKind": "All",
@@ -2962,10 +2962,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\css\\fontawesome.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\css\\fontawesome.min.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\fontawesome.min.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/css/fontawesome.min.css",
       "AssetKind": "All",
@@ -2981,10 +2981,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\css\\fontawesome.min.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\css\\regular.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\regular.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/css/regular.css",
       "AssetKind": "All",
@@ -3000,10 +3000,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\css\\regular.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\css\\regular.min.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\regular.min.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/css/regular.min.css",
       "AssetKind": "All",
@@ -3019,10 +3019,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\css\\regular.min.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\css\\solid.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\solid.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/css/solid.css",
       "AssetKind": "All",
@@ -3038,10 +3038,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\css\\solid.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\css\\solid.min.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\solid.min.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/css/solid.min.css",
       "AssetKind": "All",
@@ -3057,10 +3057,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\css\\solid.min.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\css\\svg-with-js.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\svg-with-js.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/css/svg-with-js.css",
       "AssetKind": "All",
@@ -3076,10 +3076,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\css\\svg-with-js.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\css\\svg-with-js.min.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\svg-with-js.min.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/css/svg-with-js.min.css",
       "AssetKind": "All",
@@ -3095,10 +3095,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\css\\svg-with-js.min.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\css\\v4-shims.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\v4-shims.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/css/v4-shims.css",
       "AssetKind": "All",
@@ -3114,10 +3114,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\css\\v4-shims.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\css\\v4-shims.min.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\v4-shims.min.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/css/v4-shims.min.css",
       "AssetKind": "All",
@@ -3133,10 +3133,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\css\\v4-shims.min.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\js\\all.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\all.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/js/all.js",
       "AssetKind": "All",
@@ -3152,10 +3152,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\js\\all.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\js\\all.min.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\all.min.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/js/all.min.js",
       "AssetKind": "All",
@@ -3171,10 +3171,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\js\\all.min.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\js\\brands.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\brands.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/js/brands.js",
       "AssetKind": "All",
@@ -3190,10 +3190,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\js\\brands.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\js\\brands.min.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\brands.min.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/js/brands.min.js",
       "AssetKind": "All",
@@ -3209,10 +3209,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\js\\brands.min.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\js\\conflict-detection.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\conflict-detection.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/js/conflict-detection.js",
       "AssetKind": "All",
@@ -3228,10 +3228,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\js\\conflict-detection.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\js\\conflict-detection.min.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\conflict-detection.min.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/js/conflict-detection.min.js",
       "AssetKind": "All",
@@ -3247,10 +3247,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\js\\conflict-detection.min.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\js\\fontawesome.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\fontawesome.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/js/fontawesome.js",
       "AssetKind": "All",
@@ -3266,10 +3266,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\js\\fontawesome.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\js\\fontawesome.min.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\fontawesome.min.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/js/fontawesome.min.js",
       "AssetKind": "All",
@@ -3285,10 +3285,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\js\\fontawesome.min.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\js\\regular.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\regular.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/js/regular.js",
       "AssetKind": "All",
@@ -3304,10 +3304,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\js\\regular.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\js\\regular.min.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\regular.min.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/js/regular.min.js",
       "AssetKind": "All",
@@ -3323,10 +3323,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\js\\regular.min.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\js\\solid.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\solid.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/js/solid.js",
       "AssetKind": "All",
@@ -3342,10 +3342,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\js\\solid.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\js\\solid.min.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\solid.min.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/js/solid.min.js",
       "AssetKind": "All",
@@ -3361,10 +3361,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\js\\solid.min.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\js\\v4-shims.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\v4-shims.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/js/v4-shims.js",
       "AssetKind": "All",
@@ -3380,10 +3380,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\js\\v4-shims.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\js\\v4-shims.min.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\v4-shims.min.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/js/v4-shims.min.js",
       "AssetKind": "All",
@@ -3399,10 +3399,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\js\\v4-shims.min.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-brands-400.eot",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-brands-400.eot",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/webfonts/fa-brands-400.eot",
       "AssetKind": "All",
@@ -3418,10 +3418,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\webfonts\\fa-brands-400.eot"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-brands-400.svg",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-brands-400.svg",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/webfonts/fa-brands-400.svg",
       "AssetKind": "All",
@@ -3437,10 +3437,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\webfonts\\fa-brands-400.svg"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-brands-400.ttf",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-brands-400.ttf",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/webfonts/fa-brands-400.ttf",
       "AssetKind": "All",
@@ -3456,10 +3456,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\webfonts\\fa-brands-400.ttf"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-brands-400.woff",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-brands-400.woff",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/webfonts/fa-brands-400.woff",
       "AssetKind": "All",
@@ -3475,10 +3475,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\webfonts\\fa-brands-400.woff"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-brands-400.woff2",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-brands-400.woff2",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/webfonts/fa-brands-400.woff2",
       "AssetKind": "All",
@@ -3494,10 +3494,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\webfonts\\fa-brands-400.woff2"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-regular-400.eot",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-regular-400.eot",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/webfonts/fa-regular-400.eot",
       "AssetKind": "All",
@@ -3513,10 +3513,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\webfonts\\fa-regular-400.eot"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-regular-400.svg",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-regular-400.svg",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/webfonts/fa-regular-400.svg",
       "AssetKind": "All",
@@ -3532,10 +3532,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\webfonts\\fa-regular-400.svg"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-regular-400.ttf",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-regular-400.ttf",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/webfonts/fa-regular-400.ttf",
       "AssetKind": "All",
@@ -3551,10 +3551,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\webfonts\\fa-regular-400.ttf"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-regular-400.woff",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-regular-400.woff",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/webfonts/fa-regular-400.woff",
       "AssetKind": "All",
@@ -3570,10 +3570,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\webfonts\\fa-regular-400.woff"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-regular-400.woff2",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-regular-400.woff2",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/webfonts/fa-regular-400.woff2",
       "AssetKind": "All",
@@ -3589,10 +3589,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\webfonts\\fa-regular-400.woff2"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-solid-900.eot",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-solid-900.eot",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/webfonts/fa-solid-900.eot",
       "AssetKind": "All",
@@ -3608,10 +3608,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\webfonts\\fa-solid-900.eot"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-solid-900.svg",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-solid-900.svg",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/webfonts/fa-solid-900.svg",
       "AssetKind": "All",
@@ -3627,10 +3627,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\webfonts\\fa-solid-900.svg"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-solid-900.ttf",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-solid-900.ttf",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/webfonts/fa-solid-900.ttf",
       "AssetKind": "All",
@@ -3646,10 +3646,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\webfonts\\fa-solid-900.ttf"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-solid-900.woff",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-solid-900.woff",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/webfonts/fa-solid-900.woff",
       "AssetKind": "All",
@@ -3665,10 +3665,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\webfonts\\fa-solid-900.woff"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-solid-900.woff2",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-solid-900.woff2",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/font-awesome/webfonts/fa-solid-900.woff2",
       "AssetKind": "All",
@@ -3684,10 +3684,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\font-awesome\\webfonts\\fa-solid-900.woff2"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\jquery\\jquery-3.6.0.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\jquery\\jquery-3.6.0.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/jquery/jquery-3.6.0.js",
       "AssetKind": "All",
@@ -3703,10 +3703,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\jquery\\jquery-3.6.0.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\magnific-popup\\jquery.magnific-popup.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\magnific-popup\\jquery.magnific-popup.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/magnific-popup/jquery.magnific-popup.js",
       "AssetKind": "All",
@@ -3722,10 +3722,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\magnific-popup\\jquery.magnific-popup.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\magnific-popup\\magnific-popup.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\magnific-popup\\magnific-popup.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/magnific-popup/magnific-popup.css",
       "AssetKind": "All",
@@ -3741,10 +3741,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\magnific-popup\\magnific-popup.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\swiper\\swiper.css",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\swiper\\swiper.css",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/swiper/swiper.css",
       "AssetKind": "All",
@@ -3760,10 +3760,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\swiper\\swiper.css"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\swiper\\swiper.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\swiper\\swiper.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/swiper/swiper.js",
       "AssetKind": "All",
@@ -3779,10 +3779,10 @@
       "OriginalItemSpec": "wwwroot\\vendors\\swiper\\swiper.js"
     },
     {
-      "Identity": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\vendors\\typed\\typed.js",
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\typed\\typed.js",
       "SourceId": "PortifolioDEV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
       "BasePath": "_content/PortifolioDEV",
       "RelativePath": "vendors/typed/typed.js",
       "AssetKind": "All",

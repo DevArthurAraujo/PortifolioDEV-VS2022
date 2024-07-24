@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\PortifolioDEV.csproj",
+      "projectUniqueName": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\PortifolioDEV.csproj",
       "projectName": "PortifolioDEV",
-      "projectPath": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\PortifolioDEV.csproj",
+      "projectPath": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\PortifolioDEV.csproj",
       "packagesPath": "C:\\Users\\Aluno Noite\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aluno Noite\\Documents\\Visual Studio 2022\\Projetos\\PortifolioDEV\\obj\\",
+      "outputPath": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Aluno Noite\\AppData\\Roaming\\NuGet\\NuGet.Config",
