@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="~/lib/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="~/lib/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/css/gerenciamento_index.css">
+    <link rel="stylesheet" href="~/css/submenu.css">
+  
+</head>
+<body>
+    <!-------------------- Header Area (Start) -------------------->
+        <header class="header">
+
+        <!-- Logo -->
+        
+        <h1 class="section-title">
+            <a href="/Home/Index"><img src="~/images/Portfolio/Arthur-logo-A.png" alt="About-Image" style="width: 100px; height: 100px; "></a>
+        </h1>
+    
+
+        <!-- Logo End -->
+        <!-- Navbar -->
+        <nav class="navbar" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+            <span style="display: flex; align-items: center; margin-right: 9px;">
+                <i class="fas fa-home fa-lg" aria-hidden="true" style="color: #ac0404;"></i>
+                <a href="/Home/Index" style="margin-left: 10px;">Inicio</a>
+            </span>
+
+            <div class="dropdown">
+                <span style="display: flex; align-items: center; margin-right: 20px;">
+                    <i class="fa fa-user" aria-hidden="true" style="color: #ac0404;"></i>
+                    <a href="/Usuario/Login" style="margin-left: 10px;">Login</a>
+                </span>
+                <div class="dropdown-content">
+                    <a href="/Usuario/Index">
+                        <i class="fa fa-users" aria-hidden="true" style="margin-right: 20px; color: #ac0404;"></i>
+                        Usuarios
+                    </a>
+                    <a href="/Agendamento/Index">
+                        <i class="fa fa-calendar" aria-hidden="true" style="margin-right: 20px; color: #ac0404;"></i>
+                        Agendamento Admin
+                    </a>
+                    <a href="/Agendamento/Gerencimento_Agendamento_Usuario">
+                        <i class="fa fa-calendar" aria-hidden="true" style="margin-right: 20px; color: #ac0404;"></i>
+                        Agendamento User
+                    </a>
+                    <a href="/Agendamento/Cadastro">
+                        <i class="fa fa-address-book" aria-hidden="true" style="margin-right: 20px; color: #ac0404;"></i>
+                        Cadastro Agendamento
+                    </a>
+                    <a href="/Servico/Index">
+                        <i class="fa fa-file-archive" aria-hidden="true" style="margin-right: 20px; color: #ac0404;"></i>
+                        Gerenciamento de Serviço
+                    </a>
+                    <a href="#logout">
+                        <i class="fa fa-file-archive" aria-hidden="true" style="margin-right: 20px; color: #ac0404;"></i>
+                        Relatório
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-------------------- Header Area (End) -------------------->
+
+    <div>
+        <main>
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-------------------- Footer Area (Start) -------------------->
+
+    <!-------------------- Footer Area (End) -------------------->
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
