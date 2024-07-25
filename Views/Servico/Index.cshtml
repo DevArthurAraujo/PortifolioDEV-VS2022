@@ -1,0 +1,401 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Agendamento</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="~/lib/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="~/lib/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/gerenciamento_index.css">
+ 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+</head>
+<body>
+    <header class="container">
+        <h1 class="section-title"> 
+            <a href="/Home/Index"><img src="~/images/Portfolio/Arthur logo A.png" alt="About-Image" style="width: 100px; height: 100px; "></a>
+        </h1>
+    </header>   
+    
+
+    <section class="maneger-page-section">
+        <div  class="container page-maneger"> 
+
+            <div class="add-user-button">
+                <br>
+                <h1 class="section-title cliente-title-maneger">Gerenciamento de Serviço</h1>
+                <br>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-group mb-4">
+                            <input id="filtro" type="text" class="form-control" placeholder="Pesquisar Produtos..." aria-label="Filtrar" aria-describedby="basic-addon2">
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <!-- Alteração para "text-md-end" para alinhar à direita apenas em telas médias e maiores -->
+                        <button class="btn btn-danger btn-lg" onclick="" data-bs-toggle="modal" data-bs-target="#InserirServico">
+                            <i class="fa fa-plus"></i> Adicionar Serviço
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-container table-responsive">
+                <table id="TbClientes" class="table">
+                    <colgroup>
+                        <col class="tc-nome">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nome do Serviço</th>
+                            <th>Valor do Serviço</th>
+                            <th class="editar">Editar</th>
+                            <th class="excluir">Excluir</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                            <tr>
+                                <td>Id</td>
+                                <td>Nome</td>
+                                <td>Valor</td>
+
+                                <td class="text-center">
+                                    <button class="btn btn-default" onclick="definirEdt(
+                                    'Id',
+                                    'Nome',
+                                    'Valor'
+                                    )" data-bs-toggle="modal" data-bs-target="#EditarServico">
+                                        <i class="fa fa-edit" style="color: #F7F5F2;"></i>
+                                    </button>
+                                </td>
+                                <td class="text-center">
+                                    <button class="btn btn-default" onclick="definirExc(
+                                    'Id',
+                                    'Nome', 
+                                    'Valor'
+                                    )" data-bs-toggle="modal" data-bs-target="#ExcluirServico">
+                                        <i class="fa fa-trash" style="color: #F7F5F2;"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="ExcluirServico" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="exampleModalLabel">Excluir Servico</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome">Nome</label>
+                                <input type="text" id="ExcNome" class="form-control" placeholder="Digite o nome..." readonly>
+
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="valor">Valor</label>
+                                <input type="text" id="ExcValor" class="form-control" placeholder="R$ 100,00" readonly>
+
+                            </div>                            
+                        </form>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-danger" onclick="ExcluirServicoo()" >Excluir</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="InserirServico" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" style="max-height: 80vh;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="exampleModalLabel">Adicionar Servico</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3 d-flex align-items-center">
+                                <input type="hidden" id="TxtId" class="form-check-input" value="10:00" style="margin-right: 10px;" disabled>
+                            </div>
+
+                            <!-- Adicione o atributo data-group para cada grupo de checkboxes -->
+                            <div class="mb-3 d-flex align-items-center">
+                                <label for="frutas">Nome do Serviço:</label>
+                                <input id="n_serv" type="text" class="form-control" style="width: 300px;" placeholder="Desenvolvimento FrontEnd">
+                            </div>                        
+
+                            <div class="mb-3 d-flex align-items-center">
+                                <label for="frutas">Valor do Serviço:</label>
+                                <input id="v_serv" type="text" class="form-control" style="width: 300px;" placeholder="RS 1000,00">
+                            </div> 
+
+                            <input type="hidden" id="IdEdt" value="">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary" onclick="InserirServicos()">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="EditarServico" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="exampleModalLabel">Editar Servico</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome">Nome do Serviço</label>
+                                <input type="text" id="EdtNome" class="form-control" placeholder="Desenvolvimento FrontEnd" readonly>
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="email">Valor do Serviço</label>
+                                <input type="email" id="EdtEmail" class="form-control" placeholder="R$ 1000,00" readonly>
+                            </div>
+                        </form>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" onclick="AlterarServico()" class="btn btn-primary">Atualizar</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Butao Voltar-->
+    <section class="container text-center">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <div>
+                <button type="button" id="send-button2" class="nav-link active btn btn-danger btn-block" style="flex: 1; margin-left: 5px;" onclick="window.location.href = '/Home/Index';">
+                    Voltar
+                </button>
+            </div>
+        </div>
+    </section>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script src="~/lib/swiper/swiper-bundle.min.js"></script>    
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+
+    function definirEdt(id, Nome, Valor) {
+        
+        $('#IdEdt').val(id);
+        $('#EditNome').val(Nome);
+        $('#EditValor').val(Valor);
+
+       
+        var senhaValue = "";
+        if (Senha) {
+            $('#EditSenha').val(Senha);
+            senhaValue = Senha;
+        }
+
+       
+        if ($('#DropTipoUsuarioEdit').length > 0) {               
+            $('#DropTipoUsuarioEdit option').filter(function () {
+                return $(this).val() === TipoUsuario; 
+            }).prop('selected', true); 
+            $('#DropTipoUsuarioEdit').trigger('chosen:updated');
+        } else {
+            console.error("DropDownList não encontrado.");
+        }           
+    }
+
+    function definirExc(id, Nome, Valor) {
+        $('#IdExc').val(id);
+        $('#ExcNome').val(Nome);
+        $('#ExcValor').val(Valor);
+    }
+
+    function InserirUsuario() {
+
+        var nome = $('#Nome').val();
+        var email = $('#Email').val();
+        var senha = $('#Senha').val();
+        var telefone = $('#Telefone').val();
+        var tipoUsuario = $('#DropTipoUsuario option:selected').val();
+        
+        if (nome.trim() === "") {
+            alert("Por favor, preencha o campo Nome.");
+            return;
+        }
+        if (senha.trim() === "") {
+            alert("Por favor, preencha o campo Senha.");
+            return;
+        }
+        if (email.trim() === "") {
+            alert("Por favor, insira um email válido.");
+            return;
+        }
+
+        if (tipoUsuario === "Escolha o Tipo de Usuário") {
+            alert("Por favor, selecione o tipo de usuário.");
+            return;
+        }
+
+        if (telefone.trim() === "") {
+            alert("Por favor, insira um número de telefone válido.");
+            return;
+        }            
+
+        
+
+        var dados = {
+            Nome: nome,
+            Email: email,
+            Senha: senha,
+            Telefone: telefone,
+            TipoUsuario: tipoUsuario
+        };
+
+        // Faça a chamada AJAX
+        $.ajax({
+            url: '/Usuario/InserirUsuario',
+            type: "POST",
+            dataType: "json",
+            data: dados,
+            ~: function (resultado) {
+                if (resultado.~) {
+                    alert(resultado.message);  // Exibe a mensagem de sucesso
+                    // Fecha o modal
+                    $('#InserirUsuario').modal('hide');
+                    // Recarrega a págInserirUsuarioina
+                    location.reload();
+                } else {
+                    alert(resultado.message);  // Exibe a mensagem de falha
+                }
+            },
+            error: function () {
+                alert('Erro na requisição AJAX.');
+            }
+        });
+    }
+
+    function AlterarUsuario() {
+        var id = $("#IdEdt").val();
+        var nome = $("#EditNome").val();
+        var valor = $("#EditValor").val(); // Obtém o valor do tipo de cliente, não apenas o texto
+
+        // Validação do campo 'Nome'
+        if (!nome) {
+            alert("Por favor, preencha o campo Nome.");
+            return;
+        }
+
+        // Validação do campo 'Valor'
+        if (!valor) {
+            alert("Por favor, preencha o campo Valor.");
+            return;
+        }
+
+
+        // Crie um objeto com os dados
+        var dados = {
+            Id: id,
+            Nome: nome,
+            Valor: valor,
+        };
+
+        // Faça a chamada AJAX para o servidor
+        $.ajax({
+            type: "POST",
+            url: "/Usuario/AlterarUsuario",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify(dados),
+            ~: function (response) {
+                // Manipule a resposta do servidor
+                if (response.~) {
+                    alert("Servico alterado com sucesso!");
+                    // Feche o modal de edição se necessário
+                    $('#FormEditar').modal('hide');
+                    // Recarregue a página se necessário
+                    location.reload();
+                } else {
+                    alert("Falha ao alterar o serviço.");
+                }
+            },
+            error: function (error) {
+                // Manipule erros de requisição AJAX
+                console.error("Erro na chamada AJAX:", error);
+            }
+        });
+    }
+
+    function ExcluirUsuario() 
+    {
+        // Obtenha o ID do usuário a ser excluído
+        var userId = $('#IdExc').val();
+
+        // Faça uma requisição AJAX
+        $.ajax({
+            type: "POST",
+            url: "/Usuario/ExcluirUsuario", // Substitua "Usuario" pelo nome do seu controller
+            data: { id: userId },
+            dataType: "json",
+            ~: function (response) {
+                // A resposta do servidor está em response.~
+                if (response.~) {
+                    // Feche o modal de exclusão
+                    $('#ExcluirUsuario').modal('hide');
+                    alert("Serviço excluido com sucesso!");
+
+                    // Recarregue a página
+                    location.reload();
+                } else {
+                    alert("Falha ao excluir serviço.");
+                }
+            },
+            error: function () {
+                alert("Erro na requisição AJAX.");
+            }
+        });
+    }
+    
+   
+
+</script>
+</body>
+</html>

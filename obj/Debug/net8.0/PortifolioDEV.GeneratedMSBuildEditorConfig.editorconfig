@@ -18,8 +18,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Aluno Noite\Documents\GitHub\PortifolioDEV-VS2022
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Aluno Noite/Documents/GitHub/PortifolioDEV-VS2022/Views/Agendamento/Cadastro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhbWVudG9cQ2FkYXN0cm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aluno Noite/Documents/GitHub/PortifolioDEV-VS2022/Views/Agendamento/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhbWVudG9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Aluno Noite/Documents/GitHub/PortifolioDEV-VS2022/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aluno Noite/Documents/GitHub/PortifolioDEV-VS2022/Views/Servico/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vydmljb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Aluno Noite/Documents/GitHub/PortifolioDEV-VS2022/Views/Shared/Error.cshtml]
@@ -34,12 +46,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xDYWRhc3Ryby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aluno Noite/Documents/GitHub/PortifolioDEV-VS2022/Views/Usuario/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xMb2dpbi5jc2h0bWw=
+[C:/Users/Aluno Noite/Documents/GitHub/PortifolioDEV-VS2022/Views/Usuario/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aluno Noite/Documents/GitHub/PortifolioDEV-VS2022/Views/Usuario/UsuarioIndex.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xVc3VhcmlvSW5kZXguY3NodG1s
+[C:/Users/Aluno Noite/Documents/GitHub/PortifolioDEV-VS2022/Views/Usuario/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Aluno Noite/Documents/GitHub/PortifolioDEV-VS2022/Views/_ViewImports.cshtml]

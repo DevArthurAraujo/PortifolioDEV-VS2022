@@ -1,0 +1,186 @@
+﻿@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Agendamento</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="~/lib/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="~/lib/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/gerenciamento_index.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+</head>
+<body>
+    <header class="container">
+        <h1 class="section-title">
+            <a href="/Home/Index"><img src="~/images/Portfolio/Arthur logo A.png" alt="About-Image" style="width: 100px; height: 100px; "></a>
+        </h1>
+    </header>
+
+
+    <section class="maneger-page-section">
+        <div class="container page-maneger">
+
+            <!--Titulo-->
+            <div class="add-user-button">
+                <br>
+                <h1 class="section-title cliente-title-maneger">Adicionar Agendamento</h1>
+                <br>
+            </div>
+
+            <!--Botao adicionar-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-group mb-4">
+                            <input id="filtro" type="text" class="form-control" placeholder="Pesquisar Produtos..." aria-label="Filtrar" aria-describedby="basic-addon2">
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <!-- Alteração para "text-md-end" para alinhar à direita apenas em telas médias e maiores -->
+                        <button class="btn btn-danger btn-lg" onclick="InserirUsuario()">
+                            <i class="fa fa-plus"></i> Adicionar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--formulario-->
+            <div class="modal-body">
+                <form>
+                    <p style="color:red">Campos com * vermelho são obrigatórios</p>
+                    <div class="mb-3 row">
+                        <div class="col-md-6">
+                            <input id="Nome" type="date" class="form-control" placeholder="Digite o nome do cliente">
+                        </div>
+                        <div class="col-md-6">
+                            <label style="color:red">*</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 row">
+                        <div class="col-md-6">
+                            <select id="Servico" class="form-select">
+                                <option value="">Escolha o Serviço</option>
+                                <option value="web">Construção completa de sites - Front e Back</option>
+                                <option value="construcao">Construção e Projeção de Banco de Dados</option>
+                                <option value="migracao">Migração para cloud</option>
+                                <option value="administracao">Administração e Analise de Bancos de Dados</option>
+                                <option value="dashboard">Criação de Dashboards</option>
+                                <option value="suporte">Suporte pos-execução</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Checkboxes de horários com texto branco -->
+                    <div class="mb-3 d-flex align-items-center" style="color: white;">
+                        <input type="checkbox" id="chk08M" class="form-check-input" value="08:00" style="margin-right: 10px;" data-group="horario">
+                        <label class="form-check-label" for="chk08">Atendimento das 8:00</label>
+                        <span id="Span08M" style="color:red;"></span>
+                    </div>
+
+                    <div class="mb-3 d-flex align-items-center" style="color: white;">
+                        <input type="checkbox" id="chk10M" class="form-check-input" value="10:00" style="margin-right: 10px;" data-group="horario">
+                        <label class="form-check-label" for="chk10">Atendimento das 10:00</label>
+                        <span id="Span10M" style="color:red;"></span>
+                    </div>
+
+                    <div class="mb-3 d-flex align-items-center" style="color: white;">
+                        <input type="checkbox" id="chk13M" class="form-check-input" value="13:00" style="margin-right: 10px;" data-group="horario">
+                        <label class="form-check-label" for="chk13">Atendimento das 13:00</label>
+                        <span id="Span13M" style="color:red;"></span>
+                    </div>
+
+                    <div class="mb-3 d-flex align-items-center" style="color: white;">
+                        <input type="checkbox" id="chk15M" class="form-check-input" value="15:00" style="margin-right: 10px;" data-group="horario">
+                        <label class="form-check-label" for="chk15">Atendimento das 15:00</label>
+                        <span id="Span15M" style="color:red;"></span>
+                    </div>
+
+                    <div class="mb-3 d-flex align-items-center" style="color: white;">
+                        <input type="checkbox" id="chk17M" class="form-check-input" value="17:00" style="margin-right: 10px;" data-group="horario">
+                        <label class="form-check-label" for="chk17">Atendimento das 17:00</label>
+                        <span id="Span17M" style="color:red;"></span>
+                    </div>
+
+                    <div class="mb-3 d-flex align-items-center" style="color: white;">
+                        <input type="checkbox" id="chk19M" class="form-check-input" value="19:00" style="margin-right: 10px;" data-group="horario">
+                        <label class="form-check-label" for="chk19">Atendimento das 19:00</label>
+                        <span id="Span19M" style="color:red;"></span>
+                    </div>
+                    <!-- Fim dos checkboxes de horários -->
+
+                    <input type="hidden" id="IdEdt" value="">
+                </form>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!--Butao Voltar-->
+    <section class="container text-center">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <div>
+                <button type="button" id="send-button2" class="nav-link active btn btn-danger btn-block" style="flex: 1; margin-left: 5px;" onclick="window.location.href = '/Home/Index';">
+                    Voltar
+                </button>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#show-hide-password').click(function () {
+            var senhaInput = $('#loginPassword');
+            var tipoInput = senhaInput.attr('type');
+
+            // Alternar entre o tipo de input password e text
+            if (tipoInput === 'password') {
+                senhaInput.attr('type', 'text');
+                $('#show-hide-password i').removeClass('fa-eye-slash').addClass('fa-eye');
+            } else {
+                senhaInput.attr('type', 'password');
+                $('#show-hide-password i').removeClass('fa-eye').addClass('fa-eye-slash');
+            }
+        });
+    });
+    function ConsultaLogin() {
+        var email = $("#loginEmail").val();
+        var senha = $("#loginPassword").val();
+
+        $.ajax({
+            type: "POST",
+            url: "/Usuario/ConsultarUsuario",
+            data: { Email: email, Senha: senha },
+            dataType: "json",
+            success: function (result) {
+                if (result.success) {
+                    window.location.href = '/Home/Index';
+
+                } else {
+                    // Exiba uma mensagem de erro
+                    alert("Erro: " + result.message);
+                }
+            },
+            error: function (error) {
+                console.error(error);
+                // Lógica para lidar com erros de chamada Ajax
+            }
+        });
+    }
+</script>
+</html>
