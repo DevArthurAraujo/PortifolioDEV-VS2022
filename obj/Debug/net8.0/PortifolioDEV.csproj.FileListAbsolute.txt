@@ -60,3 +60,4 @@ C:\Users\Aluno Noite\Documents\GitHub\PortifolioDEV-VS2022\obj\Debug\net8.0\Port
 C:\Users\Aluno Noite\Documents\GitHub\PortifolioDEV-VS2022\obj\Debug\net8.0\PortifolioDEV.genruntimeconfig.cache
 C:\Users\Aluno Noite\Documents\GitHub\PortifolioDEV-VS2022\obj\Debug\net8.0\ref\PortifolioDEV.dll
 C:\Users\Aluno Noite\Documents\GitHub\PortifolioDEV-VS2022\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout_Gerenciamento.cshtml.rz.scp.css
+C:\Users\Aluno Noite\Documents\GitHub\PortifolioDEV-VS2022\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout_Cadastro.cshtml.rz.scp.css

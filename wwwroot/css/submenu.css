@@ -2,16 +2,13 @@
     --red: #ac0404;
     --black: #F7F5F2;
     --white: #000000;
-    --grey: #222222;
-   
+    --grey: #222222;   
 }
-
 
 .dropdown{
     position: relative;
     display: inline-block;
 }
-
 
 .dropdown-content {
     display: none;
