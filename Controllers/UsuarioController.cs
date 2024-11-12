@@ -43,7 +43,7 @@ namespace PortifolioDEV.Controllers
             try
             {
                 // Chama o método do repositório que realiza a inserção no banco de dados
-                var resultado = _usuarioRepositorio.InserirUsuario(Nome, Email, Senha, Telefone, TipoUsuario);
+                var resultado = _usuarioRepositorio.InserirUsuario(Nome, Email, Telefone, Senha, TipoUsuario);
 
                 // Verifica o resultado da inserção
                 if (resultado)

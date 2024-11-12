@@ -31,63 +31,67 @@
                 </div>
             </div>
 
- <div class="table-container" style="max-height: 400px; overflow-y: auto;">
-     <div class="table-responsive">
-         <table id="TbClientes" class="table" style="width: 100%; border-collapse: collapse;">
-             <!-- Cabeçalho fixo -->
-             <thead style="top: 0; background-color: #ac0404; color: #F7F5F2; z-index: 1;">
-                 <tr>
-                     <th style="color: #F7F5F2;border: 1px solid #ddd; padding: 8px; width: 55px">#</th>
-                     <th style="color: #F7F5F2;border: 1px solid #ddd; padding: 8px; width: 207px">Nome</th>
-                     <th style="color: #F7F5F2;border: 1px solid #ddd; padding: 8px; width: 137px">Senha</th>
-                     <th style="color: #F7F5F2;border: 1px solid #ddd; padding: 8px; width: 335px">Email</th>
-                     <th style="color: #F7F5F2;border: 1px solid #ddd; padding: 8px; width: 182px">Telefone</th>
-                     <th style="color: #F7F5F2;border: 1px solid #ddd; padding: 8px; width: 185px">Tipo de Usuário</th>
-                     <th class="editar" style="color: #F7F5F2;border: 1px solid #ddd; padding: 8px;">Editar</th>
-                     <th class="excluir" style="color: #F7F5F2;border: 1px solid #ddd; padding: 8px;">Excluir</th>
-                 </tr>
-             </thead>
-         </table>
+        <div class="table-container" style="max-height: 400px; overflow-y: auto;">
 
-         <!-- Corpo da tabela com rolagem -->
-         <div style="max-height: 300px; overflow-y: auto;">
-             <table id="TbClientesBody" class="table" style="width: 100%; border-collapse: collapse;">
-                 <tbody>
+            <div class="table-responsive">
+                    <table id="TbClientes" class="table" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+                        <!-- Cabeçalho fixo -->
+                        <thead style="background-color: #ac0404; color: #F7F5F2;">
+                            <tr>
+                                <th style="color: #F7F5F2; border: 1px solid #ddd; padding: 8px; width: 50px; position: sticky; top: 0; background-color: #ac0404; z-index: 2;">#</th>
+                                <th style="color: #F7F5F2; border: 1px solid #ddd; padding: 8px; width: 190px; position: sticky; top: 0; background-color: #ac0404; z-index: 2;">Nome</th>
+                                <th style="color: #F7F5F2; border: 1px solid #ddd; padding: 8px; width: 230px; position: sticky; top: 0; background-color: #ac0404; z-index: 2;">Senha</th>
+                                <th style="color: #F7F5F2; border: 1px solid #ddd; padding: 8px; width: 312px; position: sticky; top: 0; background-color: #ac0404; z-index: 2;">Email</th>
+                                <th style="color: #F7F5F2; border: 1px solid #ddd; padding: 8px; width: 160px; position: sticky; top: 0; background-color: #ac0404; z-index: 2;">Telefone</th>
+                                <th style="color: #F7F5F2; border: 1px solid #ddd; padding: 8px; width: 170px; position: sticky; top: 0; background-color: #ac0404; z-index: 2;">Tipo de Usuário</th>
+                                <th class="editar" style="color: #F7F5F2; border: 1px solid #ddd; padding: 8px; position: sticky; top: 0; background-color: #ac0404; z-index: 2;">Editar</th>
+                                <th class="excluir" style="color: #F7F5F2; border: 1px solid #ddd; padding: 8px; position: sticky; top: 0; background-color: #ac0404; z-index: 2;">Excluir</th>
+                            </tr>
+                        </thead>
+                    </table>
+
+                    <!-- Corpo da tabela rolável -->
+                    <div style="max-height: 300px; overflow-y: auto; overflow-x: hidden;">
+                        <table id="TbClientesBody" class="table" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+                            <tbody>
                                 @foreach (var usuario in Model)
                                 {
-                             <tr>
-                                 <td style="color: #ac0404; border: 1px solid #ddd; padding: 8px;">@usuario.Id</td>
-                                 <td style="color: #ac0404; border: 1px solid #ddd; padding: 8px;">@usuario.Nome</td>
-                                 <td style="color: #ac0404; border: 1px solid #ddd; padding: 8px;">@usuario.Senha</td>
-                                 <td style="color: #ac0404; border: 1px solid #ddd; padding: 8px;">@usuario.Email</td>
-                                 <td style="color: #ac0404; border: 1px solid #ddd; padding: 8px;">@usuario.Telefone</td>
+                                    <tr>
+                                        <td style="color: #ac0404; border: 1px solid #ddd; padding: 8px;width: 50px">@usuario.Id</td>
+                                        <td style="color: #ac0404; border: 1px solid #ddd; padding: 8px;width: 190px">@usuario.Nome</td>
+                                        <td style="color: #ac0404; border: 1px solid #ddd; padding: 8px; width: 230px">@usuario.Senha</td>
+                                        <td style="color: #ac0404; border: 1px solid #ddd; padding: 8px; width: 312px">@usuario.Email</td>
+                                        <td style="color: #ac0404; border: 1px solid #ddd; padding: 8px; width: 160px">@usuario.Telefone</td>
 
                                         @if (usuario.TipoUsuario == 1)
                                         {
-                                         <td style="color: #ac0404; border: 1px solid #ddd; padding: 8px;">Cliente</td>
+                                            <td style="color: #ac0404; border: 1px solid #ddd; padding: 8px; width: 170px">Cliente</td>
                                         }
                                         else
                                         {
-                                                 <td style="color: #ac0404; border: 1px solid #ddd; padding: 8px;">Administrador</td>
+                                            <td style="color: #ac0404; border: 1px solid #ddd; padding: 8px; width: 170px">Administrador</td>
                                         }
 
-                                 <td class="text-center" style="border: 1px solid #ddd;">
-                                     <button class="btn btn-default" onclick="definirEdt('@usuario.Id', '@usuario.Nome','@usuario.Email', '@usuario.Senha', '@usuario.TipoUsuario', '@usuario.Telefone')" data-bs-toggle="modal" data-bs-target="#EditarUsuario" style="color: #EAE7DC;">
-                                         <i class="fa fa-edit"></i>
-                                     </button>
-                                 </td>
-                                 <td class="text-center" style="border: 1px solid #ddd;">
-                                     <button class="btn btn-default" onclick="definirExc('@usuario.Id', '@usuario.Nome', '@usuario.Email', '@usuario.Telefone')" data-bs-toggle="modal" data-bs-target="#ExcluirUsuario" style="color: #EAE7DC;">
-                                         <i class="fa fa-trash"></i>
-                                     </button>
-                                 </td>
-                             </tr>
+                                        <td class="text-center" style="border: 1px solid #ddd;">
+                                            <button class="btn btn-default" onclick="definirEdt('@usuario.Id', '@usuario.Nome','@usuario.Email', '@usuario.Senha', '@usuario.TipoUsuario', '@usuario.Telefone')" data-bs-toggle="modal" data-bs-target="#EditarUsuario" style="color: #EAE7DC;">
+                                                <i class="fa fa-edit"></i>
+                                            </button>
+                                        </td>
+                                        <td class="text-center" style="border: 1px solid #ddd;">
+                                            <button class="btn btn-default" onclick="definirExc('@usuario.Id', '@usuario.Nome', '@usuario.Email', '@usuario.Telefone')" data-bs-toggle="modal" data-bs-target="#ExcluirUsuario" style="color: #EAE7DC;">
+                                                <i class="fa fa-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
                                 }
-                 </tbody>
-             </table>
-         </div>
-     </div>
- </div>
+                            </tbody>
+                        </table>
+                    </div>
+            </div>
+        </div>
+
+        
+
         <div class="modal fade" id="EditarUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -100,7 +104,7 @@
                             <p style="color:#ac0404">Campos com * vermelho são obrigatórios</p>
                             <div class="mb-3 row">
                                 <div class="col-md-6">
-                                    <input id="EditNome" type="text" class="form-control" placeholder="Digite o nome do cliente">
+                                    <input id="EdtNome" type="text" class="form-control" placeholder="Digite o nome do cliente">
                                 </div>
                                 <div class="col-md-6">
                                     <label>*</label>
@@ -109,7 +113,7 @@
 
                             <div class="mb-3 row">
                                 <div class="col-md-6">
-                                    <input id="EditSenha" type="text" class="form-control" placeholder="Digite o a senha">
+                                    <input id="EdtSenha" type="text" class="form-control" placeholder="Digite o a senha">
                                 </div>
                                 <div class="col-md-6">
                                     <label>*</label>
@@ -118,7 +122,7 @@
 
                             <div class="mb-3 row">
                                 <div class="col-md-7">
-                                    <input id="EditEmail" type="email" class="form-control" placeholder="Digite o email">
+                                    <input id="EdtEmail" type="email" class="form-control" placeholder="Digite o email">
                                 </div>
                                 <div class="col-md-5">
                                     <label>*</label>
@@ -128,19 +132,29 @@
 
                             <div class="mb-3 row">
                                 <div class="col-md-6">
-                                    <input id="EditTel" type="text" class="form-control" placeholder="Digite o telefone">
+                                    <input id="EdtTel" type="text" class="form-control" placeholder="Digite o telefone">
                                 </div>
                                 <div class="col-md-6">
                                     <label>*</label>
                                 </div>
                             </div>
-                            <input type="hidden" id="IdEdt" value="" />
+                            
 
+                                <div class="mb-3 row">
+                                    <div class="col-md-6">
+                                        @Html.DropDownList("EdtTipoUsuario", ViewBag.lstTipoUsuario as SelectList, "Escolha o tipo de Usuário", new { @class = "form-control", @style = "width:230px; background-color: #EAE7DC; color: #333;", required = "required" })
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label style="color:red">*</label>
+                                    </div>
+                                </div>
+
+                                <input type="hidden" id="EdtId" value="" />
                         </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                        <button type="button" class="btn btn-danger" onclick=" AlterarUsuario()">Salvar</button>
+                        <button type="button" class="btn btn-danger" onclick=" AtualizarUsuario()">Salvar</button>
                     </div>
                 </div>
             </div>
@@ -232,7 +246,16 @@
                                 </div>
                             </div>
 
-                            <input type="hidden" id="IdEdt" value="" />
+                                <div class="mb-3 row">
+                                    <div class="col-md-6">
+                                        @Html.DropDownList("TipoUsuario", ViewBag.lstTipoUsuario as SelectList, "Escolha o tipo de Usuário", new { @class = "form-control", @style = "width:230px; background-color: #EAE7DC; color: #333;", required = "required" })
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label style="color:red">*</label>
+                                    </div>
+                                </div>
+
+                            <input type="hidden" id="Id" value="" />
 
                         </form>
                     </div>
@@ -267,15 +290,18 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
 
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
     <script>
+
+
 
         function definirEdt(id, Nome, Email, Senha, TipoUsuario, Telefone) {
 
-            $('#IdEdt').val(id);
-            $('#EditNome').val(Nome);
-            $('#EditSenha').val(Senha);
-            $('#EditEmail').val(Email);
-            $('#EditTel').val(Telefone);
+            $('#EdtId').val(id);
+            $('#EdtNome').val(Nome);
+            $('#EdtSenha').val(Senha);
+            $('#EdtEmail').val(Email);
+            $('#EdtTel').val(Telefone);
 
 
             var senhaValue = "";
@@ -285,18 +311,19 @@
             }
 
 
-            if ($('#DropTipoUsuarioEdit').length > 0) {
-                $('#DropTipoUsuarioEdit option').filter(function () {
+            if ($('#EdtTipoUsuario').length > 0) {
+                $('#EdtTipoUsuario option').filter(function () {
                     return $(this).val() === TipoUsuario;
                 }).prop('selected', true);
-                $('#DropTipoUsuarioEdit').trigger('chosen:updated');
+                $('#EdtTipoUsuario').trigger('chosen:updated');
             } else {
                 console.error("DropDownList não encontrado.");
             }
         }
 
         function definirExc(id, Nome, Email, Telefone) {
-            $('#IdExc').val(id);
+
+            $('#ExcId').val(id);
             $('#ExcNome').val(Nome);
             $('#ExcEmail').val(Email);
             $('#ExcTel').val(Telefone)
@@ -308,7 +335,7 @@
             var email = $('#Email').val();
             var senha = $('#Senha').val();
             var telefone = $('#Telefone').val();
-            var tipoUsuario = $('#DropTipoUsuario option:selected').val();
+            var tipoUsuario = $('#TipoUsuario option:selected').val();
 
             if (nome.trim() === "") {
                 alert("Por favor, preencha o campo Nome.");
@@ -333,8 +360,6 @@
                 return;
             }
 
-
-
             var dados = {
                 Nome: nome,
                 Email: email,
@@ -343,6 +368,7 @@
                 TipoUsuario: tipoUsuario
             };
 
+            console.log(dados)
             // Faça a chamada AJAX
             $.ajax({
                 url: '/Usuario/InserirUsuario',
@@ -366,109 +392,93 @@
             });
         }
 
-        function AlterarUsuario() {
-            var id = $("#IdEdt").val();
-            var nome = $("#EditNome").val();
-            var senha = $("#EditSenha").val();
-            var email = $("#EditEmail").val();
-            var tel = $('#EditTel').val();
-            var tipoCli = $('#DropTipoUsuarioEdit').val(); // Obtém o valor do tipo de cliente, não apenas o texto
+        function AtualizarUsuario() {
 
-            // Validação do campo 'Nome'
-            if (!nome) {
+            var id = $('#EdtId').val();
+            var nome = $('#EdtNome').val() || ''; // Garante que a variável não seja undefined ou null
+            var email = $('#EdtEmail').val() || ''; // Garante que a variável não seja undefined ou null
+            var senha = $('#EdtSenha').val() || ''; // Garante que a variável não seja undefined ou null
+            var telefone = $('#EdtTel').val() || ''; // Garante que a variável não seja undefined ou null
+            var tipoUsuario = $('#EdtTipoUsuario option:selected').val() || ''; // Garante que a variável não seja undefined ou null
+
+            // Valida os dados
+            if (nome.trim() === "") {
                 alert("Por favor, preencha o campo Nome.");
                 return;
             }
-
-            // Validação do campo 'Senha'
-            if (!senha) {
+            if (senha.trim() === "") {
                 alert("Por favor, preencha o campo Senha.");
                 return;
             }
-
-            // Validação do campo 'Email'
-            if (!email) {
-                alert("Por favor, preencha o campo Email.");
+            if (email.trim() === "") {
+                alert("Por favor, insira um email válido.");
+                return;
+            }
+            if (tipoUsuario === "" || tipoUsuario === "Escolha o Tipo de Usuário") {
+                alert("Por favor, selecione o tipo de usuário.");
+                return;
+            }
+            if (telefone.trim() === "") {
+                alert("Por favor, insira um número de telefone válido.");
                 return;
             }
 
-            // Validação do campo 'Telefone'
-            if (!tel) {
-                alert("Por favor, preencha o campo Telefone.");
-                return;
-            }
-
-            // Validação do campo 'Tipo de Cliente'
-            if (!tipoCli) {
-                alert("Por favor, selecione o Tipo de Cliente.");
-                return;
-            }
-
-            // Crie um objeto com os dados
             var dados = {
-                Id: id,
+                Id: id, // ID do usuário a ser atualizado
                 Nome: nome,
-                Senha: senha,
                 Email: email,
-                Telefone: tel,
-                TipoUsuario: tipoCli
+                Senha: senha,
+                Telefone: telefone,
+                TipoUsuario: tipoUsuario
             };
 
-            // Faça a chamada AJAX para o servidor
+            // Requisição AJAX para atualizar o usuário
             $.ajax({
+                url: '/Usuario/AtualizarUsuario',  // URL para a ação de atualizar no servidor
                 type: "POST",
-                url: "/Usuario/AlterarUsuario",
-                contentType: "application/json; charset=utf-8",
-                data: JSON.stringify(dados),
-                success: function (response) {
-                    // Manipule a resposta do servidor
-                    if (response.success) {
-                        alert("Cliente alterado com sucesso!");
-                        // Feche o modal de edição se necessário
-                        $('#FormEditar').modal('hide');
-                        // Recarregue a página se necessário
-                        location.reload();
+                dataType: "json",
+                data: dados,
+                success: function (resultado) {
+                    if (resultado.success) {
+                        alert(resultado.message);  // Exibe a mensagem de sucesso
+                        $('#InserirUsuario').modal('hide'); // Fecha o modal de inserção/atualização
+                        location.reload(); // Recarrega a página para refletir as alterações
                     } else {
-                        alert("Falha ao alterar cliente.");
+                        alert(resultado.message);  // Exibe a mensagem de falha
                     }
                 },
-                error: function (error) {
-                    // Manipule erros de requisição AJAX
-                    console.error("Erro na chamada AJAX:", error);
+                error: function () {
+                    alert('Erro na requisição AJAX.');
                 }
             });
         }
 
         function ExcluirUsuario() {
-            // Obtenha o ID do usuário a ser excluído
-            var userId = $('#IdExc').val();
+            var id = $('#ExcId').val();  // Pega o valor do ID do campo hidden
+            console.log("ID a ser excluído: ", id);  // Verifique se o ID está sendo corretamente recuperado
 
-            // Faça uma requisição AJAX
+            var dados = { Id: id };  // Dados a enviar para o servidor (ID do usuário)
+
+            // Requisição AJAX para excluir o usuário
             $.ajax({
+                url: '/Usuario/ExcluirUsuario',  // URL para a ação de exclusão no servidor
                 type: "POST",
-                url: "/Usuario/ExcluirUsuario", // Substitua "Usuario" pelo nome do seu controller
-                data: { id: userId },
                 dataType: "json",
-                success: function (response) {
-                    // A resposta do servidor está em response.success
-                    if (response.success) {
-                        // Feche o modal de exclusão
-                        $('#ExcluirUsuario').modal('hide');
-                        alert("Cliente excluido com sucesso!");
-
-                        // Recarregue a página
-                        location.reload();
+                data: dados,
+                success: function (resultado) {
+                    // Verifica se a resposta contém sucesso ou falha
+                    if (resultado.success) {
+                        alert(resultado.message);  // Exibe a mensagem de sucesso
+                        location.reload(); // Recarrega a página para refletir as mudanças
                     } else {
-                        alert("Falha ao excluir usuário.");
+                        alert("Esse usuario possui relacionamento com atendimento e não pode ser excluido");  // Exibe a mensagem de falha
                     }
                 },
                 error: function () {
-                    alert("Erro na requisição AJAX.");
+                    alert('Erro na requisição AJAX.');  // Caso haja algum erro na requisição AJAX
                 }
             });
         }
-
-
 
     </script>
 
