@@ -31,9 +31,14 @@
                 </div>
             </div>
 
-        <div class="table-container" style="max-height: 400px; overflow-y: auto;">
+            <!-- Contador de Registros Centralizado com Fonte Maior -->
+            <div style="text-align: center; color: #ac0404; margin-top: 10px;">
+                <strong style="font-size: 18px">Total de Usuários: <span id="registroCount">0</span></strong>
+            </div>
 
-            <div class="table-responsive">
+            <div class="table-container" style="max-height: 400px; overflow-y: auto;">
+
+                <div class="table-responsive">
                     <table id="TbClientes" class="table" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
                         <!-- Cabeçalho fixo -->
                         <thead style="background-color: #ac0404; color: #F7F5F2;">
@@ -88,8 +93,11 @@
                         </table>
                     </div>
             </div>
-        </div>
+           
 
+            </div>
+
+        </div>
         
 
         <div class="modal fade" id="EditarUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -171,20 +179,20 @@
                         <form>
                             <div class="mb-3">
                                 <label for="nome">Nome</label>
-                                <input type="text" id="ExcNome" class="form-control" placeholder="Digite seu nome..." readonly>
+                                <input style="background-color: #ac0404; color: #F7F5F2" type="text" id="ExcNome" class="form-control" readonly>
 
                             </div>
                             <div class="mb-3">
                                 <label for="email">Email</label>
-                                <input type="email" id="ExcEmail" class="form-control" placeholder="Digite seu email..." readonly>
+                                <input style="background-color: #ac0404; color: #F7F5F2" type="email" id="ExcEmail" class="form-control" readonly>
 
                             </div>
                             <div class="mb-3">
                                 <label for="telefone">Telefone</label>
-                                <input type="text" id="ExcTel" class="form-control" placeholder="Digite seu telefone..." readonly>
+                                    <input style="background-color: #ac0404; color: #F7F5F2" type="text" id="ExcTel" class="form-control" readonly>
 
                             </div>
-                            <input type="hidden" id="IdExc" class="form-control" placeholder="Digite seu nome..." readonly>
+                            <input type="hidden" id="IdExc" class="form-control"  readonly>
 
                         </form>
                         <div class="modal-footer">
@@ -293,7 +301,32 @@
 
     <script>
 
+        $(document).ready(function () {
+            // Função para atualizar o contador de registros visíveis
+            function atualizarContador() {
+                var visibleRows = $('#TbClientesBody tbody tr:visible').length; // Conta as linhas visíveis
+                $('#registroCount').text(visibleRows); // Atualiza o contador
+            }
 
+            // Quando o usuário digitar no campo de filtro
+            $('#filtro').on('keyup', function () {
+                var value = $(this).val().toLowerCase(); // Pega o valor do campo de filtro e converte para minúsculas
+
+                // Filtra as linhas do corpo da tabela
+                $('#TbClientesBody tbody tr').each(function () {
+                    // Verifica se qualquer célula na linha contém o valor digitado no filtro
+                    var rowText = $(this).text().toLowerCase();
+                    // Exibe ou oculta a linha, dependendo de conter o valor
+                    $(this).toggle(rowText.indexOf(value) > -1);
+                });
+
+                // Atualiza o contador após filtrar as linhas
+                atualizarContador();
+            });
+
+            // Inicializa o contador de registros ao carregar a página
+            atualizarContador();
+        });
 
         function definirEdt(id, Nome, Email, Senha, TipoUsuario, Telefone) {
 

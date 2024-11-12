@@ -30,12 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -46,8 +42,7 @@
               "RelativeToolTip": "Controllers\\UsuarioController.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAgwBsAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T17:28:49.22Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T17:28:49.22Z"
             },
             {
               "$type": "Document",
@@ -59,8 +54,7 @@
               "RelativeToolTip": "Repositorios\\UsuarioRepositorio.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAmwH4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T17:28:06.573Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T17:28:06.573Z"
             },
             {
               "$type": "Document",
@@ -82,7 +76,7 @@
               "RelativeDocumentMoniker": "Views\\Usuario\\Index.cshtml",
               "ToolTip": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Views\\Usuario\\Index.cshtml",
               "RelativeToolTip": "Views\\Usuario\\Index.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAqwEcAAABFAAAAAAAAAA==",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAALcAAABdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-11T19:52:26.781Z",
               "EditorCaption": ""
@@ -97,8 +91,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T18:20:43.681Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T18:20:43.681Z"
             }
           ]
         }
