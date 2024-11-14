@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using PortifolioDEV.Models;
 using PortifolioDEV.Repositorio;
 using PortifolioDEV.Repositorios;
@@ -19,6 +20,19 @@ namespace PortifolioDEV.Controllers
 
         public IActionResult Index()
         {
+            List<SelectListItem> tipoServico = new List<SelectListItem>
+            {
+                new SelectListItem { Value = "0", Text = "Desenvolvimento Backend .NET" },
+                new SelectListItem { Value = "1", Text = "Consultoria Cloud AWS" },
+                new SelectListItem { Value = "2", Text = "Implementação Kubernetes" },
+                new SelectListItem { Value = "3", Text = "Segurança Cibernética" },
+                new SelectListItem { Value = "4", Text = "Desenvolvimento Backend Python" },
+                new SelectListItem { Value = "5", Text = "Consultoria Cloud Azure" }
+            };
+
+            // Passar a lista para a View usando ViewBag
+            ViewBag.lstTipoServico = new SelectList(tipoServico, "Value", "Text");
+
             var Servicos = _servicoRepositorio.ListarServicos();
             return View(Servicos);
         }
