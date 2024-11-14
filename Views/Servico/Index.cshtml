@@ -143,9 +143,13 @@
                     </div>
                     <div class="modal-body">
                         <form>
-                            <div class="mb-3">
-                                <label for="EdtNome">Nome do Serviço</label>
-                                <input type="text" id="EdtNome" class="form-control" placeholder="Desenvolvimento FrontEnd">
+                            <div class="mb-3 row">
+                                <div class="col-md-6">
+                                    @Html.DropDownList("EdtTipoServico", ViewBag.lstTipoServico as SelectList, "Escolha o tipo de Serviço", new { @class = "form-control", @style = "width:230px; background-color: #EAE7DC; color: #333;", required = "required" })
+                                </div>
+                                <div class="col-md-6">
+                                    <label style="color:red">*</label>
+                                </div>
                             </div>
                             <div class="mb-3">
                                 <label for="EdtValor">Valor do Serviço</label>
@@ -212,16 +216,47 @@
             atualizarContador();
         });
 
-        function definirEdt(id, Nome, Valor) {
+        function definirEdt(id, tiposervico, valor) {
+            console.log("tiposervico recebido:", tiposervico);  // Verifique o valor que está sendo passado para a função
+
             $('#EdtId').val(id);
-            $('#EdtNome').val(Nome);
-            $('#EdtValor').val(Valor);
+            $('#EdtValor').val(valor);
+
+            if ($('#EdtTipoServico').length > 0) {
+                console.log("Procurando valor no dropdown EdtTipoServico:", tiposervico);
+
+                // Percorrer todas as opções para encontrar o valor correto
+                var optionFound = false;
+
+                $('#EdtTipoServico option').each(function () {
+                    // Comparar o texto das opções com o texto recebido
+                    if ($(this).text() === tiposervico) {
+                        // Marca a opção como selecionada
+                        $(this).prop('selected', true);
+                        optionFound = true;
+                    }
+                });
+
+                if (optionFound) {
+                    // Atualiza o chosen, se necessário
+                    $('#EdtTipoServico').trigger('chosen:updated');
+
+                    // Imprime no console o valor da opção selecionada
+                    var selectedValue = $('#EdtTipoServico').val();
+                    console.log("Valor selecionado no dropdown EdtTipoServico:", selectedValue);
+                } else {
+                    console.log("Opção não encontrada no dropdown.");
+                }
+            } else {
+                console.error("DropDownList 'EdtTipoServico' não encontrado.");
+            }
         }
 
-        function definirExc(id, Nome, Valor) {
+        function definirExc(id, nome, valor) {
+            console.log(id, nome, valor)
             $('#ExcId').val(id);
-            $('#ExcNome').val(Nome);
-            $('#ExcValor').val(Valor);
+            $('#ExcServico').val(nome);
+            $('#ExcValor').val(valor);
         }
 
         function InserirServico() {
@@ -259,75 +294,88 @@
         }
 
         function AtualizarServico() {
-            var idServico = $('#EdtId').val();
-            var nomeServico = $('#EdtNome').val();
-            var valorServico = $('#EdtValor').val();
+            // Coleta os valores dos campos HTML
+            var id = $('#EdtId').val();  // ID do serviço que será atualizado
+            var tipoServico = $('#EdtTipoServico option:selected').text();  // Valor selecionado no dropdown
+            var valor = $('#EdtValor').val();  // Valor do serviço
 
-            // Valida os campos
-            if (nomeServico.trim() === "") {
-                alert("Por favor, preencha o campo Nome.");
-                return;
-            }
-            if (valorServico.trim() === "") {
-                alert("Por favor, preencha o campo Valor.");
+            // Verificar se os campos obrigatórios estão preenchidos
+            if (tipoServico === "" || tipoServico === "Escolha o tipo de Serviço") {
+                alert("Por favor, selecione um tipo de serviço.");
                 return;
             }
 
+            if (valor === "") {
+                alert("Por favor, insira o valor do serviço.");
+                return;
+            }
+
+            // Cria o objeto de dados que será enviado via AJAX
             var dados = {
-                Id: idServico,
-                Nome: nomeServico,
-                Valor: valorServico
+                id: id,
+                tipoServico: tipoServico,
+                valor: valor
             };
 
-            // Requisição AJAX para atualizar o serviço
+            // Requisição AJAX para o método AtualizarServico no controller
             $.ajax({
-                url: '/Servico/AtualizarServico',
+                url: '/Servico/AtualizarServico', // URL do método no controlador
                 type: "POST",
                 dataType: "json",
                 data: dados,
                 success: function (resultado) {
+                    // Verifica o sucesso da operação
                     if (resultado.success) {
-                        alert(resultado.message);  // Exibe a mensagem de sucesso
-                        $('#EditarServico').modal('hide'); // Fecha o modal
-                        location.reload(); // Recarrega a página
+                        alert(resultado.message);  // Exibe mensagem de sucesso
+                        $('#EditarServico').modal('hide');  // Fecha o modal após a atualização
+                        location.reload();  // Recarrega a página para atualizar a lista de serviços
                     } else {
-                        alert(resultado.message);  // Exibe a mensagem de erro
+                        alert(resultado.message);  // Exibe mensagem de erro
                     }
                 },
-                error: function () {
-                    alert('Erro na requisição AJAX.');
+                error: function (xhr, status, error) {
+                    console.error("Erro ao atualizar serviço:", status, error, xhr.responseText);
+                    alert('Erro na requisição AJAX: ' + xhr.responseText);
                 }
             });
         }
 
         function ExcluirServico() {
-            var idServico = $('#ExcId').val();  // Pega o ID do serviço
+            // Captura o id do serviço a ser excluído
+            var id = $('#ExcId').val(); // Este valor deve ser passado para o modal antes de chamar a função
 
-            // Dados a enviar para o servidor (ID do serviço)
-            var dados = {
-                Id: idServico
-            };
+            if (!id) {
+                alert("ID do serviço não encontrado.");
+                return;
+            }
 
-            // Requisição AJAX para excluir o serviço
+            // Confirmação antes de excluir
+            if (!confirm("Tem certeza de que deseja excluir este serviço?")) {
+                return; // Cancela a exclusão se o usuário não confirmar
+            }
+
+            // Requisição AJAX para o método ExcluirServico no controller
             $.ajax({
-                url: '/Servico/ExcluirServico',
+                url: '/Servico/ExcluirServico', // URL do método no controlador
                 type: "POST",
                 dataType: "json",
-                data: dados,
+                data: { id: id }, // Envia o id do serviço para o servidor
                 success: function (resultado) {
+                    // Verifica o sucesso da operação
                     if (resultado.success) {
-                        alert(resultado.message);  // Exibe a mensagem de sucesso
-                        location.reload(); // Recarrega a página
+                        alert(resultado.message); // Exibe mensagem de sucesso
+                        $('#ExcluirServico').modal('hide'); // Fecha o modal após a exclusão
+                        location.reload(); // Recarrega a página para atualizar a lista de serviços
                     } else {
-                        alert("Erro ao excluir o serviço. Verifique as dependências.");
+                        alert(resultado.message); // Exibe mensagem de erro
                     }
                 },
-                error: function () {
-                    alert('Erro na requisição AJAX.');
+                error: function (xhr, status, error) {
+                    console.error("Erro ao excluir serviço:", status, error, xhr.responseText);
+                    alert('Erro na requisição AJAX: ' + xhr.responseText);
                 }
             });
         }
-
 
     </script>
 </body>

@@ -62,7 +62,7 @@ namespace PortifolioDEV.Controllers
                 return Json(new { success = false, message = "Erro ao processar a solicitação. Detalhes: " + ex.Message });
             }
         }
-        public IActionResult AtualizarUsuario(int id, string tipoServico, decimal valor)
+        public IActionResult AtualizarServico(int id, string tipoServico, decimal valor)
         {
             try
             {
@@ -83,7 +83,7 @@ namespace PortifolioDEV.Controllers
                 return Json(new { success = false, message = "Erro ao processar a solicitação. Detalhes: " + ex.Message });
             }
         }
-        public IActionResult ExcluirUsuario(int id)
+        public IActionResult ExcluirServico(int id)
         {
             try
             {
