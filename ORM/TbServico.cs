@@ -11,5 +11,5 @@ public partial class TbServico
 
     public decimal Valor { get; set; }
 
-    public virtual ICollection<TbAtendimento> TbAtendimentos { get; set; } = new List<TbAtendimento>();
+    public virtual ICollection<TbAgendamento> TbAgendamentos { get; set; } = new List<TbAgendamento>();
 }

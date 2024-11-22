@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace PortifolioDEV.ORM;
 
-public partial class TbAtendimento
+public partial class TbAgendamento
 {
-    public int IdAtendimento { get; set; }
+    public int IdAgendamento { get; set; }
 
     public DateTime DtHoraAgendamento { get; set; }
 

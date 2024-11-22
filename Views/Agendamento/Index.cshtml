@@ -31,8 +31,8 @@
                 </div>
             </div>
 
-            <div class="table-container table-responsive">
-                <table id="TbClientes" class="table">
+            <div class="table-container" style="height: 400px; overflow-y: auto;">
+                <table id="TbClientes" class="table table-striped">
                     <colgroup>
                         <col class="tc-nome">
                     </colgroup>
@@ -42,45 +42,50 @@
                             <th>Nome</th>
                             <th>Email</th>
                             <th>Telefone</th>
-                            <th>Agendamento para a Data</th>
+                            <th>Data do Agendamento</th>
                             <th>Horario</th>
                             <th>Serviço</th>
                             <th>Valor</th>
-                            <th>Confirmação</th>
                             <th class="editar">Editar</th>
                             <th class="excluir">Excluir</th>
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach (var agendamento in Model)
+                        {
+                            <tr>
+                                <td>@agendamento.Id</td>
+                                <td>@agendamento.UsuarioNome</td> <!-- Nome do usuário -->
+                                <td>@agendamento.UsuarioEmail</td> <!-- Email do usuário -->
+                                <td>@agendamento.UsuarioTelefone</td> <!-- Telefone do usuário -->
+                                <td>@agendamento.DataAtendimento</td> <!-- Data do agendamento -->
+                                <td>@agendamento.Horario</td> <!-- Hora do agendamento -->
+                                <td>@agendamento.ServicoNome</td> <!-- Nome do serviço -->
+                                <td>@agendamento.ServicoValor</td> <!-- Valor do serviço -->
 
-                        <tr>
-                            <td>Id</td>
-                            <td>Nome</td>
-                            <td>Email</td>
-                            <td>Telefone</td>
-                            <td>AgendarData</td>
-                            <td>Horario</td>
-                            <td>Servico</td>
-                            <td>Valor</td>
-                            <td>Confirmacao</td>
-
-                            <td class="text-center">
-                                <button class="btn btn-default" onclick="definirEdt('Id','Nome', 'Email', 'Telefone', 'AgendarData','Horario', 'Servico', 'Valor', 'Confirmacao')" data-bs-toggle="modal" data-bs-target="#EditarAgendamento">
-                                    <i class="fa fa-edit" style="color: #F7F5F2;"></i>
-                                </button>
-                            </td>
-                            <td class="text-center">
-                                <button class="btn btn-default" onclick="definirExc('Id','Nome', 'Email', 'Telefone', 'AgendarData','Horario', 'Servico', 'Valor', 'Confirmacao')" data-bs-toggle="modal" data-bs-target="#ExcluirAgendamento">
-                                    <i class="fa fa-trash" style="color: #F7F5F2;"></i>
-                                </button>
-                            </td>
-                        </tr>
-
+                                <td class="text-center">
+                                    <button class="btn btn-default"
+                                            onclick="definirEdt(@agendamento.Id, '@agendamento.UsuarioNome', '@agendamento.UsuarioEmail', '@agendamento.UsuarioTelefone', '@agendamento.DataAtendimento', '@agendamento.Horario', '@agendamento.ServicoNome', '@agendamento.ServicoValor')"
+                                            data-bs-toggle="modal" data-bs-target="#EditarAgendamento">
+                                        <i class="fa fa-edit" style="color: #F7F5F2;"></i>
+                                    </button>
+                                </td>
+                                <td class="text-center">
+                                    <button class="btn btn-default"
+                                            onclick="definirExc(@agendamento.Id, '@agendamento.UsuarioNome', '@agendamento.UsuarioEmail', '@agendamento.UsuarioTelefone', '@agendamento.DataAtendimento', '@agendamento.Horario', '@agendamento.ServicoNome', '@agendamento.ServicoValor')"
+                                            data-bs-toggle="modal" data-bs-target="#ExcluirAgendamento">
+                                        <i class="fa fa-trash" style="color: #F7F5F2;"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        }
                     </tbody>
                 </table>
             </div>
 
+
         </div>
+
 
         <div class="modal fade" id="ExcluirAgendamento" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -376,16 +381,6 @@
 
     </section>
 
-    <!--Butao Voltar-->
-    <section class="container text-center">
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <div>
-                <button type="button" id="send-button2" class="nav-link active btn btn-danger btn-block" style="flex: 1; margin-left: 5px;" onclick="window.location.href = '/Home/Index';">
-                    Voltar
-                </button>
-            </div>
-        </div>
-    </section>
 
 
     <script src="~/lib/swiper/swiper-bundle.min.js"></script>

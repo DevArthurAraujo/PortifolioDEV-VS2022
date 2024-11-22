@@ -15,13 +15,13 @@ public partial class BdPortfolioDevContext : DbContext
     {
     }
 
-    public virtual DbSet<TbAtendimento> TbAtendimentos { get; set; }
+    public virtual DbSet<TbAgendamento> TbAgendamentos { get; set; }
 
     public virtual DbSet<TbServico> TbServicos { get; set; }
 
     public virtual DbSet<TbUsuario> TbUsuarios { get; set; }
 
-    public virtual DbSet<ViewAtendimento> ViewAtendimentos { get; set; }
+    public virtual DbSet<ViewAgendamento> ViewAgendamentos { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
@@ -29,23 +29,23 @@ public partial class BdPortfolioDevContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<TbAtendimento>(entity =>
+        modelBuilder.Entity<TbAgendamento>(entity =>
         {
-            entity.HasKey(e => e.IdAtendimento).HasName("PK__Tb_Atend__EE2552C0B40B3FE6");
+            entity.HasKey(e => e.IdAgendamento).HasName("PK__Tb_Atend__EE2552C0B40B3FE6");
 
-            entity.ToTable("Tb_Atendimento");
+            entity.ToTable("Tb_Agendamento");
 
-            entity.Property(e => e.IdAtendimento).HasColumnName("id_Atendimento");
+            entity.Property(e => e.IdAgendamento).HasColumnName("id_Agendamento");
             entity.Property(e => e.DtHoraAgendamento).HasColumnType("datetime");
             entity.Property(e => e.IdServico).HasColumnName("id_Servico");
             entity.Property(e => e.IdUsuario).HasColumnName("id_Usuario");
 
-            entity.HasOne(d => d.IdServicoNavigation).WithMany(p => p.TbAtendimentos)
+            entity.HasOne(d => d.IdServicoNavigation).WithMany(p => p.TbAgendamentos)
                 .HasForeignKey(d => d.IdServico)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Tb_Atendimento_Servico");
 
-            entity.HasOne(d => d.IdUsuarioNavigation).WithMany(p => p.TbAtendimentos)
+            entity.HasOne(d => d.IdUsuarioNavigation).WithMany(p => p.TbAgendamentos)
                 .HasForeignKey(d => d.IdUsuario)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Tb_Atendimento_Usuario");
@@ -85,17 +85,17 @@ public partial class BdPortfolioDevContext : DbContext
                 .IsUnicode(false);
         });
 
-        modelBuilder.Entity<ViewAtendimento>(entity =>
+        modelBuilder.Entity<ViewAgendamento>(entity =>
         {
             entity
                 .HasNoKey()
-                .ToView("View_Atendimento");
+                .ToView("View_Agendamento");
 
             entity.Property(e => e.DtHoraAgendamento).HasColumnType("datetime");
             entity.Property(e => e.Email)
                 .HasMaxLength(100)
                 .IsUnicode(false);
-            entity.Property(e => e.IdAtendimento).HasColumnName("id_Atendimento");
+            entity.Property(e => e.IdAgendamento).HasColumnName("id_Agendamento");
             entity.Property(e => e.Nome)
                 .HasMaxLength(100)
                 .IsUnicode(false);

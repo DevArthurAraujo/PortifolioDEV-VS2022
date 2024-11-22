@@ -13,6 +13,8 @@ builder.Services.AddDbContext<BdPortfolioDevContext>(options =>
 builder.Services.AddScoped<UsuarioRepositorio>();  // Ou AddTransient ou AddSingleton dependendo do caso
 // Registrar o repositório (UsuarioRepositorio)
 builder.Services.AddScoped<ServicoRepositorio>();  // Ou AddTransient ou AddSingleton dependendo do caso
+// Registrar o repositório (UsuarioRepositorio)
+builder.Services.AddScoped<AgendamentoRepositorio>();  // Ou AddTransient ou AddSingleton dependendo do caso
 
 // Registrar outros serviços, como controllers com views
 builder.Services.AddControllersWithViews();
