@@ -1,4 +1,6 @@
-﻿@{
+﻿@model IEnumerable<PortifolioDEV.Models.AgendamentoVM>
+
+@{
     Layout = "~/Views/Shared/_Layout_Gerenciamento.cshtml";
 }
 
@@ -31,58 +33,64 @@
                 </div>
             </div>
 
-            <div class="table-container" style="height: 400px; overflow-y: auto;">
-                <table id="TbClientes" class="table table-striped">
-                    <colgroup>
-                        <col class="tc-nome">
-                    </colgroup>
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Nome</th>
-                            <th>Email</th>
-                            <th>Telefone</th>
-                            <th>Data do Agendamento</th>
-                            <th>Horario</th>
-                            <th>Serviço</th>
-                            <th>Valor</th>
-                            <th class="editar">Editar</th>
-                            <th class="excluir">Excluir</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach (var agendamento in Model)
-                        {
-                            <tr>
-                                <td>@agendamento.Id</td>
-                                <td>@agendamento.UsuarioNome</td> <!-- Nome do usuário -->
-                                <td>@agendamento.UsuarioEmail</td> <!-- Email do usuário -->
-                                <td>@agendamento.UsuarioTelefone</td> <!-- Telefone do usuário -->
-                                <td>@agendamento.DataAtendimento</td> <!-- Data do agendamento -->
-                                <td>@agendamento.Horario</td> <!-- Hora do agendamento -->
-                                <td>@agendamento.ServicoNome</td> <!-- Nome do serviço -->
-                                <td>@agendamento.ServicoValor</td> <!-- Valor do serviço -->
-
-                                <td class="text-center">
-                                    <button class="btn btn-default"
-                                            onclick="definirEdt(@agendamento.Id, '@agendamento.UsuarioNome', '@agendamento.UsuarioEmail', '@agendamento.UsuarioTelefone', '@agendamento.DataAtendimento', '@agendamento.Horario', '@agendamento.ServicoNome', '@agendamento.ServicoValor')"
-                                            data-bs-toggle="modal" data-bs-target="#EditarAgendamento">
-                                        <i class="fa fa-edit" style="color: #F7F5F2;"></i>
-                                    </button>
-                                </td>
-                                <td class="text-center">
-                                    <button class="btn btn-default"
-                                            onclick="definirExc(@agendamento.Id, '@agendamento.UsuarioNome', '@agendamento.UsuarioEmail', '@agendamento.UsuarioTelefone', '@agendamento.DataAtendimento', '@agendamento.Horario', '@agendamento.ServicoNome', '@agendamento.ServicoValor')"
-                                            data-bs-toggle="modal" data-bs-target="#ExcluirAgendamento">
-                                        <i class="fa fa-trash" style="color: #F7F5F2;"></i>
-                                    </button>
-                                </td>
-                            </tr>
-                        }
-                    </tbody>
-                </table>
+            <!-- Contador de Registros Centralizado com Fonte Maior -->
+            <div style="text-align: center; color: #ac0404; margin-top: 10px;">
+                <strong style="font-size: 18px">Total de Usuários: <span id="registroCount">0</span></strong>
             </div>
 
+            <div class="table-container" style="max-height: 400px; overflow-y: auto;">
+                <div>
+                    <table id="TbClientes" class="table" style="width: 100%; border-collapse: collapse;">
+                        <colgroup>
+                            <col class="tc-nome">
+                        </colgroup>
+                        <thead style="background-color: #ac0404; color: #F7F5F2;">
+                            <tr>
+                                <th style="color: #F7F5F2; border: 1px solid #ddd; background-color: #ac0404;">#</th>
+                                <th style="color: #F7F5F2; border: 1px solid #ddd; background-color: #ac0404;">Nome</th>
+                                <th style="color: #F7F5F2; border: 1px solid #ddd; background-color: #ac0404;">Email</th>
+                                <th style="color: #F7F5F2; border: 1px solid #ddd; background-color: #ac0404;">Telefone</th>
+                                <th style ="color: #F7F5F2; border: 1px solid #ddd;background-color: #ac0404;">Data do Agendamento</th>
+                                <th style="color: #F7F5F2; border: 1px solid #ddd; background-color: #ac0404;">Horario</th>
+                                <th style ="color: #F7F5F2; border: 1px solid #ddd; background-color: #ac0404;">Serviço</th>
+                                <th style="color: #F7F5F2; border: 1px solid #ddd; background-color: #ac0404;">Valor</th>
+                                <th class="editar" style="color: #F7F5F2; border: 1px solid #ddd; background-color: #ac0404;">Editar</th>
+                                <th class="excluir" style="color: #F7F5F2; border: 1px solid #ddd; background-color: #ac0404;">Excluir</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var agendamento in Model)
+                            {
+                                <tr>
+                                    <td style="color: #ac0404; border: 1px solid #ddd;">@agendamento.Id</td>
+                                    <td style="color: #ac0404; border: 1px solid #ddd;">@agendamento.UsuarioNome</td> <!-- Nome do usuário -->
+                                    <td style="color: #ac0404; border: 1px solid #ddd;">@agendamento.UsuarioEmail</td> <!-- Email do usuário -->
+                                    <td style="color: #ac0404; border: 1px solid #ddd;">@agendamento.UsuarioTelefone</td> <!-- Telefone do usuário -->
+                                    <td style="color: #ac0404; border: 1px solid #ddd;">@agendamento.DataAtendimento</td> <!-- Data do agendamento -->
+                                    <td style="color: #ac0404; border: 1px solid #ddd;">@agendamento.Horario</td> <!-- Hora do agendamento -->
+                                    <td style="color: #ac0404; border: 1px solid #ddd;">@agendamento.ServicoNome</td> <!-- Nome do serviço -->
+                                    <td style="color: #ac0404; border: 1px solid #ddd;">@agendamento.ServicoValor</td> <!-- Valor do serviço -->
+
+                                    <td class="text-center" style="color: #ac0404; border: 1px solid #ddd;">
+                                        <button class="btn btn-default"
+                                                onclick="definirEdt(@agendamento.Id, '@agendamento.UsuarioNome', '@agendamento.UsuarioEmail', '@agendamento.UsuarioTelefone', '@agendamento.DataAtendimento', '@agendamento.Horario', '@agendamento.ServicoNome', '@agendamento.ServicoValor')"
+                                                data-bs-toggle="modal" data-bs-target="#EditarAgendamento">
+                                            <i class="fa fa-edit" style="color: #F7F5F2;"></i>
+                                        </button>
+                                    </td>
+                                    <td class="text-center" style="color: #ac0404; border: 1px solid #ddd;">
+                                        <button class="btn btn-default"
+                                                onclick="definirExc(@agendamento.Id, '@agendamento.UsuarioNome', '@agendamento.UsuarioEmail', '@agendamento.UsuarioTelefone', '@agendamento.DataAtendimento', '@agendamento.Horario', '@agendamento.ServicoNome', '@agendamento.ServicoValor')"
+                                                data-bs-toggle="modal" data-bs-target="#ExcluirAgendamento">
+                                            <i class="fa fa-trash" style="color: #F7F5F2;"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
 
         </div>
 
@@ -227,7 +235,7 @@
             </div>
         </div>
 
-        <div class="modal fade" id="EditarAgendamento" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="AlterarAgendamento" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -389,207 +397,146 @@
 
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+        $(document).ready(function () {
+            // Função para atualizar o contador de registros visíveis
+            function atualizarContador() {
+                const visibleRows = $('#TbAgendamentos tbody tr:visible').length; // Conta as linhas visíveis
+                $('#registroCount').text(visibleRows); // Atualiza o contador
+            }
 
-        function definirEdt(id, Nome, Email, Senha, TipoUsuario, Telefone) {
+            // Filtro na tabela
+            $('#filtro').on('keyup', function () {
+                const value = $(this).val().toLowerCase(); // Valor do campo de filtro
 
+                // Filtra as linhas da tabela
+                $('#TbAgendamentos tbody tr').each(function () {
+                    const rowText = $(this).text().toLowerCase();
+                    $(this).toggle(rowText.includes(value)); // Mostra ou oculta a linha
+                });
+
+                atualizarContador(); // Atualiza o contador
+            });
+
+            // Inicializa o contador de registros
+            atualizarContador();
+        });
+
+        // Preencher modal de edição
+        function definirEdt(id, NomeCliente, Telefone, DataAtendimento, Horario, ServicoNome, ServicoValor) {
             $('#IdEdt').val(id);
-            $('#EditNome').val(Nome);
-            $('#EditSenha').val(Senha);
-            $('#EditEmail').val(Email);
+            $('#EditNomeCliente').val(NomeCliente);
             $('#EditTel').val(Telefone);
-
-
-            var senhaValue = "";
-            if (Senha) {
-                $('#EditSenha').val(Senha);
-                senhaValue = Senha;
-            }
-
-
-            if ($('#DropTipoUsuarioEdit').length > 0) {
-                $('#DropTipoUsuarioEdit option').filter(function () {
-                    return $(this).val() === TipoUsuario;
-                }).prop('selected', true);
-                $('#DropTipoUsuarioEdit').trigger('chosen:updated');
-            } else {
-                console.error("DropDownList não encontrado.");
-            }
+            $('#EditDataAtendimento').val(DataAtendimento);
+            $('#EditHorario').val(Horario);
+            $('#EditServicoNome').val(ServicoNome);
+            $('#EditServicoValor').val(ServicoValor);
         }
 
-        function definirExc(id, Nome, Email, Telefone) {
+        // Preencher modal de exclusão
+        function definirExc(id, NomeCliente, Telefone) {
             $('#IdExc').val(id);
-            $('#ExcNome').val(Nome);
-            $('#ExcEmail').val(Email);
-            $('#ExcTel').val(Telefone)
+            $('#ExcNomeCliente').text(NomeCliente);
+            $('#ExcTel').text(Telefone);
         }
 
-        function InserirUsuario() {
+        // Inserir Agendamento
+        function InserirAgendamento() {
+            const nomeCliente = $('#NomeCliente').val();
+            const telefone = $('#Telefone').val();
+            const dataAtendimento = $('#DataAtendimento').val();
+            const horario = $('#Horario').val();
+            const servicoNome = $('#ServicoNome').val();
+            const servicoValor = $('#ServicoValor').val();
 
-            var nome = $('#Nome').val();
-            var email = $('#Email').val();
-            var senha = $('#Senha').val();
-            var telefone = $('#Telefone').val();
-            var tipoUsuario = $('#DropTipoUsuario option:selected').val();
-
-            if (nome.trim() === "") {
-                alert("Por favor, preencha o campo Nome.");
-                return;
-            }
-            if (senha.trim() === "") {
-                alert("Por favor, preencha o campo Senha.");
-                return;
-            }
-            if (email.trim() === "") {
-                alert("Por favor, insira um email válido.");
+            // Validações simples
+            if (!nomeCliente.trim() || !telefone.trim() || !dataAtendimento || !horario || !servicoNome || !servicoValor) {
+                alert("Por favor, preencha todos os campos obrigatórios.");
                 return;
             }
 
-            if (tipoUsuario === "Escolha o Tipo de Usuário") {
-                alert("Por favor, selecione o tipo de usuário.");
-                return;
-            }
-
-            if (telefone.trim() === "") {
-                alert("Por favor, insira um número de telefone válido.");
-                return;
-            }
-
-
-
-            var dados = {
-                Nome: nome,
-                Email: email,
-                Senha: senha,
+            const dados = {
+                NomeCliente: nomeCliente,
                 Telefone: telefone,
-                TipoUsuario: tipoUsuario
+                DataAtendimento: dataAtendimento,
+                Horario: horario,
+                ServicoNome: servicoNome,
+                ServicoValor: servicoValor
             };
 
-            // Faça a chamada AJAX
             $.ajax({
-                url: '/Usuario/InserirUsuario',
+                url: '/Agendamento/InserirAgendamento',
                 type: "POST",
                 dataType: "json",
                 data: dados,
                 success: function (resultado) {
+                    alert(resultado.message);
                     if (resultado.success) {
-                        alert(resultado.message);  // Exibe a mensagem de sucesso
-                        // Fecha o modal
-                        $('#InserirUsuario').modal('hide');
-                        // Recarrega a págInserirUsuarioina
+                        $('#InserirAgendamento').modal('hide');
                         location.reload();
-                    } else {
-                        alert(resultado.message);  // Exibe a mensagem de falha
                     }
                 },
                 error: function () {
-                    alert('Erro na requisição AJAX.');
+                    alert("Erro ao inserir agendamento.");
                 }
             });
         }
 
-        function AlterarUsuario() {
-            var id = $("#IdEdt").val();
-            var nome = $("#EditNome").val();
-            var senha = $("#EditSenha").val();
-            var email = $("#EditEmail").val();
-            var tel = $('#EditTel').val();
-            var tipoCli = $('#DropTipoUsuarioEdit').val(); // Obtém o valor do tipo de cliente, não apenas o texto
-
-            // Validação do campo 'Nome'
-            if (!nome) {
-                alert("Por favor, preencha o campo Nome.");
-                return;
-            }
-
-            // Validação do campo 'Senha'
-            if (!senha) {
-                alert("Por favor, preencha o campo Senha.");
-                return;
-            }
-
-            // Validação do campo 'Email'
-            if (!email) {
-                alert("Por favor, preencha o campo Email.");
-                return;
-            }
-
-            // Validação do campo 'Telefone'
-            if (!tel) {
-                alert("Por favor, preencha o campo Telefone.");
-                return;
-            }
-
-            // Validação do campo 'Tipo de Cliente'
-            if (!tipoCli) {
-                alert("Por favor, selecione o Tipo de Cliente.");
-                return;
-            }
-
-            // Crie um objeto com os dados
-            var dados = {
-                Id: id,
-                Nome: nome,
-                Senha: senha,
-                Email: email,
-                Telefone: tel,
-                TipoUsuario: tipoCli
+        // Alterar Agendamento
+        function AlterarAgendamento() {
+            const dados = {
+                Id: $("#IdEdt").val(),
+                NomeCliente: $("#EditNomeCliente").val(),
+                Telefone: $("#EditTel").val(),
+                DataAtendimento: $("#EditDataAtendimento").val(),
+                Horario: $("#EditHorario").val(),
+                ServicoNome: $("#EditServicoNome").val(),
+                ServicoValor: $("#EditServicoValor").val()
             };
 
-            // Faça a chamada AJAX para o servidor
+            if (!dados.NomeCliente || !dados.Telefone || !dados.DataAtendimento || !dados.Horario || !dados.ServicoNome || !dados.ServicoValor) {
+                alert("Todos os campos são obrigatórios.");
+                return;
+            }
+
             $.ajax({
                 type: "POST",
-                url: "/Usuario/AlterarUsuario",
+                url: "/Agendamento/AlterarAgendamento",
                 contentType: "application/json; charset=utf-8",
                 data: JSON.stringify(dados),
                 success: function (response) {
-                    // Manipule a resposta do servidor
+                    alert(response.success ? "Agendamento alterado com sucesso!" : "Falha ao alterar agendamento.");
                     if (response.success) {
-                        alert("Cliente alterado com sucesso!");
-                        // Feche o modal de edição se necessário
                         $('#FormEditar').modal('hide');
-                        // Recarregue a página se necessário
                         location.reload();
-                    } else {
-                        alert("Falha ao alterar cliente.");
-                    }
-                },
-                error: function (error) {
-                    // Manipule erros de requisição AJAX
-                    console.error("Erro na chamada AJAX:", error);
-                }
-            });
-        }
-
-        function ExcluirUsuario() {
-            // Obtenha o ID do usuário a ser excluído
-            var userId = $('#IdExc').val();
-
-            // Faça uma requisição AJAX
-            $.ajax({
-                type: "POST",
-                url: "/Usuario/ExcluirUsuario", // Substitua "Usuario" pelo nome do seu controller
-                data: { id: userId },
-                dataType: "json",
-                success: function (response) {
-                    // A resposta do servidor está em response.success
-                    if (response.success) {
-                        // Feche o modal de exclusão
-                        $('#ExcluirUsuario').modal('hide');
-                        alert("Cliente excluido com sucesso!");
-
-                        // Recarregue a página
-                        location.reload();
-                    } else {
-                        alert("Falha ao excluir usuário.");
                     }
                 },
                 error: function () {
-                    alert("Erro na requisição AJAX.");
+                    alert("Erro ao alterar agendamento.");
                 }
             });
         }
 
+        // Excluir Agendamento
+        function ExcluirAgendamento() {
+            const agendamentoId = $('#IdExc').val();
 
-
+            $.ajax({
+                type: "POST",
+                url: "/Agendamento/ExcluirAgendamento",
+                data: { id: agendamentoId },
+                dataType: "json",
+                success: function (response) {
+                    alert(response.success ? "Agendamento excluído com sucesso!" : "Erro ao excluir agendamento.");
+                    if (response.success) {
+                        $('#ExcluirAgendamento').modal('hide');
+                        location.reload();
+                    }
+                },
+                error: function () {
+                    alert("Erro ao excluir agendamento.");
+                }
+            });
+        }
     </script>
+
 </body>

@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|c:\\users\\aluno noite\\documents\\github\\portifoliodev-vs2022\\views\\shared\\_layout_gerenciamento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|solutionrelative:views\\shared\\_layout_gerenciamento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|c:\\users\\aluno noite\\documents\\github\\portifoliodev-vs2022\\views\\agendamento\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|solutionrelative:views\\agendamento\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|c:\\users\\aluno noite\\documents\\github\\portifoliodev-vs2022\\repositorios\\agendamentorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|solutionrelative:repositorios\\agendamentorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|c:\\users\\aluno noite\\documents\\github\\portifoliodev-vs2022\\controllers\\agendamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|solutionrelative:controllers\\agendamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|c:\\users\\aluno noite\\documents\\github\\portifoliodev-vs2022\\orm\\tbagendamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|solutionrelative:orm\\tbagendamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|c:\\users\\aluno noite\\documents\\github\\portifoliodev-vs2022\\models\\viewagendamentovm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|solutionrelative:models\\viewagendamentovm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|c:\\users\\aluno noite\\documents\\github\\portifoliodev-vs2022\\repositorios\\agendamentorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|solutionrelative:repositorios\\agendamentorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|c:\\users\\aluno noite\\documents\\github\\portifoliodev-vs2022\\orm\\viewagendamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|solutionrelative:orm\\viewagendamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|c:\\users\\aluno noite\\documents\\github\\portifoliodev-vs2022\\views\\agendamento\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|solutionrelative:views\\agendamento\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|c:\\users\\aluno noite\\documents\\github\\portifoliodev-vs2022\\views\\usuario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|solutionrelative:views\\usuario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|c:\\users\\aluno noite\\documents\\github\\portifoliodev-vs2022\\models\\agendamentovm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,78 +46,91 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout_Gerenciamento.cshtml",
-              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Views\\Shared\\_Layout_Gerenciamento.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout_Gerenciamento.cshtml",
-              "ToolTip": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Views\\Shared\\_Layout_Gerenciamento.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout_Gerenciamento.cshtml",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-25T18:07:43.708Z",
+              "DocumentIndex": 3,
+              "Title": "ViewAgendamento.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\ORM\\ViewAgendamento.cs",
+              "RelativeDocumentMoniker": "ORM\\ViewAgendamento.cs",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\ORM\\ViewAgendamento.cs",
+              "RelativeToolTip": "ORM\\ViewAgendamento.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T18:16:23.801Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "ViewAgendamentoVM.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Models\\ViewAgendamentoVM.cs",
+              "RelativeDocumentMoniker": "Models\\ViewAgendamentoVM.cs",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Models\\ViewAgendamentoVM.cs",
+              "RelativeToolTip": "Models\\ViewAgendamentoVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T18:16:18.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Views\\Agendamento\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Agendamento\\Index.cshtml",
               "ToolTip": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Views\\Agendamento\\Index.cshtml",
               "RelativeToolTip": "Views\\Agendamento\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAB0AAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-22T20:10:25.93Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TbAgendamento.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\ORM\\TbAgendamento.cs",
-              "RelativeDocumentMoniker": "ORM\\TbAgendamento.cs",
-              "ToolTip": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\ORM\\TbAgendamento.cs",
-              "RelativeToolTip": "ORM\\TbAgendamento.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T20:01:49.48Z",
+              "WhenOpened": "2024-11-29T17:30:43.788Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Views\\Usuario\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Usuario\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Views\\Usuario\\Index.cshtml",
+              "RelativeToolTip": "Views\\Usuario\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-29T17:29:54.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "AgendamentoVM.cs",
               "DocumentMoniker": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Models\\AgendamentoVM.cs",
               "RelativeDocumentMoniker": "Models\\AgendamentoVM.cs",
               "ToolTip": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Models\\AgendamentoVM.cs",
               "RelativeToolTip": "Models\\AgendamentoVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-22T19:54:30.01Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "AgendamentoRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Repositorios\\AgendamentoRepositorio.cs",
               "RelativeDocumentMoniker": "Repositorios\\AgendamentoRepositorio.cs",
               "ToolTip": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Repositorios\\AgendamentoRepositorio.cs",
               "RelativeToolTip": "Repositorios\\AgendamentoRepositorio.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAIwC4AAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAwwC4AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-22T19:31:45.678Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "AgendamentoController.cs",
               "DocumentMoniker": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Controllers\\AgendamentoController.cs",
               "RelativeDocumentMoniker": "Controllers\\AgendamentoController.cs",
               "ToolTip": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Controllers\\AgendamentoController.cs",
               "RelativeToolTip": "Controllers\\AgendamentoController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwDEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-22T19:47:13.941Z",
               "EditorCaption": ""

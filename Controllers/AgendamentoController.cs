@@ -20,17 +20,6 @@ namespace PortifolioDEV.Controllers
             _servicoRepositorio = servicoRepositorio;
         }
 
-
-        public IActionResult Cadastro()
-        {
-            return View();
-        }
-
-        public IActionResult Gerencimento_Agendamento_Usuario()
-        {
-            return View();
-        }
-
         public IActionResult Index()
         {
             // Buscar os usuários e serviços no banco de dados
@@ -58,6 +47,17 @@ namespace PortifolioDEV.Controllers
 
             return View(agendamentos);
         }
+
+        public IActionResult Cadastro()
+        {
+            return View();
+        }
+
+        public IActionResult Gerencimento_Agendamento_Usuario()
+        {
+            return View();
+        }
+
 
         public IActionResult Create()
         {
