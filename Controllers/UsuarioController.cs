@@ -38,6 +38,62 @@ namespace PortifolioDEV.Controllers
             var Usuarios = _usuarioRepositorio.ListarUsuarios();
             return View(Usuarios);
         }
+        public IActionResult VerificarUsuario(string email, string senha)
+        {
+            try
+            {
+                // Verifica se os parâmetros foram passados corretamente
+                if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(senha))
+                {
+                    return Json(new { success = false, message = "E-mail e senha são necessários." });
+                }
+
+                // Chama o método do repositório para verificar o usuário baseado no e-mail e senha
+                var usuario = _usuarioRepositorio.VerificarLogin(email, senha);
+
+                // Verifica se o usuário foi encontrado e autenticado
+                if (usuario != null)
+                {
+                    // Se o usuário foi encontrado, significa que o login foi bem-sucedido
+                    return Json(new { success = true, message = "Usuário autenticado com sucesso!" });
+                }
+                else
+                {
+                    // Se não encontrar o usuário, a resposta é de falha na autenticação
+                    return Json(new { success = false, message = "E-mail ou senha inválidos." });
+                }
+            }
+            catch (Exception ex)
+            {
+                // Em caso de erro inesperado, captura e exibe o erro
+                return Json(new { success = false, message = "Erro ao processar a solicitação. Detalhes: " + ex.Message });
+            }
+        }
+        public IActionResult Logout()
+        {
+            try
+            {
+                // Limpar a sessão
+                HttpContext.Session.Clear();
+
+                // Limpar as variáveis de ambiente
+                Environment.SetEnvironmentVariable("USUARIO_ID", null);
+                Environment.SetEnvironmentVariable("USUARIO_NOME", null);
+                Environment.SetEnvironmentVariable("USUARIO_EMAIL", null);
+                Environment.SetEnvironmentVariable("USUARIO_TELEFONE", null);
+                Environment.SetEnvironmentVariable("USUARIO_TIPO", null);
+
+                // Caso esteja usando o SignInManager, também deve chamar o método de logout
+                // _signInManager.SignOutAsync();
+
+                return Json(new { success = true });
+            }
+            catch (Exception ex)
+            {
+                // Se ocorrer um erro, retornar uma resposta de erro com a mensagem
+                return Json(new { success = false, message = ex.Message });
+            }
+        }
         public IActionResult InserirUsuario(string Nome, string Senha, string Email, string Telefone, int TipoUsuario)
         {
             try

@@ -11,10 +11,17 @@ builder.Services.AddDbContext<BdPortfolioDevContext>(options =>
 
 // Registrar o repositório (UsuarioRepositorio)
 builder.Services.AddScoped<UsuarioRepositorio>();  // Ou AddTransient ou AddSingleton dependendo do caso
-// Registrar o repositório (UsuarioRepositorio)
+// Registrar o repositório (ServicoRepositorio)
 builder.Services.AddScoped<ServicoRepositorio>();  // Ou AddTransient ou AddSingleton dependendo do caso
-// Registrar o repositório (UsuarioRepositorio)
+// Registrar o repositório (AgendamentoRepositorio)
 builder.Services.AddScoped<AgendamentoRepositorio>();  // Ou AddTransient ou AddSingleton dependendo do caso
+
+// Adicionar suporte a sessões
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30); // Defina o tempo de expiração da sessão
+    options.Cookie.HttpOnly = true; // Torna o cookie acessível apenas via HTTP
+});
 
 // Registrar outros serviços, como controllers com views
 builder.Services.AddControllersWithViews();
@@ -30,7 +37,11 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
 app.UseStaticFiles();
+
+// Adicionar o middleware de sessão
+app.UseSession();
 
 app.UseRouting();
 

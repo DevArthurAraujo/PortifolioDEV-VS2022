@@ -115,7 +115,7 @@
 
         $.ajax({
             type: "POST",
-            url: "/Usuario/ConsultarUsuario",
+            url: "/Usuario/VerificarUsuario",
             data: { Email: email, Senha: senha },
             dataType: "json",
             success: function (result) {
