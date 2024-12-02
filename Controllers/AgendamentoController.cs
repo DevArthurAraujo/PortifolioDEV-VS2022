@@ -58,7 +58,6 @@ namespace PortifolioDEV.Controllers
             return View();
         }
 
-
         public IActionResult Create()
         {
             // Recarrega as listas de usuários e serviços
@@ -83,7 +82,21 @@ namespace PortifolioDEV.Controllers
             return View();
         }
 
+        public IActionResult ConsultarAgendamento(string data)
+        {
 
+            var agendamento = _agendamentoRepositorio.ConsultarAgendamento(data);
+
+            if (agendamento != null)
+            {
+                return Json(agendamento);
+            }
+            else
+            {
+                return NotFound();
+            }
+
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

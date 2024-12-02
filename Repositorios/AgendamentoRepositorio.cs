@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using System.Globalization;
 
 namespace PortifolioDEV.Repositorio
 {
@@ -92,6 +93,38 @@ namespace PortifolioDEV.Repositorio
             else
             {
                 throw new Exception("Agendamento não encontrado.");
+            }
+        }
+
+        public List<AgendamentoVM> ConsultarAgendamento(string datap)
+        {
+            DateOnly data = DateOnly.ParseExact(datap, "dd/MM/yyyy", CultureInfo.InvariantCulture);
+            string dataFormatada = data.ToString("yyyy-MM-dd"); // Formato desejado: "yyyy-MM-dd"
+
+            try
+            {
+                // Consulta ao banco de dados, convertendo para o tipo AtendimentoVM
+                var ListaAgendamento = _context.TbAgendamentos
+                    .Where(a => a.DataAtendimento == DateOnly.Parse(dataFormatada))
+                    .Select(a => new AgendamentoVM
+                    {
+                        // Mapear as propriedades de TbAtendimento para AtendimentoVM
+                        // Suponha que TbAtendimento tenha as propriedades Id, DataAtendimento, e outras:
+                        Id = a.IdAgendamento,
+                        DtHoraAgendamento = a.DtHoraAgendamento,
+                        DataAtendimento = DateOnly.Parse(dataFormatada),
+                        Horario = a.Horario,
+                        IdUsuario = a.IdUsuario,
+                        IdServico = a.IdServico
+                    })
+                    .ToList(); // Converte para uma lista
+
+                return ListaAgendamento;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao consultar agendamentos: {ex.Message}");
+                return new List<AgendamentoVM>(); // Retorna uma lista vazia em caso de erro
             }
         }
     }
