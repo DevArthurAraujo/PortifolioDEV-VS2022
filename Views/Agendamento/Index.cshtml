@@ -59,6 +59,8 @@
                             </tr>
                         </thead>
                         <tbody>
+                        @if (Model != null && Model.Any())
+                        {
                             @foreach (var agendamento in Model)
                             {
                                 <tr>
@@ -74,7 +76,7 @@
                                     <td class="text-center" style="color: #ac0404; border: 1px solid #ddd;">
                                         <button class="btn btn-default"
                                                 onclick="definirEdt(@agendamento.Id, '@agendamento.UsuarioNome', '@agendamento.UsuarioEmail', '@agendamento.UsuarioTelefone', '@agendamento.DataAtendimento', '@agendamento.Horario', '@agendamento.ServicoNome', '@agendamento.ServicoValor')"
-                                                data-bs-toggle="modal" data-bs-target="#EditarAgendamento">
+                                                data-bs-toggle="modal" data-bs-target="#AlterarAgendamento">
                                             <i class="fa fa-edit" style="color: #F7F5F2;"></i>
                                         </button>
                                     </td>
@@ -85,6 +87,13 @@
                                             <i class="fa fa-trash" style="color: #F7F5F2;"></i>
                                         </button>
                                     </td>
+                                </tr>
+                            }
+                        }
+                            else
+                            {
+                                <tr>
+                                    <td colspan="11" style="text-align: center; color: #EAE7DC; padding: 8px;">Nenhum atendimento encontrado.</td>
                                 </tr>
                             }
                         </tbody>
