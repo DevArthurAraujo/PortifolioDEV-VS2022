@@ -45,6 +45,26 @@ namespace PortifolioDEV.Repositorio
             }
         }
 
+        public void Update(AgendamentoVM agendamento)
+        {
+            var tbAgendamento = _context.TbAgendamentos.FirstOrDefault(f => f.IdAgendamento == agendamento.Id);
+            if (tbAgendamento != null)
+            {
+                tbAgendamento.DtHoraAgendamento = agendamento.DtHoraAgendamento;
+                tbAgendamento.DataAtendimento = agendamento.DataAtendimento;
+                tbAgendamento.Horario = agendamento.Horario;
+                tbAgendamento.IdUsuario = agendamento.IdUsuario;
+                tbAgendamento.IdServico = agendamento.IdServico;
+
+                _context.TbAgendamentos.Update(tbAgendamento);
+                _context.SaveChanges();
+            }
+            else
+            {
+                throw new Exception("Agendamento não encontrado.");
+            }
+        }
+
         public List<AgendamentoVM> ListarAgendamentos()
         {
             var listAte = new List<AgendamentoVM>();
@@ -74,26 +94,6 @@ namespace PortifolioDEV.Repositorio
             }
 
             return listAte;
-        }
-
-        public void Update(AgendamentoVM agendamento)
-        {
-            var tbAgendamento = _context.TbAgendamentos.FirstOrDefault(f => f.IdAgendamento == agendamento.Id);
-            if (tbAgendamento != null)
-            {
-                tbAgendamento.DtHoraAgendamento = agendamento.DtHoraAgendamento;
-                tbAgendamento.DataAtendimento = agendamento.DataAtendimento;
-                tbAgendamento.Horario = agendamento.Horario;
-                tbAgendamento.IdUsuario = agendamento.IdUsuario;
-                tbAgendamento.IdServico = agendamento.IdServico;
-
-                _context.TbAgendamentos.Update(tbAgendamento);
-                _context.SaveChanges();
-            }
-            else
-            {
-                throw new Exception("Agendamento não encontrado.");
-            }
         }
 
         public List<AgendamentoVM> ConsultarAgendamento(string datap)
@@ -127,6 +127,24 @@ namespace PortifolioDEV.Repositorio
                 Console.WriteLine($"Erro ao consultar agendamentos: {ex.Message}");
                 return new List<AgendamentoVM>(); // Retorna uma lista vazia em caso de erro
             }
+        }
+
+        public List<UsuarioVM> ListarNomesAgendamentos()
+        {
+            // Lista para armazenar os usuários com apenas Id e Nome
+            List<UsuarioVM> listFun = new List<UsuarioVM>();
+
+            // Obter apenas os campos Id e Nome da tabela TbUsuarios
+            var listTb = _context.TbUsuarios
+                                 .Select(u => new UsuarioVM
+                                 {
+                                     Id = u.IdUsuario,
+                                     Nome = u.Nome
+                                 })
+                                 .ToList();
+
+            // Retorna a lista já com os campos filtrados
+            return listTb;
         }
     }
 }

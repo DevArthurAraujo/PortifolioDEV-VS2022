@@ -185,6 +185,18 @@
                                 <input id="data_agdt" type="date" class="form-control" style="width: 300px;" placeholder="Escolha a data do agendamento" oninput="consultarAgendamento()">
                             </div>
 
+                            <div class="mb-3 row">
+                                <div class="col-md-6">
+                                    @Html.DropDownList("DropUsuario",
+                                             new SelectList(ViewBag.Usuarios, "Value", "Text", null),
+                                             "Escolha o usuário",
+                                             new { @class = "form-control", @style = "width:230px; background-color: #EAE7DC; color: #333;", required = "required" })
+                                </div>
+                                <div class="col-md-6">
+                                    <label style="color:red">*</label>
+                                </div>
+                            </div>
+
                             <!-- DropDown de Tipo de Serviço -->
                             <div class="mb-3 row">
                                 <div class="col-md-6">

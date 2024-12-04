@@ -36,6 +36,19 @@ namespace PortifolioDEV.Controllers
                 new SelectListItem { Value = "6", Text = "Consultoria Cloud Azure" }
             };
 
+            if (usuarios != null && usuarios.Any())
+            {
+                // Cria a lista de SelectListItem
+                var selectList = usuarios.Select(u => new SelectListItem
+                {
+                    Value = u.Id.ToString(),  // O valor do item será o ID do usuário
+                    Text = u.Nome             // O texto exibido será o nome do usuário
+                }).ToList();
+
+                // Passa a lista para o ViewBag para ser utilizada na view
+                ViewBag.Usuarios = selectList;
+            }
+
             // Passar a lista para a View usando ViewBag
             ViewBag.lstTipoServico = new SelectList(tipoServico, "Value", "Text");
 
