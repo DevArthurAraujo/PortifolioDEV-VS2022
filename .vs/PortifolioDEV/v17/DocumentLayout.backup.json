@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|c:\\users\\aluno noite\\documents\\github\\portifoliodev-vs2022\\controllers\\agendamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|solutionrelative:controllers\\agendamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|c:\\users\\aluno noite\\documents\\github\\portifoliodev-vs2022\\repositorios\\agendamentorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|solutionrelative:repositorios\\agendamentorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|c:\\users\\aluno noite\\documents\\github\\portifoliodev-vs2022\\views\\usuario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|solutionrelative:views\\usuario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|c:\\users\\aluno noite\\documents\\github\\portifoliodev-vs2022\\controllers\\agendamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|solutionrelative:controllers\\agendamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|c:\\users\\aluno noite\\documents\\github\\portifoliodev-vs2022\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|c:\\users\\aluno noite\\documents\\github\\portifoliodev-vs2022\\views\\agendamento\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|solutionrelative:views\\agendamento\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|c:\\users\\aluno noite\\documents\\github\\portifoliodev-vs2022\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|c:\\users\\aluno noite\\documents\\github\\portifoliodev-vs2022\\repositorios\\usuariorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|solutionrelative:repositorios\\usuariorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|c:\\users\\aluno noite\\documents\\github\\portifoliodev-vs2022\\controllers\\servicocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|solutionrelative:controllers\\servicocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,77 +35,54 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AgendamentoController.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Controllers\\AgendamentoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AgendamentoController.cs",
-              "ToolTip": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Controllers\\AgendamentoController.cs",
-              "RelativeToolTip": "Controllers\\AgendamentoController.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAowDwAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T20:18:40.357Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "AgendamentoRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Repositorios\\AgendamentoRepositorio.cs",
               "RelativeDocumentMoniker": "Repositorios\\AgendamentoRepositorio.cs",
               "ToolTip": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Repositorios\\AgendamentoRepositorio.cs",
               "RelativeToolTip": "Repositorios\\AgendamentoRepositorio.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAuwH4AAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAIEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T20:15:45.688Z",
+              "WhenOpened": "2024-12-04T18:18:34.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ServicoController.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Controllers\\ServicoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ServicoController.cs",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Controllers\\ServicoController.cs",
+              "RelativeToolTip": "Controllers\\ServicoController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T17:23:43.232Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Views\\Usuario\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Usuario\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Views\\Usuario\\Index.cshtml",
-              "RelativeToolTip": "Views\\Usuario\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAABFAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Views\\Agendamento\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Agendamento\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Views\\Agendamento\\Index.cshtml",
+              "RelativeToolTip": "Views\\Agendamento\\Index.cshtml",
+              "ViewState": "AgIAAEEBAAAAAAAAAAAAAEkBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-02T19:55:57.733Z",
+              "WhenOpened": "2024-12-04T17:37:30.293Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Controllers\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Controllers\\UsuarioController.cs",
-              "RelativeToolTip": "Controllers\\UsuarioController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "AgendamentoController.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Controllers\\AgendamentoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AgendamentoController.cs",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Controllers\\AgendamentoController.cs",
+              "RelativeToolTip": "Controllers\\AgendamentoController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAADwv2EAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T19:55:22.913Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T18:39:39.456Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UsuarioRepositorio.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Repositorios\\UsuarioRepositorio.cs",
-              "RelativeDocumentMoniker": "Repositorios\\UsuarioRepositorio.cs",
-              "ToolTip": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Repositorios\\UsuarioRepositorio.cs",
-              "RelativeToolTip": "Repositorios\\UsuarioRepositorio.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAABsAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T18:05:18.561Z"
+              "WhenOpened": "2024-12-04T17:37:11.519Z",
+              "EditorCaption": ""
             }
           ]
         }

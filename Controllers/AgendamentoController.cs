@@ -26,6 +26,19 @@ namespace PortifolioDEV.Controllers
             var usuarios = _usuarioRepositorio.ListarUsuarios();
             var servicos = _servicoRepositorio.ListarServicos();
 
+            List<SelectListItem> tipoServico = new List<SelectListItem>
+            {
+                new SelectListItem { Value = "1", Text = "Desenvolvimento Backend .NET" },
+                new SelectListItem { Value = "2", Text = "Consultoria Cloud AWS" },
+                new SelectListItem { Value = "3", Text = "Implementação Kubernetes" },
+                new SelectListItem { Value = "4", Text = "Segurança Cibernética" },
+                new SelectListItem { Value = "5", Text = "Desenvolvimento Backend Python" },
+                new SelectListItem { Value = "6", Text = "Consultoria Cloud Azure" }
+            };
+
+            // Passar a lista para a View usando ViewBag
+            ViewBag.lstTipoServico = new SelectList(tipoServico, "Value", "Text");
+
             // Preencher as listas para os dropdowns
             List<SelectListItem> idUsuario = usuarios.Select(u => new SelectListItem
             {
