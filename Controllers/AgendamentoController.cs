@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using PortifolioDEV.Models;
+using PortifolioDEV.ORM;
 using PortifolioDEV.Repositorio;
 using PortifolioDEV.Repositorios;
 using System.Diagnostics;
@@ -9,33 +10,34 @@ namespace PortifolioDEV.Controllers
 {
     public class AgendamentoController : Controller
     {
-        private readonly AgendamentoRepositorio _agendamentoRepositorio;
-        private readonly UsuarioRepositorio _usuarioRepositorio;
-        private readonly ServicoRepositorio _servicoRepositorio;
+        private readonly AgendamentoRepositorio _agendamentoRepositorio;        
+        private BdPortfolioDevContext _context;
 
-        public AgendamentoController(AgendamentoRepositorio agendamentoRepositorio, UsuarioRepositorio usuarioRepositorio, ServicoRepositorio servicoRepositorio)
+        public AgendamentoController(AgendamentoRepositorio agendamentoRepositorio, BdPortfolioDevContext context)
         {
-            _agendamentoRepositorio = agendamentoRepositorio;
-            _usuarioRepositorio = usuarioRepositorio;
-            _servicoRepositorio = servicoRepositorio;
+            _agendamentoRepositorio = agendamentoRepositorio;           
+            _context = context;
         }
 
         public IActionResult Index()
         {
-            // Buscar os usuários e serviços no banco de dados
-            var usuarios = _usuarioRepositorio.ListarUsuarios();
-            var servicos = _servicoRepositorio.ListarServicos();
-
-            List<SelectListItem> tipoServico = new List<SelectListItem>
+            var servicos = new ServicoRepositorio(_context);
+            var nomeServicos = servicos.ListarNomesServicos();
+            if (nomeServicos != null && nomeServicos.Any())
             {
-                new SelectListItem { Value = "1", Text = "Desenvolvimento Backend .NET" },
-                new SelectListItem { Value = "2", Text = "Consultoria Cloud AWS" },
-                new SelectListItem { Value = "3", Text = "Implementação Kubernetes" },
-                new SelectListItem { Value = "4", Text = "Segurança Cibernética" },
-                new SelectListItem { Value = "5", Text = "Desenvolvimento Backend Python" },
-                new SelectListItem { Value = "6", Text = "Consultoria Cloud Azure" }
-            };
+                // Cria a lista de SelectListItem
+                var selectList = nomeServicos.Select(u => new SelectListItem
+                {
+                    Value = u.Id.ToString(),  // O valor do item será o ID do usuário
+                    Text = u.TipoServico             // O texto exibido será o nome do usuário
+                }).ToList();
 
+                // Passa a lista para o ViewBag para ser utilizada na view
+                ViewBag.lstTipoServico = selectList;
+            }
+
+            // Buscar os usuários e serviços no banco de dados
+            var usuarios = _agendamentoRepositorio.ListarNomesAgendamentos();
             if (usuarios != null && usuarios.Any())
             {
                 // Cria a lista de SelectListItem
@@ -48,26 +50,7 @@ namespace PortifolioDEV.Controllers
                 // Passa a lista para o ViewBag para ser utilizada na view
                 ViewBag.Usuarios = selectList;
             }
-
-            // Passar a lista para a View usando ViewBag
-            ViewBag.lstTipoServico = new SelectList(tipoServico, "Value", "Text");
-
-            // Preencher as listas para os dropdowns
-            List<SelectListItem> idUsuario = usuarios.Select(u => new SelectListItem
-            {
-                Value = u.Id.ToString(),
-                Text = u.Nome
-            }).ToList();
-
-            List<SelectListItem> idServico = servicos.Select(s => new SelectListItem
-            {
-                Value = s.Id.ToString(),
-                Text = s.TipoServico
-            }).ToList();
-
-            ViewBag.lstIdUsuario = new SelectList(idUsuario, "Value", "Text");
-            ViewBag.lstIdServico = new SelectList(idServico, "Value", "Text");
-
+            
             // Buscar os agendamentos e incluir os nomes de Usuário e Serviço
             var agendamentos = _agendamentoRepositorio.ListarAgendamentos();
 

@@ -39,7 +39,6 @@ namespace PortifolioDEV.Controllers
             var Servicos = _servicoRepositorio.ListarServicos();
             return View(Servicos);
         }
-
         public IActionResult InserirServico(string tipoServico, decimal valor)
         {
             try

@@ -18,19 +18,6 @@ namespace PortifolioDEV.Repositorio
 
 
 
-        public void Delete(int id)
-        {
-            var tbAgendamento = _context.TbAgendamentos.FirstOrDefault(f => f.IdAgendamento == id);
-            if (tbAgendamento != null)
-            {
-                _context.TbAgendamentos.Remove(tbAgendamento);
-                _context.SaveChanges();
-            }
-            else
-            {
-                throw new Exception("Agendamento não encontrado.");
-            }
-        }
 
         // Método para inserir um novo agendamento
         public bool InserirAgendamento(DateTime dtHoraAgendamento, DateOnly dataAtendimento, TimeOnly horario, int IdUsuario, int IdServico)

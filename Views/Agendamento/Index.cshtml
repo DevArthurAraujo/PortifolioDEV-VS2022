@@ -33,14 +33,10 @@
                 </div>
             </div>
 
-            <!-- Contador de Registros Centralizado com Fonte Maior -->
-            <div style="text-align: center; color: #ac0404; margin-top: 10px;">
-                <strong style="font-size: 18px">Total de Usuários: <span id="registroCount">0</span></strong>
-            </div>
 
             <div class="table-container" style="max-height: 400px; overflow-y: auto;">
                 <div>
-                    <table id="TbClientes" class="table" style="width: 100%; border-collapse: collapse;">
+                    <table id="TbAgendamentoBody" class="table" style="width: 100%; border-collapse: collapse;">
                         <colgroup>
                             <col class="tc-nome">
                         </colgroup>
@@ -101,6 +97,11 @@
                 </div>
             </div>
 
+        </div>
+
+        <!-- Contador de Registros Centralizado com Fonte Maior -->
+        <div style="text-align: center; margin-top: 10px;">
+            <strong style="font-size: 18px; color: #ac0404;">Total de Usuários: <span id="registroCount">0</span></strong>
         </div>
 
 
@@ -200,7 +201,10 @@
                             <!-- DropDown de Tipo de Serviço -->
                             <div class="mb-3 row">
                                 <div class="col-md-6">
-                                    @Html.DropDownList("TipoServico", ViewBag.lstTipoServico as SelectList, "Escolha o tipo de Serviço", new { @class = "form-control", @style = "width:230px; background-color: #EAE7DC; color: #333;", required = "required" })
+                                    @Html.DropDownList("TipoServico",
+                                             new SelectList(ViewBag.lstTipoServico, "Value", "Text", null),
+                                             "Escolha o serviço",
+                                             new { @class = "form-control", @style = "width:230px; background-color: #EAE7DC; color: #333;", required = "required" })
                                 </div>
                                 <div class="col-md-6">
                                     <label style="color:red">*</label>
@@ -348,6 +352,34 @@
 
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+
+        $(document).ready(function () {
+            // Função para atualizar o contador de registros visíveis
+            function atualizarContador() {
+                var visibleRows = $('#TbAgendamentoBody tbody tr:visible').length; // Conta as linhas visíveis
+                $('#registroCount').text(visibleRows); // Atualiza o contador
+            }
+
+            // Quando o usuário digitar no campo de filtro
+            $('#filtro').on('keyup', function () {
+                var value = $(this).val().toLowerCase(); // Pega o valor do campo de filtro e converte para minúsculas
+
+                // Filtra as linhas do corpo da tabela
+                $('#TbAgendamentoBody tbody tr').each(function () {
+                    // Verifica se qualquer célula na linha contém o valor digitado no filtro
+                    var rowText = $(this).text().toLowerCase();
+                    // Exibe ou oculta a linha, dependendo de conter o valor
+                    $(this).toggle(rowText.indexOf(value) > -1);
+                });
+
+                // Atualiza o contador após filtrar as linhas
+                atualizarContador();
+            });
+
+            // Inicializa o contador de registros ao carregar a página
+            atualizarContador();
+        });
+
         // Impede a digitação manual no campo de data
         document.getElementById('data_agdt').addEventListener('keydown', function (e) {
             e.preventDefault(); // Bloqueia qualquer entrada do teclado

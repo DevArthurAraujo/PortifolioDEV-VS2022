@@ -50,7 +50,7 @@
                     </table>
                     <!-- Corpo da tabela rolável -->
                     <div style="max-height: 300px; overflow-y: auto; overflow-x: hidden;">
-                        <table id="TbServicosBody" class="table" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+                        <table id="TbServicosBody" class="table-responsive" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
                             <tbody>
                                 @if (Model != null && Model.Any())
                                 {
@@ -58,15 +58,15 @@
                                     {
                                         <tr>
                                             <td style="color: #ac0404; border: 1px solid #ddd; padding: 8px; width: 50px">@servico.Id</td>
-                                            <td style="color: #ac0404; border: 1px solid #ddd; padding: 8px; width: 220px">@servico.TipoServico</td>
-                                            <td style="color: #ac0404; border: 1px solid #ddd; padding: 8px; width: 250px">@servico.Valor.ToString("C")</td> <!-- Formato de moeda -->
+                                            <td style="color: #ac0404; border: 1px solid #ddd; padding: 8px; width: 840px">@servico.TipoServico</td>
+                                            <td style="color: #ac0404; border: 1px solid #ddd; padding: 8px; width: 200px">@servico.Valor.ToString("C")</td> <!-- Formato de moeda -->
 
-                                            <td class="text-center" style="border: 1px solid #ddd; width: 80px;">
-                                                <button class="btn btn-default" onclick="definirEdt('@servico.Id', '@servico.TipoServico', '@servico.Valor')" data-bs-toggle="modal" data-bs-target="#EditarServico" style="color: #ac0404;">
+                                            <td class="text-center" style="border: 1px solid #ddd; width: 50px;">
+                                                <button class="btn btn-default" onclick="definirEdt('@servico.Id', '@servico.TipoServico', '@servico.Valor')" data-bs-toggle="modal" data-bs-target="#AlterarServico" style="color: #ac0404;">
                                                     <i class="fa fa-edit"></i>
                                                 </button>
                                             </td>
-                                            <td class="text-center" style="border: 1px solid #ddd; width: 80px;">
+                                            <td class="text-center" style="border: 1px solid #ddd; width: 50px;">
                                                 <button class="btn btn-default" onclick="definirExc('@servico.Id', '@servico.TipoServico', '@servico.Valor')" data-bs-toggle="modal" data-bs-target="#ExcluirServico" style="color: #ac0404;">
                                                     <i class="fa fa-trash"></i>
                                                 </button>
@@ -146,7 +146,7 @@
             </div>
         </div>
 
-        <div class="modal fade" id="EditarServico" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="AlterarServico" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -175,7 +175,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                        <button type="button" onclick="AtualizarServico()" class="btn btn-primary">Atualizar</button>
+                        <button type="button" onclick="AlterarServico()" class="btn btn-primary">Atualizar</button>
                     </div>
                 </div>
             </div>
@@ -393,123 +393,110 @@
             $('#ExcValor').val(valor);
         }
 
-        function InserirServico() {
-            // Coleta os valores dos campos HTML
-            var valor = $('#Valor').val();
-            var tipoServico = $('#TipoServico option:selected').text();
-
-            // Cria o objeto de dados que será enviado
-            var dados = {
-                tipoServico: tipoServico,
-                valor: valor
-            };
-
-            // Requisição AJAX para o método InserirServico
-            $.ajax({
-                url: '/Servico/InserirServico', // URL do método no controlador
-                type: "POST",
-                dataType: "json",              
-                data: dados,
-                success: function (resultado) {
-                    // Verifica o sucesso da operação
-                    if (resultado.success) {
-                        alert(resultado.message);
-                        $('#InserirServico').modal('hide'); // Fecha o modal após a inserção
-                        location.reload(); // Recarrega a página para atualizar a lista de serviços
-                    } else {
-                        alert(resultado.message); // Exibe mensagem de erro
-                    }
-                },
-                error: function (xhr, status, error) {
-                    console.error("Erro ao inserir serviço:", status, error, xhr.responseText);
-                    alert('Erro na requisição AJAX: ' + xhr.responseText);
-                }
-            });
-        }
-
-        function AtualizarServico() {
-            // Coleta os valores dos campos HTML
-            var id = $('#EdtId').val();  // ID do serviço que será atualizado
-            var tipoServico = $('#EdtTipoServico option:selected').text();  // Valor selecionado no dropdown
-            var valor = $('#EdtValor').val();  // Valor do serviço
-
-            // Verificar se os campos obrigatórios estão preenchidos
-            if (tipoServico === "" || tipoServico === "Escolha o tipo de Serviço") {
-                alert("Por favor, selecione um tipo de serviço.");
-                return;
-            }
-
-            if (valor === "") {
-                alert("Por favor, insira o valor do serviço.");
-                return;
-            }
-
-            // Cria o objeto de dados que será enviado via AJAX
-            var dados = {
-                id: id,
-                tipoServico: tipoServico,
-                valor: valor
-            };
-
-            // Requisição AJAX para o método AtualizarServico no controller
-            $.ajax({
-                url: '/Servico/AtualizarServico', // URL do método no controlador
-                type: "POST",
-                dataType: "json",
-                data: dados,
-                success: function (resultado) {
-                    // Verifica o sucesso da operação
-                    if (resultado.success) {
-                        alert(resultado.message);  // Exibe mensagem de sucesso
-                        $('#EditarServico').modal('hide');  // Fecha o modal após a atualização
-                        location.reload();  // Recarrega a página para atualizar a lista de serviços
-                    } else {
-                        alert(resultado.message);  // Exibe mensagem de erro
-                    }
-                },
-                error: function (xhr, status, error) {
-                    console.error("Erro ao atualizar serviço:", status, error, xhr.responseText);
-                    alert('Erro na requisição AJAX: ' + xhr.responseText);
-                }
-            });
-        }
-
         function ExcluirServico() {
-            // Captura o id do serviço a ser excluído
-            var id = $('#ExcId').val(); // Este valor deve ser passado para o modal antes de chamar a função
+             var id = $('#ExcId').val();
+             // Confirmar antes de excluir
+             if (confirm("Você tem certeza que deseja excluir este serviço?")) {
+                 // Fazer a requisição AJAX para excluir o serviço
+                 $.ajax({
+                     url: '/Servico/ExcluirServico',  // Substitua 'SeuController' pelo nome real do seu controller
+                     type: 'POST',
+                     data: { id: id },
+                     success: function (response) {
+                         // Verificar se a exclusão foi bem-sucedida
+                         if (response.success) {
 
-            if (!id) {
-                alert("ID do serviço não encontrado.");
-                return;
-            }
+                             alert(response.message);  // Exibir mensagem de sucesso
+                             $('#ExcluirServico').modal('hide'); // Exemplo de fechamento de modal
+                             location.reload();  // Opcional: recarrega a página
+                         } else {
+                             alert(response.message);  // Caso haja erro
+                         }
+                     },
+                     error: function (xhr, status, error) {
+                         alert("Ocorreu um erro ao tentar excluir o serviço: " + error);
+                     }
+                 });
+             }
+         }
 
-            // Confirmação antes de excluir
-            if (!confirm("Tem certeza de que deseja excluir este serviço?")) {
-                return; // Cancela a exclusão se o usuário não confirmar
-            }
+         function AlterarServico() {
 
-            // Requisição AJAX para o método ExcluirServico no controller
-            $.ajax({
-                url: '/Servico/ExcluirServico', // URL do método no controlador
-                type: "POST",
-                dataType: "json",
-                data: { id: id }, // Envia o id do serviço para o servidor
-                success: function (resultado) {
-                    // Verifica o sucesso da operação
-                    if (resultado.success) {
-                        alert(resultado.message); // Exibe mensagem de sucesso
-                        $('#ExcluirServico').modal('hide'); // Fecha o modal após a exclusão
-                        location.reload(); // Recarrega a página para atualizar a lista de serviços
-                    } else {
-                        alert(resultado.message); // Exibe mensagem de erro
-                    }
-                },
-                error: function (xhr, status, error) {
-                    console.error("Erro ao excluir serviço:", status, error, xhr.responseText);
-                    alert('Erro na requisição AJAX: ' + xhr.responseText);
-                }
-            });
-        }
+             var id = $('#EdtId').val();
+             var tipoSevico = $('#EdtTipoServico option:selected').text()
+             var valor = $('#EdtValor').val();
+
+             // Fazer a requisição AJAX para atualizar o serviço
+             $.ajax({
+                 url: '/Servico/AtualizarServico',  // Substitua 'SeuController' pelo nome real do seu controller
+                 type: 'POST',
+                 data: {
+                     id: id,
+                     TipoServico: tipoSevico,
+                     Valor: valor
+                 },
+                 success: function (response) {
+                     // Verificar se a atualização foi bem-sucedida
+                     if (response.success) {
+                         alert("Serviço " + tipoSevico + " alterado com sucesso!");
+                         $('#EditarServico').modal('hide');
+                         location.reload();  // Opcional: recarrega a página
+                     } else {
+                         alert(response.message); // Caso haja erro
+                     }
+                 },
+                 error: function (xhr, status, error) {
+                     alert("Ocorreu um erro ao tentar atualizar o serviço: " + error);
+                 }
+             });
+         }
+
+         function InserirServico() {
+
+             var tipoServico = $('#TipoServico option:selected').text();
+             var Valor = $('#Valor').val();
+
+
+             if (tipoServico === "" || tipoServico === "Escolha o tipo de Usuário") {
+                 alert("Por favor, selecione o tipo de usuário.");
+                 return;
+             }
+             if (Valor.trim() === "") {
+                 alert("Por favor, insira um email válido.");
+                 return;
+             }
+
+
+             // Objeto com os dados para enviar via AJAX
+             var dados = {
+                 tipoServico: tipoServico,
+                 Valor: Valor
+             };
+
+             console.log(dados); // Verifica os dados antes de enviar
+
+             // Requisição AJAX
+             $.ajax({
+                 url: '@Url.Action("InserirServico", "Servico")', // Substitua "NomeDoController" pelo nome da sua controller
+                 type: 'POST',
+                 dataType: 'json',
+                 data: dados,
+                 success: function (response) {
+                     // Exibe a mensagem de sucesso ou erro
+                     if (response.success) {
+                         alert(response.message);  // Exibe mensagem de sucesso
+                         // Se necessário, fecha o modal ou faz outra ação aqui
+                         $('#InserirServicoModal').modal('hide'); // Exemplo de fechamento de modal
+                         location.reload();  // Opcional: recarrega a página
+                     } else {
+                         alert(response.message);  // Exibe mensagem de erro
+                     }
+                 },
+                 error: function () {
+                     alert('Erro ao processar a solicitação. Tente novamente.');
+                 }
+             });
+         }
 
     </script>
 </body>
