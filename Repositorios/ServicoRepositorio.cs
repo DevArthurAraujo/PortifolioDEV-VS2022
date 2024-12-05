@@ -113,5 +113,22 @@ namespace PortifolioDEV.Repositorio
                 throw new Exception($"Erro ao excluir o servico: {ex.Message}");
             }
         }
+
+        public List<ServicoVM> ListarNomesServicos()
+        {
+            // Recupera os serviços com filtragem e projeção para ServicoVM diretamente no banco de dados
+            var query = _context.TbServicos.ToList();
+
+            // Projeta diretamente para ServicoVM e retorna como lista
+            var listServicos = _context.TbServicos
+                .Select(s => new ServicoVM
+                {
+                    Id = s.IdServico,
+                    TipoServico = s.TipoServico,
+                })
+                .ToList();
+
+            return listServicos;
+        }
     }
 }
