@@ -84,30 +84,6 @@ namespace PortifolioDEV.Controllers
             return View();
         }
 
-        public IActionResult Create()
-        {
-            // Recarrega as listas de usuários e serviços
-            var usuarios = _usuarioRepositorio.ListarUsuarios();
-            var servicos = _servicoRepositorio.ListarServicos();
-
-            List<SelectListItem> idUsuario = usuarios.Select(u => new SelectListItem
-            {
-                Value = u.Id.ToString(),
-                Text = u.Nome
-            }).ToList();
-
-            List<SelectListItem> idServico = servicos.Select(s => new SelectListItem
-            {
-                Value = s.Id.ToString(),
-                Text = s.TipoServico
-            }).ToList();
-
-            ViewBag.lstIdUsuario = new SelectList(idUsuario, "Value", "Text");
-            ViewBag.lstIdServico = new SelectList(idServico, "Value", "Text");
-
-            return View();
-        }
-
         public IActionResult ConsultarAgendamento(string data)
         {
 
@@ -122,6 +98,30 @@ namespace PortifolioDEV.Controllers
                 return NotFound();
             }
 
+        }
+
+        public IActionResult InserirAgendamento(DateTime dtHoraAgendamento, DateOnly dataAtendimento, TimeOnly horario, int IdUsuario, int IdServico)
+        {
+            try
+            {
+                // Chama o método do repositório que realiza a inserção no banco de dados
+                var resultado = _agendamentoRepositorio.InserirAgendamento(dtHoraAgendamento, dataAtendimento, horario, IdUsuario, IdServico);
+
+                // Verifica o resultado da inserção
+                if (resultado)
+                {
+                    return Json(new { success = true, message = "Atendimento inserido com sucesso!" });
+                }
+                else
+                {
+                    return Json(new { success = false, message = "Erro ao inserir o atendimento. Tente novamente." });
+                }
+            }
+            catch (Exception ex)
+            {
+                // Em caso de erro inesperado, captura e exibe o erro
+                return Json(new { success = false, message = "Erro ao processar a solicitação. Detalhes: " + ex.Message });
+            }
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

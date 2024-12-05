@@ -252,7 +252,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                        <button type="button" class="btn btn-primary" onclick="InserirAgendamentos()">Adicionar</button>
+                        <button type="button" class="btn btn-primary" onclick="InserirAgendamento()">Adicionar</button>
                     </div>
                 </div>
             </div>
@@ -490,13 +490,16 @@
             return dataHoraFormatada;
         }
 
-        function InserirAgendamentos() {
+        function InserirAgendamento() {
 
-            //var id =
-            var dataC = obterDataHoraFormatada();
+            // Data from hidden field or any other necessary values
+            var dataC = obterDataHoraFormatada();  // Assuming this function formats the current date/time.
             var data = $("#data_agdt").val();
-            var servico = $("#DropServico").val();
+            var usuario = $("#DropUsuario").val();  // Getting value for "DropUsuario"
+            var tipoServico = $('#TipoServico option:selected').val(); // Getting value for "TipoServico"
             var atendimentos = [];
+
+            // Check if the time slots are selected and push them into the atendimentos array
             if ($("#chk08").prop("checked")) atendimentos.push($("#chk08").val());
             if ($("#chk10").prop("checked")) atendimentos.push($("#chk10").val());
             if ($("#chk13").prop("checked")) atendimentos.push($("#chk13").val());
@@ -505,46 +508,29 @@
             if ($("#chk19").prop("checked")) atendimentos.push($("#chk19").val());
 
 
-            if (!id) {
-                alert("Por favor, Insira aum Id");
-                return;
-            }
 
-            if (!dataC) {
-                alert("Por favor, selecione uma data de cadastro");
-                return;
-            }
-            if (!data) {
-                alert("Por favor, selecione uma data para o agendamento.");
-                return;
-            }
-            if (!servico) {
-                alert("Por favor, selecione o serviço.");
-                return;
-            }
-            if (atendimentos.length === 0) {
-                alert("Por favor, selecione pelo menos um horário para o agendamento.");
-                return; // Retorna da função se nenhum horário foi selecionado
-            }
+            // Collect data for AJAX request
             var dados = {
-                id: id,
-                dataC: dataC,
-                data: data,
-                servico: servico,
-                atendimentos: atendimentos
+                dtHoraAgendamento: dataC,
+                dataAtendimento: data,
+                horario: atendimentos,
+                IdUsuario: usuario,
+                IdServico: tipoServico,
+
             };
             console.log(dados)
+
+            // Perform the AJAX request
             $.ajax({
-                url: '/Agendamento/InserirAgendamentos',
+                url: '/Agendamento/InserirAgendamento',
                 type: "POST",
                 dataType: "json",
                 data: dados,
                 success: function (response) {
                     if (response.success) {
                         alert("Agendamento(s) cadastrado(s) com sucesso!");
-                        $('#InserirAgendamento').modal('hide'); // Substitua 'seuModal' pelo ID do seu modal
-                        // Atualizar a página
-                        location.reload();
+                        $('#InserirAgendamento').modal('hide');  // Close the modal
+                        location.reload();  // Reload the page
                     } else {
                         alert("Erro ao cadastrar agendamento(s).");
                     }

@@ -16,20 +16,7 @@ namespace PortifolioDEV.Repositorio
             _context = context;
         }
 
-        public void Add(AgendamentoVM agendamento)
-        {
-            var tbAgendamento = new TbAgendamento()
-            {
-                DtHoraAgendamento = agendamento.DtHoraAgendamento,
-                DataAtendimento = agendamento.DataAtendimento,
-                Horario = agendamento.Horario,
-                IdUsuario = agendamento.IdUsuario,  // Vincula o usuário
-                IdServico = agendamento.IdServico   // Vincula o serviço
-            };
 
-            _context.TbAgendamentos.Add(tbAgendamento);
-            _context.SaveChanges();
-        }
 
         public void Delete(int id)
         {
@@ -45,23 +32,31 @@ namespace PortifolioDEV.Repositorio
             }
         }
 
-        public void Update(AgendamentoVM agendamento)
+        // Método para inserir um novo agendamento
+        public bool InserirAgendamento(DateTime dtHoraAgendamento, DateOnly dataAtendimento, TimeOnly horario, int IdUsuario, int IdServico)
         {
-            var tbAgendamento = _context.TbAgendamentos.FirstOrDefault(f => f.IdAgendamento == agendamento.Id);
-            if (tbAgendamento != null)
+            try
             {
-                tbAgendamento.DtHoraAgendamento = agendamento.DtHoraAgendamento;
-                tbAgendamento.DataAtendimento = agendamento.DataAtendimento;
-                tbAgendamento.Horario = agendamento.Horario;
-                tbAgendamento.IdUsuario = agendamento.IdUsuario;
-                tbAgendamento.IdServico = agendamento.IdServico;
+                // Criando uma instância do modelo AtendimentoVM
+                var atendimento = new TbAgendamento
+                {
+                    DtHoraAgendamento = dtHoraAgendamento,
+                    DataAtendimento = dataAtendimento,
+                    Horario = horario,
+                    IdUsuario = IdUsuario,
+                    IdServico = IdServico
+                };
 
-                _context.TbAgendamentos.Update(tbAgendamento);
-                _context.SaveChanges();
+                // Adicionando o atendimento ao contexto
+                _context.TbAgendamentos.Add(atendimento);
+                _context.SaveChanges(); // Persistindo as mudanças no banco de dados
+
+                return true; // Retorna true indicando sucesso
             }
-            else
+            catch (Exception ex)
             {
-                throw new Exception("Agendamento não encontrado.");
+                // Em caso de erro, pode-se logar a exceção (ex.Message)
+                return false; // Retorna false em caso de erro
             }
         }
 
