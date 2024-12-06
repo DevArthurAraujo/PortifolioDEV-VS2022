@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using PortifolioDEV.Models;
 using PortifolioDEV.ORM;
-using PortifolioDEV.Repositorio;
 using PortifolioDEV.Repositorios;
 using System.Diagnostics;
 
@@ -50,10 +49,21 @@ namespace PortifolioDEV.Controllers
                 // Passa a lista para o ViewBag para ser utilizada na view
                 ViewBag.Usuarios = selectList;
             }
-            
+
+            var listaHorario = new List<SelectListItem>
+            {
+                 new SelectListItem { Value = "8", Text = "08:00:00" },
+                 new SelectListItem { Value = "10", Text = "10:00:00" },
+                 new SelectListItem { Value = "13", Text = "13:00:00" },
+                 new SelectListItem { Value = "15", Text = "15:00:00" },
+                 new SelectListItem { Value = "17", Text = "17:00:00" },
+                 new SelectListItem { Value = "19", Text = "19:00:00" }
+            };
+
+            ViewBag.lstHorarios = listaHorario;
+
             // Buscar os agendamentos e incluir os nomes de Usuário e Serviço
             var agendamentos = _agendamentoRepositorio.ListarAgendamentos();
-
             return View(agendamentos);
         }
 
@@ -105,6 +115,28 @@ namespace PortifolioDEV.Controllers
                 // Em caso de erro inesperado, captura e exibe o erro
                 return Json(new { success = false, message = "Erro ao processar a solicitação. Detalhes: " + ex.Message });
             }
+        }
+
+        public IActionResult AlterarAgendamento(int id, string data, int servico, TimeOnly horario)
+        {
+
+            var rs = _agendamentoRepositorio.AlterarAgendamento(id, data, servico, horario);
+            if (rs)
+            {
+                return Json(new { success = true });
+            }
+            else
+            {
+                return Json(new { success = false });
+            }
+        }
+
+        public IActionResult ExcluirAgendamento(int id)
+        {
+
+            var rs = _agendamentoRepositorio.ExcluirAgendamento(id);
+            return Json(new { success = rs });
+
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

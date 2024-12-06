@@ -6,7 +6,7 @@ using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using System.Globalization;
 
-namespace PortifolioDEV.Repositorio
+namespace PortifolioDEV.Repositorios
 {
     public class AgendamentoRepositorio
     {
@@ -15,8 +15,6 @@ namespace PortifolioDEV.Repositorio
         {
             _context = context;
         }
-
-
 
 
         // Método para inserir um novo agendamento
@@ -44,6 +42,65 @@ namespace PortifolioDEV.Repositorio
             {
                 // Em caso de erro, pode-se logar a exceção (ex.Message)
                 return false; // Retorna false em caso de erro
+            }
+        }
+
+        public bool AlterarAgendamento(int id, string data, int servico, TimeOnly horario)
+        {
+            try
+            {
+                TbAgendamento agt = _context.TbAgendamentos.Find(id);
+                DateOnly dtHoraAgendamento;
+                if (agt != null)
+                {
+                    agt.IdServico = id;
+                    if (data != null)
+                    {
+                        if (DateOnly.TryParse(data, out dtHoraAgendamento))
+                        {
+                            agt.DataAtendimento = dtHoraAgendamento;
+                        }
+                    }
+
+                    // Corrigido a verificação do tipo TimeOnly
+                    if (horario != TimeOnly.MinValue)  // Verificando se o horário não é o valor padrão
+                    {
+                        agt.Horario = horario;
+                    }
+
+                    agt.IdServico = servico;
+                    _context.SaveChanges();
+                    return true;
+                }
+
+                return false;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        public bool ExcluirAgendamento(int id)
+        {
+            try
+            {
+
+
+                var agt = _context.TbAgendamentos.Where(a => a.IdAgendamento == id).FirstOrDefault();
+                if (agt != null)
+                {
+                    _context.TbAgendamentos.Remove(agt);
+
+                }
+                _context.SaveChanges();
+                return true;
+            }
+
+            catch (Exception)
+            {
+
+                return false;
             }
         }
 

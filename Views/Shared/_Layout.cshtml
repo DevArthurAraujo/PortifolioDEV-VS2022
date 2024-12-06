@@ -92,24 +92,29 @@
                         </span>
                         <div class="dropdown-content" style="display: none; position: absolute; background-color: #F7F5F2; width: 200px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; padding: 8px; border-radius: 3%; border: #ac0404 solid 1px; box-shadow: 5px #ac0404;">
                             <a href="/Usuario/Index" style="padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
-                                <i class="fa fa-users" aria-hidden="true" style="margin-right: 8px;"></i>Usuarios
+                                <i class="fa fa-users" aria-hidden="true" style="margin-right: 8px;"></i>
+                                Usuarios
                             </a>
                             <a href="/Agendamento/Index" style="padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
-                                <i class="fa fa-calendar" aria-hidden="true" style="margin-right: 8px;"></i>Agendamento Admin
+                                <i class="fa fa-calendar" aria-hidden="true" style="margin-right: 8px;"></i>
+                                Agendamento Admin
                             </a>
                             <a href="/Servico/Index" style="padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
-                                <i class="fas fa-gavel fa-lg" aria-hidden="true" style="margin-right: 8px;"></i>Serviço
+                                <i class="fas fa-gavel fa-lg" aria-hidden="true" style="margin-right: 8px;"></i>
+                                Serviço
                             </a>
                             <a href="#logout" style="padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
-                                <i class="fa fa-align-justify" aria-hidden="true" style="margin-right: 8px;"></i>Relatório
+                                <i class="fa fa-align-justify" aria-hidden="true" style="margin-right: 8px;"></i>
+                                Relatório
                             </a>
                             <a href="javascript:void(0);" onclick="logout()" style="padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
-                                <i class="fa fa-sign-out-alt" aria-hidden="true" style="margin-right: 8px;"></i> Sair
+                                <i class="fa fa-sign-out-alt" aria-hidden="true" style="margin-right: 8px;"></i>
+                                Sair
                             </a>
                         </div>
                     </div>
                 }
-                else
+                @if (tipoUsuario == "0")
                 {
                     <!-- Menu do Usuário -->
                     <div class="dropdown" style="position: relative; display: inline-block;">
@@ -119,14 +124,17 @@
                             <i class="fa fa-chevron-down" aria-hidden="true" style="color: #ac0404; margin-left: 5px;"></i>
                         </span>
                         <div class="dropdown-content" style="display: none; position: absolute; background-color: #F7F5F2; width: 200px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; padding: 8px; border-radius: 3%; border: #ac0404 solid 1px; box-shadow: 5px #ac0404;">
-                            <a href="/Agendamento/Gerenciamento_Agendamento_Usuario" style="padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
-                                <i class="fa fa-calendar" aria-hidden="true" style="margin-right: 8px;"></i>Agendamento User
+                            <a href="/Agendamento/Gerencimento_Agendamento_Usuario" style="padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
+                                <i class="fa fa-calendar" aria-hidden="true" style="margin-right: 8px;"></i>
+                                Agendamento User
                             </a>
-                            <a href="/Agendamento/Cadastro_Agendamento" style="padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
-                                <i class="fa fa-file" aria-hidden="true" style="margin-right: 8px;"></i>Cadastro Agendamento
+                            <a href="/Agendamento/Cadastro" style="padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
+                                <i class="fa fa-file" aria-hidden="true" style="margin-right: 8px;"></i>
+                                Cadastro Agendamento
                             </a>
                             <a href="javascript:void(0);" onclick="logout()" style="padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
-                                <i class="fa fa-sign-out-alt" aria-hidden="true" style="margin-right: 8px;"></i> Sair
+                                <i class="fa fa-sign-out-alt" aria-hidden="true" style="margin-right: 8px;"></i> 
+                                Sair
                             </a>
                         </div>
                     </div>

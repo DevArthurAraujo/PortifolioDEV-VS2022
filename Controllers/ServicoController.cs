@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using PortifolioDEV.Models;
-using PortifolioDEV.Repositorio;
 using PortifolioDEV.Repositorios;
 using System.Diagnostics;
 

@@ -1,7 +1,7 @@
 ﻿using PortifolioDEV.Models;
 using PortifolioDEV.ORM;
 
-namespace PortifolioDEV.Repositorio
+namespace PortifolioDEV.Repositorios
 {
     public class ServicoRepositorio
     {
