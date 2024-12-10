@@ -107,8 +107,17 @@ footer {
     margin-top: 2.5em;
     border-radius: 8px;
     box-shadow: 2px 0 10px -2px var(--red);
-    height: 590px;
+    height: 650px;
     overflow: hidden;
+}
+
+.cadastro-height {
+    background-color: var(--black) !important;
+    margin-top: 2.5em !important;
+    border-radius: 8px !important;
+    box-shadow: 2px 0 10px -2px #ac0404 !important;
+    height: 800px !important;
+    overflow: hidden !important;
 }
 
 label{

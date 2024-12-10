@@ -85,7 +85,7 @@
       ]
     },
     {
-      "Route": "css/gerenciamento_index.8872h5y56g.css",
+      "Route": "css/gerenciamento_index.bk1kkto5r1.css",
       "AssetFile": "css/gerenciamento_index.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -99,7 +99,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2512"
+          "Value": "2774"
         },
         {
           "Name": "Content-Type",
@@ -107,21 +107,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"GNYnCQhjIpNwQX66kEE1fbg0dORjKCv2CYmgl/EeyA4=\""
+          "Value": "\"6ywzaN8c45pJg+JDhn5gzKgzqfXyfJnI/WJxliI4Iss=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 04 Nov 2024 17:43:13 GMT"
+          "Value": "Tue, 10 Dec 2024 17:58:13 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "8872h5y56g"
+          "Value": "bk1kkto5r1"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-GNYnCQhjIpNwQX66kEE1fbg0dORjKCv2CYmgl/EeyA4="
+          "Value": "sha256-6ywzaN8c45pJg+JDhn5gzKgzqfXyfJnI/WJxliI4Iss="
         },
         {
           "Name": "label",
@@ -144,7 +144,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2512"
+          "Value": "2774"
         },
         {
           "Name": "Content-Type",
@@ -152,17 +152,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"GNYnCQhjIpNwQX66kEE1fbg0dORjKCv2CYmgl/EeyA4=\""
+          "Value": "\"6ywzaN8c45pJg+JDhn5gzKgzqfXyfJnI/WJxliI4Iss=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 04 Nov 2024 17:43:13 GMT"
+          "Value": "Tue, 10 Dec 2024 17:58:13 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-GNYnCQhjIpNwQX66kEE1fbg0dORjKCv2CYmgl/EeyA4="
+          "Value": "sha256-6ywzaN8c45pJg+JDhn5gzKgzqfXyfJnI/WJxliI4Iss="
         }
       ]
     },

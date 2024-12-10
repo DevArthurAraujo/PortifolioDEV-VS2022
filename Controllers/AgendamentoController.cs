@@ -69,6 +69,21 @@ namespace PortifolioDEV.Controllers
 
         public IActionResult Cadastro()
         {
+            var servicos = new ServicoRepositorio(_context);
+            var nomeServicos = servicos.ListarNomesServicos();
+            if (nomeServicos != null && nomeServicos.Any())
+            {
+                // Cria a lista de SelectListItem
+                var selectList = nomeServicos.Select(u => new SelectListItem
+                {
+                    Value = u.Id.ToString(),  // O valor do item será o ID do usuário
+                    Text = u.TipoServico             // O texto exibido será o nome do usuário
+                }).ToList();
+
+                // Passa a lista para o ViewBag para ser utilizada na view
+                ViewBag.lstTipoServico = selectList;
+            }
+
             return View();
         }
 
@@ -99,6 +114,32 @@ namespace PortifolioDEV.Controllers
             {
                 // Chama o método do repositório que realiza a inserção no banco de dados
                 var resultado = _agendamentoRepositorio.InserirAgendamento(dtHoraAgendamento, dataAtendimento, horario, IdUsuario, IdServico);
+
+                // Verifica o resultado da inserção
+                if (resultado)
+                {
+                    return Json(new { success = true, message = "Atendimento inserido com sucesso!" });
+                }
+                else
+                {
+                    return Json(new { success = false, message = "Erro ao inserir o atendimento. Tente novamente." });
+                }
+            }
+            catch (Exception ex)
+            {
+                // Em caso de erro inesperado, captura e exibe o erro
+                return Json(new { success = false, message = "Erro ao processar a solicitação. Detalhes: " + ex.Message });
+            }
+        }
+
+        public IActionResult InserirAgendamentoCliente(DateTime dtHoraAgendamento, DateOnly dataAtendimento, TimeOnly horario, int IdUsuario, int IdServico)
+        {
+            string id = Environment.GetEnvironmentVariable("USUARIO_ID");
+            int IdUsuarioLocal = Int32.Parse(id);
+            try
+            {
+                // Chama o método do repositório que realiza a inserção no banco de dados
+                var resultado = _agendamentoRepositorio.InserirAgendamento(dtHoraAgendamento, dataAtendimento, horario, IdUsuarioLocal, IdServico);
 
                 // Verifica o resultado da inserção
                 if (resultado)
