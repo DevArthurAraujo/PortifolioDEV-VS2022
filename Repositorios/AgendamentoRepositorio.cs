@@ -135,6 +135,43 @@ namespace PortifolioDEV.Repositorios
             return listAte;
         }
 
+        public List<AgendamentoVM> ListarAgendamentosClientes()
+        {
+            // Obtendo o ID do usuário a partir da variável de ambiente
+            string nome = Environment.GetEnvironmentVariable("USUARIO_NOME");
+
+            var listAtendimentos = new List<AgendamentoVM>();
+
+            // Inclui a navegação para carregar dados do usuário (e-mail, telefone)
+            var listTb = _context.TbAgendamentos
+                .Include(a => a.IdUsuarioNavigation) // Inclui a navegação para o usuário
+                .Include(a => a.IdServicoNavigation) // Inclui a navegação para o serviço
+                .Where(x => x.IdUsuarioNavigation.Nome == nome)
+                .ToList();
+
+            foreach (var item in listTb)
+            {
+                var agendamento = new AgendamentoVM
+                {
+                    Id = item.IdAgendamento,
+                    DtHoraAgendamento = item.DtHoraAgendamento,
+                    DataAtendimento = item.DataAtendimento,
+                    Horario = item.Horario,
+                    UsuarioNome = item.IdUsuarioNavigation != null ? item.IdUsuarioNavigation.Nome : "N/A", // Se nulo, atribui "N/A"
+                    UsuarioEmail = item.IdUsuarioNavigation != null ? item.IdUsuarioNavigation.Email : "N/A",
+                    UsuarioTelefone = item.IdUsuarioNavigation != null ? item.IdUsuarioNavigation.Telefone : "N/A",
+                    ServicoNome = item.IdServicoNavigation != null ? item.IdServicoNavigation.TipoServico : "N/A",
+                    ServicoValor = item.IdServicoNavigation != null ? item.IdServicoNavigation.Valor : 0 // Valor 0 se nulo
+                };
+
+                listAtendimentos.Add(agendamento);
+            }
+
+
+
+            return listAtendimentos;
+        }
+
         public List<AgendamentoVM> ConsultarAgendamento(string datap)
         {
             DateOnly data = DateOnly.ParseExact(datap, "yyyy-MM-dd", CultureInfo.InvariantCulture);

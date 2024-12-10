@@ -87,9 +87,12 @@ namespace PortifolioDEV.Controllers
             return View();
         }
 
-        public IActionResult Gerencimento_Agendamento_Usuario()
+        public IActionResult Gerenciamento_Agendamento_Usuario()
         {
-            return View();
+
+            // Buscar os agendamentos e incluir os nomes de Usuário e Serviço
+            var agendamentos = _agendamentoRepositorio.ListarAgendamentosClientes();
+            return View(agendamentos);
         }
 
         public IActionResult ConsultarAgendamento(string data)

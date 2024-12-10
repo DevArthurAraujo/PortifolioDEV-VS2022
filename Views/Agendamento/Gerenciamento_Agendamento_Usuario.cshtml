@@ -1,4 +1,7 @@
-﻿@{
+﻿@using System.Text.Json
+@model IEnumerable<PortifolioDEV.Models.AgendamentoVM>
+
+@{
     Layout = "~/Views/Shared/_Layout_Gerenciamento.cshtml";
 }
 
@@ -30,53 +33,67 @@
                 </div>
             </div>
 
-            <div class="table-container table-responsive">
-                <table id="TbClientes" class="table">
-                    <colgroup>
-                        <col class="tc-nome">
-                    </colgroup>
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Nome</th>
-                            <th>Email</th>
-                            <th>Telefone</th>
-                            <th>Agendamento para a Data</th>
-                            <th>Horario</th>
-                            <th>Serviço</th>
-                            <th>Valor</th>
-                            <th>Confirmação</th>
-                            <th class="editar">Editar</th>
-                            <th class="excluir">Excluir</th>
-                        </tr>
-                    </thead>
-                    <tbody>
+            <div class="table-container" style="max-height: 400px; overflow-y: auto;">
+                <div>
+                    <table id="TbAgendamentoBody" class="table" style="width: 100%; border-collapse: collapse;">
+                        <colgroup>
+                            <col class="tc-nome">
+                        </colgroup>
+                        <thead style="background-color: #ac0404; color: #F7F5F2;">
+                            <tr>
+                                <th style="color: #F7F5F2; border: 1px solid #ddd; background-color: #ac0404;">#</th>
+                                <th style="color: #F7F5F2; border: 1px solid #ddd; background-color: #ac0404;">Nome</th>
+                                <th style="color: #F7F5F2; border: 1px solid #ddd; background-color: #ac0404;">Email</th>
+                                <th style="color: #F7F5F2; border: 1px solid #ddd; background-color: #ac0404;">Telefone</th>
+                                <th style="color: #F7F5F2; border: 1px solid #ddd;background-color: #ac0404;">Data do Agendamento</th>
+                                <th style="color: #F7F5F2; border: 1px solid #ddd; background-color: #ac0404;">Horario</th>
+                                <th style="color: #F7F5F2; border: 1px solid #ddd; background-color: #ac0404;">Serviço</th>
+                                <th style="color: #F7F5F2; border: 1px solid #ddd; background-color: #ac0404;">Valor</th>
+                                <th class="editar" style="color: #F7F5F2; border: 1px solid #ddd; background-color: #ac0404;">Editar</th>
+                                <th class="excluir" style="color: #F7F5F2; border: 1px solid #ddd; background-color: #ac0404;">Excluir</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model != null && Model.Any())
+                            {
+                                @foreach (var agendamento in Model)
+                                {
+                                    <tr>
+                                        <td style="color: #ac0404; border: 1px solid #ddd;">@agendamento.Id</td>
+                                        <td style="color: #ac0404; border: 1px solid #ddd;">@agendamento.UsuarioNome</td> <!-- Nome do usuário -->
+                                        <td style="color: #ac0404; border: 1px solid #ddd;">@agendamento.UsuarioEmail</td> <!-- Email do usuário -->
+                                        <td style="color: #ac0404; border: 1px solid #ddd;">@agendamento.UsuarioTelefone</td> <!-- Telefone do usuário -->
+                                        <td style="color: #ac0404; border: 1px solid #ddd;">@agendamento.DataAtendimento</td> <!-- Data do agendamento -->
+                                        <td style="color: #ac0404; border: 1px solid #ddd;">@agendamento.Horario</td> <!-- Hora do agendamento -->
+                                        <td style="color: #ac0404; border: 1px solid #ddd;">@agendamento.ServicoNome</td> <!-- Nome do serviço -->
+                                        <td style="color: #ac0404; border: 1px solid #ddd;">@agendamento.ServicoValor</td> <!-- Valor do serviço -->
 
-                        <tr>
-                            <td>Id</td>
-                            <td>Nome</td>
-                            <td>Email</td>
-                            <td>Telefone</td>
-                            <td>AgendarData</td>
-                            <td>Horario</td>
-                            <td>Servico</td>
-                            <td>Valor</td>
-                            <td>Confirmacao</td>
-
-                            <td class="text-center">
-                                <button class="btn btn-default" onclick="definirEdt('Id','Nome', 'Email', 'Telefone', 'AgendarData','Horario', 'Servico', 'Valor', 'Confirmacao')" data-bs-toggle="modal" data-bs-target="#EditarAgendamento">
-                                    <i class="fa fa-edit" style="color: #F7F5F2;"></i>
-                                </button>
-                            </td>
-                            <td class="text-center">
-                                <button class="btn btn-default" onclick="definirExc('Id','Nome', 'Email', 'Telefone', 'AgendarData','Horario', 'Servico', 'Valor', 'Confirmacao')" data-bs-toggle="modal" data-bs-target="#ExcluirAgendamento">
-                                    <i class="fa fa-trash" style="color: #F7F5F2;"></i>
-                                </button>
-                            </td>
-                        </tr>
-
-                    </tbody>
-                </table>
+                                        <td class="text-center" style="color: #ac0404; border: 1px solid #ddd;">
+                                            <button class="btn btn-default"
+                                                    onclick="definirEdt(@agendamento.Id, '@agendamento.UsuarioNome', '@agendamento.UsuarioEmail', '@agendamento.UsuarioTelefone', '@agendamento.DataAtendimento', '@agendamento.Horario', '@agendamento.ServicoNome', '@agendamento.ServicoValor')"
+                                                    data-bs-toggle="modal" data-bs-target="#EditarAgendamento">
+                                                <i class="fa fa-edit" style="color: #F7F5F2;"></i>
+                                            </button>
+                                        </td>
+                                        <td class="text-center" style="color: #ac0404; border: 1px solid #ddd;">
+                                            <button class="btn btn-default"
+                                                    onclick="definirExc(@agendamento.Id, '@agendamento.UsuarioNome', '@agendamento.UsuarioEmail', '@agendamento.UsuarioTelefone', '@agendamento.DataAtendimento', '@agendamento.Horario', '@agendamento.ServicoNome', '@agendamento.ServicoValor')"
+                                                    data-bs-toggle="modal" data-bs-target="#ExcluirAgendamento">
+                                                <i class="fa fa-trash" style="color: #F7F5F2;"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                            else
+                            {
+                                <tr>
+                                    <td colspan="11" style="text-align: center; color: #EAE7DC; padding: 8px;">Nenhum atendimento encontrado.</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
         </div>
@@ -394,37 +411,51 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script>
 
-        function definirEdt(id, Nome, Email, Senha, TipoUsuario, Telefone) {
+        var listaOriginalHorario;
+        // Impede a digitação manual no campo de data
+        document.getElementById('data_agdt').addEventListener('keydown', function (e) {
+            e.preventDefault(); // Bloqueia qualquer entrada do teclado
+        });
 
-            $('#IdEdt').val(id);
-            $('#EditNome').val(Nome);
-            $('#EditSenha').val(Senha);
-            $('#EditEmail').val(Email);
-            $('#EditTel').val(Telefone);
+        $(document).ready(function () {
+            $('input[type="checkbox"]').click(function () {
+                var isChecked = $(this).prop("checked");
+                var groupId = $(this).attr("data-group");
 
+                if (isChecked) {
+                    $('input[type="checkbox"][data-group="' + groupId + '"]').not($(this)).prop("checked", false);
+                }
+            });
+        });
 
-            var senhaValue = "";
-            if (Senha) {
-                $('#EditSenha').val(Senha);
-                senhaValue = Senha;
-            }
+        function definirExc(id, Nome, Email, Telefone, Data, Horario, Tecnica, Val) {
 
-
-            if ($('#DropTipoUsuarioEdit').length > 0) {
-                $('#DropTipoUsuarioEdit option').filter(function () {
-                    return $(this).val() === TipoUsuario;
-                }).prop('selected', true);
-                $('#DropTipoUsuarioEdit').trigger('chosen:updated');
-            } else {
-                console.error("DropDownList não encontrado.");
-            }
-        }
-
-        function definirExc(id, Nome, Email, Telefone) {
-            $('#IdExc').val(id);
+            $('#ExcId').val(id);
             $('#ExcNome').val(Nome);
             $('#ExcEmail').val(Email);
             $('#ExcTel').val(Telefone)
+            $('#ExcData').val(Data)
+            $('#ExcHorario').val(Horario)
+            $('#ExcTecnica').val(Tecnica)
+            $('#ExcVal').val(Val)
+
+         }
+
+        function definirEdt(id, Nome, Email, Telefone, Data, Horario, Tecnica, Val, Conf, idservico) {
+            console.log(idservico)
+            $('#EdtId').val(id);
+            $('#EdtNome').val(Nome);
+            $('#EdtEmail').val(Email);
+            $('#EdtTel').val(Telefone);
+            $('#EdtData').val(Data);
+            $('#EdtHorario').val(Horario);
+            $('#EdtVal').val(Val);
+
+            $('#EdtTipoServico option').each(function () {
+                if ($(this).text() === Tecnica) {
+                    $(this).prop('selected', true);
+                }
+            });
         }
 
         function InserirUsuario() {

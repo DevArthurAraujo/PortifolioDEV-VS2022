@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Update="Views\Agendamento\Gerencimento_Agendamento_Usuario.cshtml">
+    <Content Update="Views\Agendamento\Gerenciamento_Agendamento_Usuario.cshtml">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
