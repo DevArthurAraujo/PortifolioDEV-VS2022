@@ -226,8 +226,12 @@
     <!-------------------- Services Area (Start) -------------------->
     <section class="service" id="service">
 
-        <div class="heading">
+        <div class="heading" style="text-align: center">
             <h2>Meus <span>Serviços</span></h2>
+            <br />
+            <button type="button" id="agendarButton" class="btn btn-secondary" data-bs-dismiss="modal" onclick="verificarUsuarioLogado()">
+                Agendar
+            </button>
         </div>
 
         <div class="box-container">
@@ -770,6 +774,19 @@
 
     <!--Submenu-->
     <script>
+
+        function verificarUsuarioLogado() {
+            var usuarioId = '@Environment.GetEnvironmentVariable("USUARIO_ID")'; // Variável do ambiente passada pelo backend
+            console.log(usuarioId)
+            if (usuarioId !== "") { // Verifica se o usuário está logado
+                // Se o usuário estiver logado, redireciona para a página de agendamento
+                window.location.href = "/Agendamento/Cadastro";
+            } else {
+                // Se não estiver logado, redireciona para a página de login
+                window.location.href = "/Usuario/Login";
+            }
+        }
+
         // Script to handle the dropdown functionality
         document.querySelector('.dropdown').addEventListener('mouseover', function () {
             this.querySelector('.dropdown-content').style.display = 'block';

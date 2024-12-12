@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9VrvaUWgXp2PAcvpTa77CA9jElO3AMKg/H/NPUPYr5o=",
+  "Hash": "lb6PqgIRZTSUCiZSpOlCMLcgFI5HyFevhFenrTIFQG4=",
   "Source": "PortifolioDEV",
   "BasePath": "_content/PortifolioDEV",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "bk1kkto5r1",
-      "Integrity": "6ywzaN8c45pJg+JDhn5gzKgzqfXyfJnI/WJxliI4Iss=",
+      "Fingerprint": "4d3816ue4z",
+      "Integrity": "+GMlKDe2d9bIeKcGEWpkh0BucUTgDMEfmpCmgc0D4KM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\gerenciamento_index.css"
@@ -4198,7 +4198,7 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/gerenciamento_index.bk1kkto5r1.css",
+      "Route": "css/gerenciamento_index.4d3816ue4z.css",
       "AssetFile": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\css\\gerenciamento_index.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -4208,7 +4208,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2774"
+          "Value": "2776"
         },
         {
           "Name": "Content-Type",
@@ -4216,11 +4216,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"6ywzaN8c45pJg+JDhn5gzKgzqfXyfJnI/WJxliI4Iss=\""
+          "Value": "\"+GMlKDe2d9bIeKcGEWpkh0BucUTgDMEfmpCmgc0D4KM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 17:58:13 GMT"
+          "Value": "Thu, 12 Dec 2024 18:47:54 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4230,7 +4230,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "bk1kkto5r1"
+          "Value": "4d3816ue4z"
         },
         {
           "Name": "label",
@@ -4238,7 +4238,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-6ywzaN8c45pJg+JDhn5gzKgzqfXyfJnI/WJxliI4Iss="
+          "Value": "sha256-+GMlKDe2d9bIeKcGEWpkh0BucUTgDMEfmpCmgc0D4KM="
         }
       ]
     },
@@ -4253,7 +4253,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2774"
+          "Value": "2776"
         },
         {
           "Name": "Content-Type",
@@ -4261,11 +4261,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"6ywzaN8c45pJg+JDhn5gzKgzqfXyfJnI/WJxliI4Iss=\""
+          "Value": "\"+GMlKDe2d9bIeKcGEWpkh0BucUTgDMEfmpCmgc0D4KM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 17:58:13 GMT"
+          "Value": "Thu, 12 Dec 2024 18:47:54 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4275,7 +4275,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-6ywzaN8c45pJg+JDhn5gzKgzqfXyfJnI/WJxliI4Iss="
+          "Value": "sha256-+GMlKDe2d9bIeKcGEWpkh0BucUTgDMEfmpCmgc0D4KM="
         }
       ]
     },

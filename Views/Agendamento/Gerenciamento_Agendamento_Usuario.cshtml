@@ -5,8 +5,9 @@
     Layout = "~/Views/Shared/_Layout_Gerenciamento.cshtml";
 }
 
+<body>
 
-<body>  
+
 
     <section class="maneger-page-section">
         <div class="container page-maneger">
@@ -26,12 +27,14 @@
                     </div>
                     <div class="col-md-6 text-md-end">
                         <!-- Alteração para "text-md-end" para alinhar à direita apenas em telas médias e maiores -->
-                        <button class="btn btn-danger btn-lg" onclick="" data-bs-toggle="modal" data-bs-target="#InserirAgendamento">
+                        <!--<button type="button" onclick="@Url.Action("Cadastro", "Agendamento")" class="btn btn-danger btn-lg">-->
+                        <button type="button" onclick="window.location.href = '/Agendamento/Cadastro';" class="btn btn-danger btn-lg">
                             <i class="fa fa-plus"></i> Adicionar Agendamento
                         </button>
                     </div>
                 </div>
             </div>
+
 
             <div class="table-container" style="max-height: 400px; overflow-y: auto;">
                 <div>
@@ -98,6 +101,12 @@
 
         </div>
 
+        <!-- Contador de Registros Centralizado com Fonte Maior -->
+        <div style="text-align: center; margin-top: 10px;">
+            <strong style="font-size: 18px; color: #ac0404;">Total de Usuários: <span id="registroCount">0</span></strong>
+        </div>
+
+
         <div class="modal fade" id="ExcluirAgendamento" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -109,131 +118,51 @@
                         <form>
                             <div class="mb-3">
                                 <label for="nome">Nome</label>
-                                <input type="text" id="ExcNome" class="form-control" placeholder="Digite seu nome..." readonly>
+                                <input type="text" id="ExcNome" class="form-control" readonly>
 
                             </div>
                             <div class="mb-3">
                                 <label for="email">Email</label>
-                                <input type="email" id="ExcEmail" class="form-control" placeholder="Digite seu email..." readonly>
+                                <input type="email" id="ExcEmail" class="form-control" readonly>
 
                             </div>
                             <div class="mb-3">
                                 <label for="telefone">Telefone</label>
-                                <input type="text" id="ExcTel" class="form-control" placeholder="Digite seu telefone..." readonly>
+                                <input type="text" id="ExcTel" class="form-control" readonly>
 
                             </div>
+
                             <div class="mb-3">
-                                <label for="telefone">Data de Agendamento</label>
-                                <input type="date" id="ExcAgendarData" class="form-control" placeholder="01/01/2000" readonly>
+                                <label for="telefone">Data do Agendamento</label>
+                                <input type="text" id="ExcData" class="form-control" readonly>
 
                             </div>
                             <div class="mb-3">
                                 <label for="telefone">Horario</label>
-                                <input type="text" id="ExcHorario" class="form-control" placeholder="08:00" readonly>
+                                <input type="text" id="ExcHorario" class="form-control" readonly>
 
                             </div>
                             <div class="mb-3">
-                                <label for="telefone">Servico</label>
-                                <input type="text" id="ExcServico" class="form-control" placeholder="Digite seu telefone..." readonly>
+                                <label for="telefone">Tecnica</label>
+                                <input type="text" id="ExcTecnica" class="form-control" readonly>
 
                             </div>
                             <div class="mb-3">
                                 <label for="telefone">Valor</label>
-                                <input type="text" id="ExcVal" class="form-control" placeholder="R$ 100,00" readonly>
-
-                            </div>
-                            <div class="mb-3">
-                                <label for="telefone">Confirmação</label>
-                                <input type="text" id="ExcConf" class="form-control" placeholder="Confirmado" readonly>
+                                <input type="text" id="ExcVal" class="form-control" readonly>
 
                             </div>
 
+                            <input type="hidden" id="ExcId" class="form-control" readonly>
 
                         </form>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                            <button type="button" class="btn btn-danger" onclick="ExcluirAgendamentoo()">Excluir</button>
+                            <button type="button" class="btn btn-danger" onclick="ExcluirAgendamento()">Excluir</button>
                         </div>
 
                     </div>
 
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="InserirAgendamento" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable" style="max-height: 80vh;">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2 class="modal-title" id="exampleModalLabel">Adicionar Agendamento</h2>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="mb-3 d-flex align-items-center">
-                                <input type="hidden" id="TxtId" class="form-check-input" value="10:00" style="margin-right: 10px;" disabled>
-                            </div>
-
-                            <!-- Adicione o atributo data-group para cada grupo de checkboxes -->
-                            <div class="mb-3 d-flex align-items-center">
-                                <label for="frutas">Escolha uma data:</label>
-                                <input id="data_agdt" type="date" class="form-control" style="width: 300px;" placeholder="Escolha a data do agendamento" oninput="consultarAgendamento();consultarAgendamentoManutencao()">
-                            </div>
-                            <div class="mb-3 d-flex align-items-center">
-                                <label for="frutas">Escolha um serviço:</label>
-                                <select id="frutas" name="frutas">
-                                    <option value="web">Construção completa de sites - Front e Back</option>
-                                    <option value="construcao">Construção e Projeção de Banco de Dados</option>
-                                    <option value="migracao" selected>Migração para cloud</option>
-                                    <option value="administracao">Administração e Analise de Bancos de Dados</option>
-                                    <option value="dashboard">Criação de Dashboards</option>
-                                    <option value="suporte">Suporte pos-execução</option>
-                                </select>
-                            </div>
-
-                            <div class="mb-3 d-flex align-items-center">
-                                <input type="options" id="chk08" class="form-check-input" value="08:00" style="margin-right: 10px;" data-group="horario">
-                                <label class="form-check-label" for="chk08">Atendimento das 8:00</label>
-                                <span id="Span08" style="color:red;"></span>
-                            </div>
-
-                            <div class="mb-3 d-flex align-items-center">
-                                <input type="options" id="chk10" class="form-check-input" value="10:00" style="margin-right: 10px;" data-group="horario">
-                                <label class="form-check-label" for="chk10">Atendimento das 10:00</label>
-                                <span id="Span10" style="color:red;"></span>
-                            </div>
-
-                            <div class="mb-3 d-flex align-items-center">
-                                <input type="options" id="chk13" class="form-check-input" value="13:00" style="margin-right: 10px;" data-group="horario">
-                                <label class="form-check-label" for="chk13">Atendimento das 13:00</label>
-                                <span id="Span13" style="color:red;"></span>
-                            </div>
-
-                            <div class="mb-3 d-flex align-items-center">
-                                <input type="options" id="chk15" class="form-check-input" value="15:00" style="margin-right: 10px;" data-group="horario">
-                                <label class="form-check-label" for="chk15">Atendimento das 15:00</label>
-                                <span id="Span15" style="color:red;"></span>
-                            </div>
-
-                            <div class="mb-3 d-flex align-items-center">
-                                <input type="options" id="chk17" class="form-check-input" value="17:00" style="margin-right: 10px;" data-group="horario">
-                                <label class="form-check-label" for="chk17">Atendimento das 17:00</label>
-                                <span id="Span17" style="color:red;"></span>
-                            </div>
-
-                            <div class="mb-3 d-flex align-items-center">
-                                <input type="options" id="chk19" class="form-check-input" value="19:00" style="margin-right: 10px;" data-group="horario">
-                                <label class="form-check-label" for="chk19">Atendimento das 19:00</label>
-                                <span id="Span19" style="color:red;"></span>
-                            </div>
-
-                            <input type="hidden" id="IdEdt" value="">
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                        <button type="button" class="btn btn-primary" onclick="InserirAgendamentos()">Adicionar</button>
-                    </div>
                 </div>
             </div>
         </div>
@@ -264,47 +193,47 @@
                             </div>
                             <div class="mb-3">
                                 <label for="telefone">Data do agendamento</label>
-                                <input type="date" id="EdtData" class="form-control" readonly>
+                                <input type="text" id="EdtData" class="form-control" readonly>
 
                             </div>
-
                             <div class="mb-3">
                                 <label for="telefone">Horario</label>
                                 <input type="text" id="EdtHorario" class="form-control" readonly>
 
                             </div>
                             <div class="mb-3">
-                                <label for="telefone">Serviço</label>
-                                <input type="text" id="EdtHorario" class="form-control" readonly>
-
-                            </div>
-                            <div class="mb-3">
                                 <label for="telefone">Valor</label>
                                 <input type="text" id="EdtVal" class="form-control" readonly>
-
                             </div>
-                            <div class="mb-3">
-                                <label for="telefone">Confirmação</label>
-                                <input type="text" id="EdtConf" class="form-control" readonly>
-
+                            <div class="mb-3 row">
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-center">
+                                        <label for="telefone" class="me-2">Tipo de Serviço</label>
+                                        <label style="color:red">*</label>
+                                    </div>
+                                    @Html.DropDownList("EdtTipoServico",
+                                             new SelectList(ViewBag.lstTipoServico, "Value", "Text", null),
+                                             "Escolha o serviço",
+                                             new { @class = "form-control", @style = "width:450px; background-color: #EAE7DC; color: #333;", required = "required" })
+                                </div>
                             </div>
 
                             <div class="mb-3">
                                 <div class="mb-3 d-flex align-items-center">
-                                    <br />
-                                    <input type="checkbox" id="chkR" value="08:00" style="margin-right: 10px;">
-                                    <label for="chkR">Reagendamento</label>
+                                    <input type="checkbox" id="chkR" value="08:00" class="form-check-input" style="margin-right: 10px;">
+                                    <label for="chkR" class="form-check-label ms-2">Reagendamento</label>
                                 </div>
                             </div>
                             <div id="divCampos" style="border: 2px solid #000; padding: 10px; margin: 10px; display: none;">
-                                <div class="mb-3">
-                                    <input id="data_a" type="text" class="form-control" style="width: 300px;" placeholder="Escolha a data do agendamento" oninput="consultarAgendamentoEdt();consultarAgendamentoManutencaoEdt()">
+                                <!-- Campo de data -->
+                                <div class="mb-3 d-flex align-items-center">
+                                    <input id="data_a" type="date" class="form-control" style="width: 300px;" placeholder="Escolha a data do agendamento" oninput="consultarAgendamento()" min="{{ today }}">
                                 </div>
                                 <div class="mb-3 d-flex align-items-center">
-                                    
+                                    @Html.DropDownList("DropHorario", ViewBag.lstHorarios, "Escolha o Horario", new { @class = "chosen-select form-control", @style = "width:420px;" })
                                 </div>
                             </div>
-                            <input type="hidden" id="IdEdt" class="form-control" readonly>
+                            <input type="hidden" id="EdtId" class="form-control" readonly>
                         </form>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
@@ -317,91 +246,9 @@
             </div>
         </div>
 
-        <div class="modal fade" id="InserirAgendamentoM" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable" style="max-height: 80vh;">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2 class="modal-title" id="exampleModalLabel">Adicionar Agendamento de Manutenção</h2>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="mb-3 d-flex align-items-center">
-                                <input type="hidden" id="TxtIdM" class="form-check-input" value="10:00" style="margin-right: 10px;" disabled>
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="telefone">Serviço</label>
-                                
-                            </div>
-                            <div class="mb-3">
-                                <label for="telefone">Manutenção diponivel para esse serviço</label>
-                                
-                            </div>
-                            <div class="mb-3 d-flex align-items-center">
-                                <input id="data_agdtM" type="text" class="form-control" style="width: 300px;" placeholder="Escolha a data do agendamento" oninput="consultarAgendamentoM();consultarAgendamentoManutencaoM()">
-                            </div>
-                            <div class="mb-3 d-flex align-items-center">
-                                <input type="checkbox" id="chk08M" class="form-check-input" value="08:00" style="margin-right: 10px;" data-group="horario" disabled>
-                                <label class="form-check-label" for="chk08">Atendimento das 8:00</label>
-                                <span id="Span08M" style="color:red;"></span>
-                            </div>
-
-                            <div class="mb-3 d-flex align-items-center">
-                                <input type="checkbox" id="chk10M" class="form-check-input" value="10:00" style="margin-right: 10px;" data-group="horario" disabled>
-                                <label class="form-check-label" for="chk10">Atendimento das 10:00</label>
-                                <span id="Span10M" style="color:red;"></span>
-                            </div>
-
-                            <div class="mb-3 d-flex align-items-center">
-                                <input type="checkbox" id="chk13M" class="form-check-input" value="13:00" style="margin-right: 10px;" data-group="horario" disabled>
-                                <label class="form-check-label" for="chk13">Atendimento das 13:00</label>
-                                <span id="Span13M" style="color:red;"></span>
-                            </div>
-
-                            <div class="mb-3 d-flex align-items-center">
-                                <input type="checkbox" id="chk15M" class="form-check-input" value="15:00" style="margin-right: 10px;" data-group="horario" disabled>
-                                <label class="form-check-label" for="chk15">Atendimento das 15:00</label>
-                                <span id="Span15M" style="color:red;"></span>
-                            </div>
-
-                            <div class="mb-3 d-flex align-items-center">
-                                <input type="checkbox" id="chk17M" class="form-check-input" value="17:00" style="margin-right: 10px;" data-group="horario" disabled>
-                                <label class="form-check-label" for="chk17">Atendimento das 17:00</label>
-                                <span id="Span17M" style="color:red;"></span>
-                            </div>
-
-                            <div class="mb-3 d-flex align-items-center">
-                                <input type="checkbox" id="chk19M" class="form-check-input" value="19:00" style="margin-right: 10px;" data-group="horario" disabled>
-                                <label class="form-check-label" for="chk19">Atendimento das 19:00</label>
-                                <span id="Span19M" style="color:red;"></span>
-                            </div>
-
-                            <input type="hidden" id="IdEdt" value="">
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                        <button type="button" class="btn btn-primary" onclick="InserirAgendamentoManutencao()">Adicionar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
 
     </section>
 
-    <!--Butao Voltar-->
-    <section class="container text-center">
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <div>
-                <button type="button" id="send-button2" class="nav-link active btn btn-danger btn-block" style="flex: 1; margin-left: 5px;" onclick="window.location.href = '/Home/Index';">
-                    Voltar
-                </button>
-            </div>
-        </div>
-    </section>
 
 
     <script src="~/lib/swiper/swiper-bundle.min.js"></script>
@@ -410,12 +257,7 @@
 
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-
         var listaOriginalHorario;
-        // Impede a digitação manual no campo de data
-        document.getElementById('data_agdt').addEventListener('keydown', function (e) {
-            e.preventDefault(); // Bloqueia qualquer entrada do teclado
-        });
 
         $(document).ready(function () {
             $('input[type="checkbox"]').click(function () {
@@ -439,10 +281,10 @@
             $('#ExcTecnica').val(Tecnica)
             $('#ExcVal').val(Val)
 
-         }
+        }
 
-        function definirEdt(id, Nome, Email, Telefone, Data, Horario, Tecnica, Val, Conf, idservico) {
-            console.log(idservico)
+        function definirEdt(id, Nome, Email, Telefone, Data, Horario, Tecnica, Val, Conf) {
+
             $('#EdtId').val(id);
             $('#EdtNome').val(Nome);
             $('#EdtEmail').val(Email);
@@ -458,173 +300,219 @@
             });
         }
 
-        function InserirUsuario() {
+        $(document).ready(function () {
+            $('#EditarAgendamento').on('show.bs.modal', function () {
+                $('#chkR').prop('checked', false);
+                $('#divCampos').hide();
+            });
+        });
 
-            var nome = $('#Nome').val();
-            var email = $('#Email').val();
-            var senha = $('#Senha').val();
-            var telefone = $('#Telefone').val();
-            var tipoUsuario = $('#DropTipoUsuario option:selected').val();
+        $(document).ready(function () {
 
-            if (nome.trim() === "") {
-                alert("Por favor, preencha o campo Nome.");
-                return;
-            }
-            if (senha.trim() === "") {
-                alert("Por favor, preencha o campo Senha.");
-                return;
-            }
-            if (email.trim() === "") {
-                alert("Por favor, insira um email válido.");
-                return;
-            }
+            listaOriginalHorario = @Html.Raw(JsonSerializer.Serialize(ViewBag.lstHorarios));
+            document.getElementById('divCampos').style.display = 'none';
 
-            if (tipoUsuario === "Escolha o Tipo de Usuário") {
-                alert("Por favor, selecione o tipo de usuário.");
-                return;
-            }
+            // Adiciona o ouvinte de evento ao checkbox
+            document.getElementById('chkR').addEventListener('change', function () {
+                var display = this.checked ? 'block' : 'none';
+                document.getElementById('divCampos').style.display = display;
+            });
+        });
 
-            if (telefone.trim() === "") {
-                alert("Por favor, insira um número de telefone válido.");
-                return;
+        $(document).ready(function () {
+            // Função para atualizar o contador de registros visíveis
+            function atualizarContador() {
+                var visibleRows = $('#TbAgendamentoBody tbody tr:visible').length; // Conta as linhas visíveis
+                $('#registroCount').text(visibleRows); // Atualiza o contador
             }
 
+            // Quando o usuário digitar no campo de filtro
+            $('#filtro').on('keyup', function () {
+                var value = $(this).val().toLowerCase(); // Pega o valor do campo de filtro e converte para minúsculas
+
+                // Filtra as linhas do corpo da tabela
+                $('#TbAgendamentoBody tbody tr').each(function () {
+                    // Verifica se qualquer célula na linha contém o valor digitado no filtro
+                    var rowText = $(this).text().toLowerCase();
+                    // Exibe ou oculta a linha, dependendo de conter o valor
+                    $(this).toggle(rowText.indexOf(value) > -1);
+                });
+
+                // Atualiza o contador após filtrar as linhas
+                atualizarContador();
+            });
+
+            // Inicializa o contador de registros ao carregar a página
+            atualizarContador();
+        });
+
+        function atualizarDropDownHorario(lista) {
+
+            $("#DropHorario").empty();
+            $.each(lista, function (index, item) {
+                $("#DropHorario").append($("<option></option>")
+                    .attr("value", item.Value)
+                    .text(item.Text));
+            });
+        }
+
+        function consultarAgendamentoEdt() {
+
+            var data = $("#data_a").val();
+
+            // Resetar o DropDownList para a lista original
+            if (listaOriginalHorario) {
+                atualizarDropDownHorario(listaOriginalHorario);
+            }
+
+            $.ajax({
+                type: "GET",
+                url: "/Agendamento/ConsultarAgendamento",
+                data: { data: data },
+                success: function (response) {
+                    response.forEach(function (item) {
+                        switch (item.horario) {
+                            case "08:00:00":
+                                $("#DropHorario option[value='8']").remove();
+                                break;
+                            case "10:00:00":
+                                $("#DropHorario option[value='10']").remove();
+                                break;
+                            case "13:00:00":
+                                $("#DropHorario option[value='13']").remove();
+                                break;
+                            case "15:00:00":
+                                $("#DropHorario option[value='15']").remove();
+                                break;
+                            case "17:00:00":
+                                $("#DropHorario option[value='17']").remove();
+                                break;
+                            case "19:00:00":
+                                $("#DropHorario option[value='19']").remove();
+                                break;
+                            default:
+                                break;
+                        }
+                    });
+                },
+                error: function (error) {
+                    // Manipule os erros aqui
+                    console.error("Erro na requisição AJAX:", error);
+                }
+            });
+        }
+
+        function obterDataHoraFormatada() {
+            // Obtém a data e hora atuais
+            var dataHoraAtual = new Date();
+
+            // Formata a data e hora para o formato desejado (por exemplo, "yyyy-MM-dd HH:mm:ss.fff")
+            var dataHoraFormatada = dataHoraAtual.getFullYear() + "-" +
+                ("0" + (dataHoraAtual.getMonth() + 1)).slice(-2) + "-" +
+                ("0" + dataHoraAtual.getDate()).slice(-2) + " " +
+                ("0" + dataHoraAtual.getHours()).slice(-2) + ":" +
+                ("0" + dataHoraAtual.getMinutes()).slice(-2) + ":" +
+                ("0" + dataHoraAtual.getSeconds()).slice(-2) + "." +
+                ("00" + dataHoraAtual.getMilliseconds()).slice(-3);
+
+            // Retorna a data e hora formatada
+            return dataHoraFormatada;
+        }
+
+        function AlterarAgendamento() {
+
+            var id = $("#EdtId").val();
+            var servico = $('#EdtTipoServico option:selected').val();
+            var data;
+            var horario;
+            if (!servico != 0) {
+                alert("Por favor, preencha o campo Tecnica.");
+                return;
+            }
+            if ($('#chkR').prop('checked')) {
+                data = $("#data_a").val(),
+                    horario = $('#DropHorario option:selected').text()
+
+                if (!data) {
+                    alert("Por favor, preencha o campo data.");
+                    return;
+                }
+                if (!horario) {
+                    alert("Por favor, preencha o campo horário.");
+                    return;
+                }
 
 
+
+
+            }
+            else {
+
+                data = null,
+                    horario = ""
+
+            }
             var dados = {
-                Nome: nome,
-                Email: email,
-                Senha: senha,
-                Telefone: telefone,
-                TipoUsuario: tipoUsuario
+                id: id,
+                data: data,
+                servico: servico,
+                horario: horario
             };
 
-            // Faça a chamada AJAX
+            console.log(dados);
             $.ajax({
-                url: '/Usuario/InserirUsuario',
+                url: '/Agendamento/AlterarAgendamento',
                 type: "POST",
                 dataType: "json",
                 data: dados,
-                success: function (resultado) {
-                    if (resultado.success) {
-                        alert(resultado.message);  // Exibe a mensagem de sucesso
-                        // Fecha o modal
-                        $('#InserirUsuario').modal('hide');
-                        // Recarrega a págInserirUsuarioina
-                        location.reload();
-                    } else {
-                        alert(resultado.message);  // Exibe a mensagem de falha
-                    }
-                },
-                error: function () {
-                    alert('Erro na requisição AJAX.');
-                }
-            });
-        }
-
-        function AlterarUsuario() {
-            var id = $("#IdEdt").val();
-            var nome = $("#EditNome").val();
-            var senha = $("#EditSenha").val();
-            var email = $("#EditEmail").val();
-            var tel = $('#EditTel').val();
-            var tipoCli = $('#DropTipoUsuarioEdit').val(); // Obtém o valor do tipo de cliente, não apenas o texto
-
-            // Validação do campo 'Nome'
-            if (!nome) {
-                alert("Por favor, preencha o campo Nome.");
-                return;
-            }
-
-            // Validação do campo 'Senha'
-            if (!senha) {
-                alert("Por favor, preencha o campo Senha.");
-                return;
-            }
-
-            // Validação do campo 'Email'
-            if (!email) {
-                alert("Por favor, preencha o campo Email.");
-                return;
-            }
-
-            // Validação do campo 'Telefone'
-            if (!tel) {
-                alert("Por favor, preencha o campo Telefone.");
-                return;
-            }
-
-            // Validação do campo 'Tipo de Cliente'
-            if (!tipoCli) {
-                alert("Por favor, selecione o Tipo de Cliente.");
-                return;
-            }
-
-            // Crie um objeto com os dados
-            var dados = {
-                Id: id,
-                Nome: nome,
-                Senha: senha,
-                Email: email,
-                Telefone: tel,
-                TipoUsuario: tipoCli
-            };
-
-            // Faça a chamada AJAX para o servidor
-            $.ajax({
-                type: "POST",
-                url: "/Usuario/AlterarUsuario",
-                contentType: "application/json; charset=utf-8",
-                data: JSON.stringify(dados),
                 success: function (response) {
-                    // Manipule a resposta do servidor
                     if (response.success) {
-                        alert("Cliente alterado com sucesso!");
-                        // Feche o modal de edição se necessário
-                        $('#FormEditar').modal('hide');
-                        // Recarregue a página se necessário
+                        alert("Agendamento(s) Alterados(s) com sucesso!");
+                        $('#EditarAgendamento').modal('hide'); // Substitua 'seuModal' pelo ID do seu modal
+                        // Atualizar a página
                         location.reload();
                     } else {
-                        alert("Falha ao alterar cliente.");
+                        alert("Erro ao alterar agendamento(s).");
                     }
                 },
-                error: function (error) {
-                    // Manipule erros de requisição AJAX
-                    console.error("Erro na chamada AJAX:", error);
+                error: function (xhr, textStatus, errorThrown) {
+                    alert("Erro ao cadastrar agendamento(s): " + errorThrown);
                 }
             });
         }
 
-        function ExcluirUsuario() {
-            // Obtenha o ID do usuário a ser excluído
-            var userId = $('#IdExc').val();
+        function ExcluirAgendamento() {
 
-            // Faça uma requisição AJAX
+
+            var userId = $('#ExcId').val();
+
             $.ajax({
                 type: "POST",
-                url: "/Usuario/ExcluirUsuario", // Substitua "Usuario" pelo nome do seu controller
-                data: { id: userId },
+                url: "/Agendamento/ExcluirAgendamento",
                 dataType: "json",
+                data: { id: userId },
                 success: function (response) {
-                    // A resposta do servidor está em response.success
-                    if (response.success) {
-                        // Feche o modal de exclusão
-                        $('#ExcluirUsuario').modal('hide');
-                        alert("Cliente excluido com sucesso!");
 
-                        // Recarregue a página
+                    if (response.success) {
+
+                        alert("Agendamento excluido com sucesso!");
+                        $('#ExcluirAgendamento').modal('hide');
                         location.reload();
+
                     } else {
+
                         alert("Falha ao excluir usuário.");
                     }
                 },
                 error: function () {
+
                     alert("Erro na requisição AJAX.");
                 }
             });
         }
-
-
-
     </script>
+    <script>
+        document.getElementById('data_a').setAttribute('min', new Date().toISOString().split('T')[0]);
+    </script>
+
 </body>

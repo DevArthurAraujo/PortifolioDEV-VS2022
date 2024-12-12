@@ -117,38 +117,38 @@
                         <form>
                             <div class="mb-3">
                                 <label for="nome">Nome</label>
-                                <input type="text" id="ExcNome" class="form-control" readonly>
+                                <input style="background-color: #ac0404; color: #F7F5F2" type="text" id="ExcNome" class="form-control" readonly>
 
                             </div>
                             <div class="mb-3">
                                 <label for="email">Email</label>
-                                <input type="email" id="ExcEmail" class="form-control" readonly>
+                                <input style="background-color: #ac0404; color: #F7F5F2" type="email" id="ExcEmail" class="form-control" readonly>
 
                             </div>
                             <div class="mb-3">
                                 <label for="telefone">Telefone</label>
-                                <input type="text" id="ExcTel" class="form-control" readonly>
+                                <input style="background-color: #ac0404; color: #F7F5F2" type="text" id="ExcTel" class="form-control" readonly>
 
                             </div>
 
                             <div class="mb-3">
                                 <label for="telefone">Data do Agendamento</label>
-                                <input type="text" id="ExcData" class="form-control" readonly>
+                                <input style="background-color: #ac0404; color: #F7F5F2" type="text" id="ExcData" class="form-control" readonly>
 
                             </div>
                             <div class="mb-3">
                                 <label for="telefone">Horario</label>
-                                <input type="text" id="ExcHorario" class="form-control" readonly>
+                                <input style="background-color: #ac0404; color: #F7F5F2" type="text" id="ExcHorario" class="form-control" readonly>
 
                             </div>
                             <div class="mb-3">
                                 <label for="telefone">Tecnica</label>
-                                <input type="text" id="ExcTecnica" class="form-control" readonly>
+                                <input style="background-color: #ac0404; color: #F7F5F2" type="text" id="ExcTecnica" class="form-control" readonly>
 
                             </div>
                             <div class="mb-3">
                                 <label for="telefone">Valor</label>
-                                <input type="text" id="ExcVal" class="form-control" readonly>
+                                <input style="background-color: #ac0404; color: #F7F5F2" type="text" id="ExcVal" class="form-control" readonly>
 
                             </div>
 
@@ -181,7 +181,7 @@
 
                             <!-- Campo de data -->
                             <div class="mb-3 d-flex align-items-center">
-                                <input id="data_agdt" type="date" class="form-control" style="width: 300px;" placeholder="Escolha a data do agendamento" oninput="consultarAgendamento()">
+                                <input id="data_agdt" type="date" class="form-control" style="width: 300px;" placeholder="Escolha a data do agendamento" oninput="consultarAgendamento()" min="{{ today }}">
                             </div>
 
                             <div class="mb-3 row">
@@ -318,8 +318,9 @@
                                 </div>
                             </div>
                             <div id="divCampos" style="border: 2px solid #000; padding: 10px; margin: 10px; display: none;">
+                                <!-- Campo de data -->
                                 <div class="mb-3 d-flex align-items-center">
-                                    <input id="data_a" type="date" class="form-control" style="width: 300px;" placeholder="Escolha a data do agendamento" oninput="consultarAgendamentoEdt()">
+                                    <input id="data_a" type="date" class="form-control" style="width: 300px;" placeholder="Escolha a data do agendamento" oninput="consultarAgendamento()" min="{{ today }}">
                                 </div>
                                 <div class="mb-3 d-flex align-items-center">
                                     @Html.DropDownList("DropHorario", ViewBag.lstHorarios, "Escolha o Horario", new { @class = "chosen-select form-control", @style = "width:420px;" })
@@ -768,6 +769,12 @@
                 }
             });
         }
+
+        
+    </script>
+    <script>
+        document.getElementById('data_agdt').setAttribute('min', new Date().toISOString().split('T')[0]);
+        document.getElementById('data_a').setAttribute('min', new Date().toISOString().split('T')[0]);
     </script>
 
 </body>
