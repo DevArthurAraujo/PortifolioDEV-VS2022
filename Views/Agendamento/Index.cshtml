@@ -471,27 +471,27 @@
 
                         switch (item.horario) {
                             case "08:00:00":
-                                $("#chk08").prop("disabled", true).prop("checked", true);  // Marcar e desabilitar
+                                $("#chk08").prop("disabled", true);  // Marcar e desabilitar
                                 $("#Span08").text("Horario Indisponivel");
                                 break;
                             case "10:00:00":
-                                $("#chk10").prop("disabled", true).prop("checked", true);  // Marcar e desabilitar
+                                $("#chk10").prop("disabled", true);  // Marcar e desabilitar
                                 $("#Span10").text("Horario Indisponivel");
                                 break;
                             case "13:00:00":
-                                $("#chk13").prop("disabled", true).prop("checked", true);  // Marcar e desabilitar
+                                $("#chk13").prop("disabled", true));  // Marcar e desabilitar
                                 $("#Span13").text("Horario Indisponivel");
                                 break;
                             case "15:00:00":
-                                $("#chk15").prop("disabled", true).prop("checked", true);  // Marcar e desabilitar
+                                $("#chk15").prop("disabled", true);  // Marcar e desabilitar
                                 $("#Span15").text("Horario Indisponivel");
                                 break;
                             case "17:00:00":
-                                $("#chk17").prop("disabled", true).prop("checked", true);  // Marcar e desabilitar
+                                $("#chk17").prop("disabled", true);  // Marcar e desabilitar
                                 $("#Span17").text("Horario Indisponivel");
                                 break;
                             case "19:00:00":
-                                $("#chk19").prop("disabled", true).prop("checked", true);  // Marcar e desabilitar
+                                $("#chk19").prop("disabled", true);  // Marcar e desabilitar
                                 $("#Span19").text("Horario Indisponivel");
                                 break;
                             default:
@@ -628,7 +628,6 @@
         }
 
         function InserirAgendamento() {
-
             // Data from hidden field or any other necessary values
             var dataC = obterDataHoraFormatada();  // Assuming this function formats the current date/time.
             var data = $("#data_agdt").val();
@@ -636,7 +635,7 @@
             var tipoServico = $('#TipoServico option:selected').val(); // Getting value for "TipoServico"
             var atendimentos = [];
 
-            // Check if the time slots are selected and push them into the atendimentos array
+            // Check if any time slots are selected and push them into the atendimentos array
             if ($("#chk08").prop("checked")) atendimentos.push($("#chk08").val());
             if ($("#chk10").prop("checked")) atendimentos.push($("#chk10").val());
             if ($("#chk13").prop("checked")) atendimentos.push($("#chk13").val());
@@ -644,7 +643,26 @@
             if ($("#chk17").prop("checked")) atendimentos.push($("#chk17").val());
             if ($("#chk19").prop("checked")) atendimentos.push($("#chk19").val());
 
+            // Validation
+            if (!data) {
+                alert("Por favor, selecione uma data para o agendamento.");
+                return;  // Stop the function if the date is not selected
+            }
 
+            if (!usuario) {
+                alert("Por favor, selecione um usuário.");
+                return;  // Stop the function if the user is not selected
+            }
+
+            if (!tipoServico) {
+                alert("Por favor, selecione o tipo de serviço.");
+                return;  // Stop the function if the service type is not selected
+            }
+
+            if (atendimentos.length === 0) {
+                alert("Por favor, selecione ao menos um horário para o agendamento.");
+                return;  // Stop the function if no time slots are selected
+            }
 
             // Collect data for AJAX request
             var dados = {
@@ -653,9 +671,9 @@
                 horario: atendimentos,
                 IdUsuario: usuario,
                 IdServico: tipoServico,
-
             };
-            console.log(dados)
+
+            console.log(dados);  // Debugging: to check if the data is correct
 
             // Perform the AJAX request
             $.ajax({

@@ -420,38 +420,38 @@
              }
          }
 
-         function AlterarServico() {
+        function AlterarServico() {
 
-             var id = $('#EdtId').val();
-             var tipoSevico = $('#EdtTipoServico option:selected').text()
-             var valor = $('#EdtValor').val();
+            var id = $('#EdtId').val();
+            var tipoSevico = $('#EdtTipoServico option:selected').text()
+            var valor = $('#EdtValor').val();
 
-             // Fazer a requisição AJAX para atualizar o serviço
-             $.ajax({
-                 url: '/Servico/AtualizarServico',  // Substitua 'SeuController' pelo nome real do seu controller
-                 type: 'POST',
-                 data: {
-                     id: id,
-                     TipoServico: tipoSevico,
-                     Valor: valor
-                 },
-                 success: function (response) {
-                     // Verificar se a atualização foi bem-sucedida
-                     if (response.success) {
-                         alert("Serviço " + tipoSevico + " alterado com sucesso!");
-                         $('#EditarServico').modal('hide');
-                         location.reload();  // Opcional: recarrega a página
-                     } else {
-                         alert(response.message); // Caso haja erro
-                     }
-                 },
-                 error: function (xhr, status, error) {
-                     alert("Ocorreu um erro ao tentar atualizar o serviço: " + error);
-                 }
-             });
-         }
+            // Fazer a requisição AJAX para atualizar o serviço
+            $.ajax({
+                url: '/Servico/AtualizarServico',  // Substitua 'SeuController' pelo nome real do seu controller
+                type: 'POST',
+                data: {
+                    id: id,
+                    TipoServico: tipoSevico,
+                    Valor: valor
+                },
+                success: function (response) {
+                    // Verificar se a atualização foi bem-sucedida
+                    if (response.success) {
+                        alert("Serviço " + tipoSevico + " alterado com sucesso!");
+                        $('#EditarServico').modal('hide');
+                        location.reload();  // Opcional: recarrega a página
+                    } else {
+                        alert(response.message); // Caso haja erro
+                    }
+                },
+                error: function (xhr, status, error) {
+                    alert("Ocorreu um erro ao tentar atualizar o serviço: " + error);
+                }
+            });
+        }
 
-         function InserirServico() {
+        function InserirServico() {
 
              var tipoServico = $('#TipoServico option:selected').text();
              var Valor = $('#Valor').val();

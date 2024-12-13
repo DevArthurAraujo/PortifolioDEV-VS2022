@@ -248,7 +248,6 @@
             // Data from hidden field or any other necessary values
             var dataC = obterDataHoraFormatada();  // Assuming this function formats the current date/time.
             var data = $("#data_agdt").val();
-            var usuario = $("#DropUsuario").val();  // Getting value for "DropUsuario"
             var tipoServico = $('#TipoServico option:selected').val(); // Getting value for "TipoServico"
             var atendimentos = [];
 
@@ -266,7 +265,7 @@
                 return; // Stop execution if validation fails
             }
 
-            if (!tipoServico) {
+            if (!tipoServico || tipoServico === "") {
                 alert("Por favor, selecione o tipo de serviço.");
                 return; // Stop execution if validation fails
             }
@@ -281,7 +280,6 @@
                 dtHoraAgendamento: dataC,
                 dataAtendimento: data,
                 horario: atendimentos,
-                fkUsuarioId: usuario,
                 IdServico: tipoServico,
             };
 
