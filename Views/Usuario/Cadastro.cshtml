@@ -104,8 +104,10 @@
 
 
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Adiciona o SweetAlert2 -->
 
+
+<script>
     function InserirUsuario() {
         // Obtenha os valores dos controles HTML
         var nome = $('#loginNome').val();
@@ -113,6 +115,35 @@
         var senha = $('#loginPassword').val();
         var telefone = $('#loginTelefone').val();
         var tipoUsuario = true;
+
+        // Validar os campos obrigatórios
+        if (nome.trim() === '') {
+            Swal.fire('Erro', 'O campo Nome é obrigatório.', 'error');  // SweetAlert2
+            return; // Impede o envio do formulário
+        }
+
+        if (email.trim() === '') {
+            Swal.fire('Erro', 'O campo E-mail é obrigatório.', 'error');
+            return;
+        }
+
+
+        if (senha.trim() === '') {
+            Swal.fire('Erro', 'O campo Senha é obrigatório.', 'error');
+            return;
+        }
+
+        if (telefone.trim() === '') {
+            Swal.fire('Erro', 'O campo Telefone é obrigatório.', 'error');
+            return;
+        }
+
+        // Validação de formato de telefone (exemplo simples para número de 10 dígitos)
+        var telefoneRegex = /^\d{10}$/;
+        if (!telefoneRegex.test(telefone)) {
+            Swal.fire('Erro', 'Por favor, insira um número de telefone válido (10 dígitos).', 'error');
+            return;
+        }
 
         // Crie um objeto de usuário para enviar
         var dados = {
@@ -131,19 +162,36 @@
             data: dados,
             success: function (resultado) {
                 if (resultado.success) {
-                    alert(resultado.message);  // Exibe a mensagem de sucesso ou erro
-                    if (resultado.success) {
-                        window.location.href = "/Usuario/Login";
-                    }
+                    Swal.fire({
+                        position: 'top-end',
+                        icon: 'success',
+                        title: 'Sucesso',
+                        text: 'Usuário cadastrado com sucesso!',
+                        confirmButtonText: 'OK'
+                    })
                 } else {
-                    alert(resultado.message);  // Exibe a mensagem de falha
+                    Swal.fire({
+                        position: 'top-end',
+                        icon: 'error',
+                        title: 'Erro',
+                        text: resultado.message,
+                        confirmButtonText: 'OK'
+                    });
                 }
             },
             error: function () {
-                alert('Erro na requisição AJAX.');
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Erro',
+                    text: 'Erro na requisição AJAX.',
+                    confirmButtonText: 'OK'
+                });
             }
         });
-    }
 
+
+    }
 </script>
+
+
 

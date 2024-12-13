@@ -1,4 +1,5 @@
 wwwroot\css\gerenciamento_index.css
+wwwroot\css\loader.css
 wwwroot\css\login.css
 wwwroot\css\main.css
 wwwroot\css\responsive.css

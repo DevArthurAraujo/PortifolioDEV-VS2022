@@ -100,6 +100,8 @@
 
 
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Adiciona o SweetAlert2 -->
+
 <script>
         $(document).ready(function () {
         // Função para alternar a visibilidade da senha
@@ -144,11 +146,21 @@
                 $("#loader").hide();
 
                 if (result.success) {
-                    window.location.href = '/Home/Index';
-
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Sucesso',
+                        text: 'Usuário cadastrado com sucesso!',
+                        confirmButtonText: 'OK'
+                    }).then(function () {
+                        window.location.href = '/Home/Index'; // Redireciona após o clique no botão OK
+                    });
                 } else {
-                    // Exiba uma mensagem de erro
-                    alert("Erro: " + result.message);
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Erro',
+                        text: result.message,
+                        confirmButtonText: 'OK'
+                    });
                 }
             },
             error: function (error) {

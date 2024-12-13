@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lb6PqgIRZTSUCiZSpOlCMLcgFI5HyFevhFenrTIFQG4=",
+  "Hash": "P/IHx/EiOtRZy21vPpvVyosN91DLxHaMu2c4fxKNiR4=",
   "Source": "PortifolioDEV",
   "BasePath": "_content/PortifolioDEV",
   "Mode": "Default",
@@ -78,6 +78,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\gerenciamento_index.css"
+    },
+    {
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\css\\loader.css",
+      "SourceId": "PortifolioDEV",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
+      "BasePath": "_content/PortifolioDEV",
+      "RelativePath": "css/loader#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aa1ez7blht",
+      "Integrity": "Am3bswxQ+bRswIh+7AZr+ocTbn+gZr3DUJmfXntaeY4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\loader.css"
     },
     {
       "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\css\\login.css",
@@ -4276,6 +4297,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-+GMlKDe2d9bIeKcGEWpkh0BucUTgDMEfmpCmgc0D4KM="
+        }
+      ]
+    },
+    {
+      "Route": "css/loader.aa1ez7blht.css",
+      "AssetFile": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\css\\loader.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1015"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Am3bswxQ+bRswIh+7AZr+ocTbn+gZr3DUJmfXntaeY4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Dec 2024 18:45:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aa1ez7blht"
+        },
+        {
+          "Name": "label",
+          "Value": "css/loader.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Am3bswxQ+bRswIh+7AZr+ocTbn+gZr3DUJmfXntaeY4="
+        }
+      ]
+    },
+    {
+      "Route": "css/loader.css",
+      "AssetFile": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\css\\loader.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1015"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Am3bswxQ+bRswIh+7AZr+ocTbn+gZr3DUJmfXntaeY4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Dec 2024 18:45:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Am3bswxQ+bRswIh+7AZr+ocTbn+gZr3DUJmfXntaeY4="
         }
       ]
     },

@@ -455,6 +455,11 @@
                     horario = ""
 
             }
+
+            // Show the overlay and loader
+            $("#overlay").show();  // Exibir o overlay escuro
+            $("#loader").show();   // Exibir o loader
+
             var dados = {
                 id: id,
                 data: data,
@@ -469,6 +474,9 @@
                 dataType: "json",
                 data: dados,
                 success: function (response) {
+                    // Hide the overlay and loader after the response
+                    $("#overlay").hide();
+                    $("#loader").hide();
                     if (response.success) {
                         alert("Agendamento(s) Alterados(s) com sucesso!");
                         $('#EditarAgendamento').modal('hide'); // Substitua 'seuModal' pelo ID do seu modal
