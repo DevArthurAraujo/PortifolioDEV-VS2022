@@ -5,7 +5,11 @@
 }
 
 <body>
-
+    <!-- Overlay e Loader -->
+    <div id="overlay" style="display: none;"></div>
+    <div id="loader" style="display: none;">
+        <i class="fa fa-spinner fa-spin"></i> Carregando...
+    </div>
 
     <section class="maneger-page-section">
         <div  class="container page-maneger"> 
@@ -421,28 +425,52 @@
          }
 
         function AlterarServico() {
-
+            // Obter valores dos campos
             var id = $('#EdtId').val();
-            var tipoSevico = $('#EdtTipoServico option:selected').text()
-            var valor = $('#EdtValor').val();
+            var tipoServico = $('#EdtTipoServico option:selected').text();  // Valor do tipo de serviço selecionado
+            var valor = $('#EdtValor').val();  // Valor inserido
+
+            // Validação dos campos
+            if (!id || id === "") {
+                alert("O ID do serviço é obrigatório.");
+                return;  // Para a execução da função se o ID não estiver preenchido
+            }
+
+            if (!tipoServico || tipoServico === "Escolha o serviço") {
+                alert("Por favor, selecione um tipo de serviço.");
+                return;  // Para a execução da função se o tipo de serviço não for selecionado
+            }
+
+            if (!valor || valor.trim() === "") {
+                alert("Por favor, insira um valor para o serviço.");
+                return;  // Para a execução da função se o valor estiver vazio
+            }
+
+            // Show the overlay and loader
+             $("#overlay").show();  // Exibir o overlay escuro
+             $("#loader").show();   // Exibir o loader
 
             // Fazer a requisição AJAX para atualizar o serviço
             $.ajax({
-                url: '/Servico/AtualizarServico',  // Substitua 'SeuController' pelo nome real do seu controller
+                url: '/Servico/AtualizarServico',  // Substitua pelo nome real do seu controller
                 type: 'POST',
                 data: {
                     id: id,
-                    TipoServico: tipoSevico,
+                    TipoServico: tipoServico,
                     Valor: valor
                 },
                 success: function (response) {
+                    // Hide the overlay and loader after the response
+                    $("#overlay").hide();
+                    $("#loader").hide();
+
                     // Verificar se a atualização foi bem-sucedida
                     if (response.success) {
-                        alert("Serviço " + tipoSevico + " alterado com sucesso!");
+                        alert("Serviço " + tipoServico + " alterado com sucesso!");
                         $('#EditarServico').modal('hide');
                         location.reload();  // Opcional: recarrega a página
                     } else {
-                        alert(response.message); // Caso haja erro
+                        alert(response.message);  // Caso haja erro na resposta
                     }
                 },
                 error: function (xhr, status, error) {
@@ -466,6 +494,10 @@
                  return;
              }
 
+             // Show the overlay and loader
+             $("#overlay").show();  // Exibir o overlay escuro
+             $("#loader").show();   // Exibir o loader
+
 
              // Objeto com os dados para enviar via AJAX
              var dados = {
@@ -482,6 +514,10 @@
                  dataType: 'json',
                  data: dados,
                  success: function (response) {
+                    // Hide the overlay and loader after the response
+                    $("#overlay").hide();
+                    $("#loader").hide();
+
                      // Exibe a mensagem de sucesso ou erro
                      if (response.success) {
                          alert(response.message);  // Exibe mensagem de sucesso

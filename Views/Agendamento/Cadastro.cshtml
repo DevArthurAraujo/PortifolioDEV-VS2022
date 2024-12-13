@@ -3,7 +3,11 @@
 }
 
 <body>
-
+    <!-- Overlay e Loader -->
+    <div id="overlay" style="display: none;"></div>
+    <div id="loader" style="display: none;">
+        <i class="fa fa-spinner fa-spin"></i> Carregando...
+    </div>
 
     <section class="maneger-page-section">
         <div class="container page-maneger">
@@ -204,27 +208,31 @@
         }
 
         function limparFormulario() {
-            // Limpar o campo oculto TxtId
-            document.getElementById("TxtId").value = '';  // Remova 'usuarioId' ou defina outro valor conforme necessário
+              console.log("Função de limpeza chamada");
 
-            // Limpar campos de texto
-            document.querySelectorAll('#agendamentoModal form input[type="text"]').forEach(function (input) {
+              // Limpar o campo de data
+              document.querySelector('#data_agdt').value = '';  // Limpa o campo de data
+
+              // Limpar campos de texto, mas não os de data
+              document.querySelectorAll('#InserirAgendamento input[type="text"]:not(#data_agdt)').forEach(function (input) {
                 input.value = '';
-            });
+              });
 
-            // Limpar campos de seleção (dropdown)
-            document.querySelectorAll('#agendamentoModal form select').forEach(function (select) {
+              // Limpar campos de seleção
+              document.querySelectorAll('#InserirAgendamento select').forEach(function (select) {
                 select.selectedIndex = 0;
-            });
+              });
 
-            // Desmarcar checkboxes e desabilitar
-            document.querySelectorAll('#agendamentoModal form input[type="checkbox"]').forEach(function (checkbox) {
+              // Desmarcar checkboxes
+              document.querySelectorAll('#InserirAgendamento input[type="checkbox"]').forEach(function (checkbox) {
                 checkbox.checked = false;
-                checkbox.disabled = true;  // Desabilitar checkboxes após a limpeza
-            });
+                checkbox.disabled = true;
+              });
 
-            // Limpar textos dos spans
-            limparTextosSpans();
+              // Limpar spans
+              document.querySelectorAll('#InserirAgendamento span').forEach(function (span) {
+                span.textContent = '';
+              });
         }
 
         function obterDataHoraFormatada() {
@@ -275,6 +283,10 @@
                 return; // Stop execution if no time slots are selected
             }
 
+            // Show the overlay and loader
+            $("#overlay").show();  // Exibir o overlay escuro
+            $("#loader").show();   // Exibir o loader
+
             // Collect data for AJAX request
             var dados = {
                 dtHoraAgendamento: dataC,
@@ -292,6 +304,9 @@
                 dataType: "json",
                 data: dados,
                 success: function (response) {
+                    // Hide the overlay and loader after the response
+                    $("#overlay").hide();
+                    $("#loader").hide();
                     if (response.success) {
                         alert("Agendamento cadastrado com sucesso!");
                         location.reload();  // Reload the page

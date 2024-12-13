@@ -194,7 +194,7 @@ namespace PortifolioDEV.Repositorios
                     .Select(a => new AgendamentoVM
                     {
                         // Mapear as propriedades de TbAgendamento para AgendamentoVM
-                        Id = a.IdServico,
+                        Id = a.IdAgendamento,
                         DtHoraAgendamento = a.DtHoraAgendamento,
                         DataAtendimento = DateOnly.Parse(dataFormatada),
                         Horario = a.Horario,

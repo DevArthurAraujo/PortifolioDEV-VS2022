@@ -4,7 +4,13 @@
     Layout = "~/Views/Shared/_Layout_Gerenciamento.cshtml";
 }
 
+
 <body>
+    <!-- Overlay e Loader -->
+    <div id="overlay" style="display: none;"></div>
+    <div id="loader" style="display: none;">
+        <i class="fa fa-spinner fa-spin"></i> Carregando...
+    </div>
 
     <section class="maneger-page-section">
         <div class="container page-maneger">
@@ -520,6 +526,10 @@
                 return;
             }
 
+            // Show the overlay and loader
+            $("#overlay").show();  // Exibir o overlay escuro
+            $("#loader").show();   // Exibir o loader
+
             var dados = {
                 Nome: nome,
                 Email: email,
@@ -536,6 +546,9 @@
                 dataType: "json",
                 data: dados,
                 success: function (resultado) {
+                    // Hide the overlay and loader after the response
+                    $("#overlay").hide();
+                    $("#loader").hide();
                     if (resultado.success) {
                         alert(resultado.message);  // Exibe a mensagem de sucesso
                         // Fecha o modal
@@ -583,6 +596,10 @@
                 return;
             }
 
+            // Show the overlay and loader
+            $("#overlay").show();  // Exibir o overlay escuro
+            $("#loader").show();   // Exibir o loader
+
             var dados = {
                 Id: id, // ID do usuário a ser atualizado
                 Nome: nome,
@@ -599,6 +616,9 @@
                 dataType: "json",
                 data: dados,
                 success: function (resultado) {
+                    // Hide the overlay and loader after the response
+                    $("#overlay").hide();
+                    $("#loader").hide();
                     if (resultado.success) {
                         alert(resultado.message);  // Exibe a mensagem de sucesso
                         $('#InserirUsuario').modal('hide'); // Fecha o modal de inserção/atualização
