@@ -145,6 +145,10 @@
             return;
         }
 
+        // Show the overlay and loader
+         $("#overlay").show();  // Exibir o overlay escuro
+         $("#loader").show();   // Exibir o loader
+
         // Crie um objeto de usuário para enviar
         var dados = {
             Nome: nome,
@@ -161,23 +165,32 @@
             dataType: "json",
             data: dados,
             success: function (resultado) {
-                if (resultado.success) {
-                    Swal.fire({
-                        position: 'top-end',
-                        icon: 'success',
-                        title: 'Sucesso',
-                        text: 'Usuário cadastrado com sucesso!',
-                        confirmButtonText: 'OK'
-                    })
-                } else {
-                    Swal.fire({
-                        position: 'top-end',
-                        icon: 'error',
-                        title: 'Erro',
-                        text: resultado.message,
-                        confirmButtonText: 'OK'
-                    });
-                }
+                // Hide the overlay and loader after the response
+                    $("#overlay").hide();
+                    $("#loader").hide();
+
+                    if (resultado.success) {
+                        Swal.fire({
+                            position: "top-end",
+                            icon: 'success',
+                            title: 'Sucesso',
+                            text: 'Usuário cadastrado com sucesso!',
+                            confirmButtonText: 'OK'
+                        }).then(function () {
+                            // Fecha o modal
+                            $('#InserirUsuario').modal('hide');
+                            // Recarrega a página
+                            location.reload(); // Recarrega a página atual
+                        });
+                    } else {
+                        Swal.fire({
+                            position: "top-end",
+                            icon: 'error',
+                            title: 'Erro',
+                            text: resultado.message,
+                            confirmButtonText: 'OK'
+                        });
+                    }
             },
             error: function () {
                 Swal.fire({

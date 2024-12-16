@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|c:\\users\\aluno noite\\documents\\github\\portifoliodev-vs2022\\views\\usuario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|solutionrelative:views\\usuario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|c:\\users\\aluno noite\\documents\\github\\portifoliodev-vs2022\\views\\servico\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|solutionrelative:views\\servico\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|c:\\users\\aluno noite\\documents\\github\\portifoliodev-vs2022\\views\\usuario\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|solutionrelative:views\\usuario\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,15 +26,28 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Views\\Usuario\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Usuario\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Views\\Usuario\\Login.cshtml",
+              "RelativeToolTip": "Views\\Usuario\\Login.cshtml",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAGYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-16T20:28:18.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Views\\Usuario\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Usuario\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Views\\Usuario\\Index.cshtml",
-              "RelativeToolTip": "Views\\Usuario\\Index.cshtml",
-              "ViewState": "AgIAABICAAAAAAAAAAAUwDUCAAAJAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Views\\Servico\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Servico\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\Views\\Servico\\Index.cshtml",
+              "RelativeToolTip": "Views\\Servico\\Index.cshtml",
+              "ViewState": "AgIAAJkBAAAAAAAAAAAAAKwBAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-13T20:33:19.249Z",
+              "WhenOpened": "2024-12-16T20:15:36.326Z",
               "EditorCaption": ""
             }
           ]

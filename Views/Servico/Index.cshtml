@@ -206,6 +206,11 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
 
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Adiciona o SweetAlert2 -->
+
+
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             // Função para remover o asterisco
@@ -399,6 +404,11 @@
 
         function ExcluirServico() {
              var id = $('#ExcId').val();
+
+             // Show the overlay and loader
+             $("#overlay").show();  // Exibir o overlay escuro
+             $("#loader").show();   // Exibir o loader
+
              // Confirmar antes de excluir
              if (confirm("Você tem certeza que deseja excluir este serviço?")) {
                  // Fazer a requisição AJAX para excluir o serviço
@@ -406,19 +416,57 @@
                      url: '/Servico/ExcluirServico',  // Substitua 'SeuController' pelo nome real do seu controller
                      type: 'POST',
                      data: { id: id },
-                     success: function (response) {
-                         // Verificar se a exclusão foi bem-sucedida
-                         if (response.success) {
+                     success: function (resultado) {
+                        // Hide the overlay and loader after the resultado
+                        $("#overlay").hide();
+                        $("#loader").hide();
 
-                             alert(response.message);  // Exibir mensagem de sucesso
-                             $('#ExcluirServico').modal('hide'); // Exemplo de fechamento de modal
-                             location.reload();  // Opcional: recarrega a página
-                         } else {
-                             alert(response.message);  // Caso haja erro
-                         }
+                        if (resultado.success) {
+                            Swal.fire({
+                                position: "top-end",
+                                icon: 'success',
+                                title: 'Sucesso',
+                                text: 'Serviço excluido com sucesso!',
+                                confirmButtonText: 'OK',
+                                width: '400px',  // Defina a largura desejada aqui
+                                padding: '20px', // Ajuste o preenchimento interno do alerta
+                                customClass: {
+                                    popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                                }
+                            }).then(function () {
+                                // Fecha o modal
+                                $('#EditarServico').modal('hide');
+                                // Recarrega a página
+                                location.reload(); // Recarrega a página atual
+                            });
+                        } else {
+                            Swal.fire({
+                                position: "top-end",
+                                icon: 'error',
+                                title: 'Erro',
+                                text: resultado.message,
+                                confirmButtonText: 'OK',
+                                width: '400px',  // Defina a largura desejada aqui
+                                padding: '20px', // Ajuste o preenchimento interno do alerta
+                                customClass: {
+                                    popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                                }
+                            });
+                        }
                      },
                      error: function (xhr, status, error) {
-                         alert("Ocorreu um erro ao tentar excluir o serviço: " + error);
+                         Swal.fire({
+                                position: "top-end",
+                                icon: 'error',
+                                title: 'Erro',
+                                text: resultado.message,
+                                confirmButtonText: 'OK',
+                                width: '400px',  // Defina a largura desejada aqui
+                                padding: '20px', // Ajuste o preenchimento interno do alerta
+                                customClass: {
+                                    popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                                }
+                            });
                      }
                  });
              }
@@ -459,22 +507,57 @@
                     TipoServico: tipoServico,
                     Valor: valor
                 },
-                success: function (response) {
-                    // Hide the overlay and loader after the response
+                success: function (resultado) {
+                    // Hide the overlay and loader after the resultado
                     $("#overlay").hide();
                     $("#loader").hide();
 
-                    // Verificar se a atualização foi bem-sucedida
-                    if (response.success) {
-                        alert("Serviço " + tipoServico + " alterado com sucesso!");
-                        $('#EditarServico').modal('hide');
-                        location.reload();  // Opcional: recarrega a página
+                    if (resultado.success) {
+                        Swal.fire({
+                            position: "top-end",
+                            icon: 'success',
+                            title: 'Sucesso',
+                            text: 'Servico alterado com sucesso!',
+                            confirmButtonText: 'OK',
+                            width: '400px',  // Defina a largura desejada aqui
+                            padding: '20px', // Ajuste o preenchimento interno do alerta
+                            customClass: {
+                                popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                            }
+                        }).then(function () {
+                            // Fecha o modal
+                            $('#InserirUsuario').modal('hide');
+                            // Recarrega a página
+                            location.reload(); // Recarrega a página atual
+                        });
                     } else {
-                        alert(response.message);  // Caso haja erro na resposta
+                        Swal.fire({
+                            position: "top-end",
+                            icon: 'error',
+                            title: 'Erro',
+                            text: resultado.message,
+                            confirmButtonText: 'OK',
+                            width: '400px',  // Defina a largura desejada aqui
+                            padding: '20px', // Ajuste o preenchimento interno do alerta
+                            customClass: {
+                                popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                            }
+                        });
                     }
                 },
                 error: function (xhr, status, error) {
-                    alert("Ocorreu um erro ao tentar atualizar o serviço: " + error);
+                    Swal.fire({
+                            position: "top-end",
+                            icon: 'error',
+                            title: 'Erro',
+                            text: resultado.message,
+                            confirmButtonText: 'OK',
+                            width: '400px',  // Defina a largura desejada aqui
+                            padding: '20px', // Ajuste o preenchimento interno do alerta
+                            customClass: {
+                                popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                            }
+                        });
                 }
             });
         }
@@ -513,23 +596,57 @@
                  type: 'POST',
                  dataType: 'json',
                  data: dados,
-                 success: function (response) {
-                    // Hide the overlay and loader after the response
+                 success: function (resultado) {
+                    // Hide the overlay and loader after the resultado
                     $("#overlay").hide();
                     $("#loader").hide();
 
-                     // Exibe a mensagem de sucesso ou erro
-                     if (response.success) {
-                         alert(response.message);  // Exibe mensagem de sucesso
-                         // Se necessário, fecha o modal ou faz outra ação aqui
-                         $('#InserirServicoModal').modal('hide'); // Exemplo de fechamento de modal
-                         location.reload();  // Opcional: recarrega a página
-                     } else {
-                         alert(response.message);  // Exibe mensagem de erro
-                     }
+                    if (resultado.success) {
+                        Swal.fire({
+                            position: "top-end",
+                            icon: 'success',
+                            title: 'Sucesso',
+                            text: 'Servico cadastrado com sucesso!',
+                            confirmButtonText: 'OK',
+                            width: '400px',  // Defina a largura desejada aqui
+                            padding: '20px', // Ajuste o preenchimento interno do alerta
+                            customClass: {
+                                popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                            }
+                        }).then(function () {
+                            // Fecha o modal
+                            $('#InserirServicoModal').modal('hide');
+                            // Recarrega a página
+                            location.reload(); // Recarrega a página atual
+                        });
+                    } else {
+                        Swal.fire({
+                            position: "top-end",
+                            icon: 'error',
+                            title: 'Erro',
+                            text: resultado.message,
+                            confirmButtonText: 'OK',
+                            width: '400px',  // Defina a largura desejada aqui
+                            padding: '20px', // Ajuste o preenchimento interno do alerta
+                            customClass: {
+                                popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                            }
+                        });
+                    }
                  },
                  error: function () {
-                     alert('Erro ao processar a solicitação. Tente novamente.');
+                     Swal.fire({
+                            position: "top-end",
+                            icon: 'error',
+                            title: 'Erro',
+                            text: resultado.message,
+                            confirmButtonText: 'OK',
+                            width: '400px',  // Defina a largura desejada aqui
+                            padding: '20px', // Ajuste o preenchimento interno do alerta
+                            customClass: {
+                                popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                            }
+                        });
                  }
              });
          }

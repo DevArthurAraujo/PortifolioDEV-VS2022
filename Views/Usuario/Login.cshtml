@@ -103,7 +103,7 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Adiciona o SweetAlert2 -->
 
 <script>
-        $(document).ready(function () {
+    $(document).ready(function () {
         // Função para alternar a visibilidade da senha
         $('#show-hide-password').click(function () {
             var senhaInput = $('#loginPassword');
@@ -127,11 +127,12 @@
             }
         });
     });
-        function ConsultaLogin() {
+
+    function ConsultaLogin() {
         var email = $("#loginEmail").val();
         var senha = $("#loginPassword").val();
 
-        // Show the overlay and loader
+         // Show the overlay and loader
          $("#overlay").show();  // Exibir o overlay escuro
          $("#loader").show();   // Exibir o loader
 
@@ -147,15 +148,17 @@
 
                 if (result.success) {
                     Swal.fire({
+                        position: "top-end",
                         icon: 'success',
                         title: 'Sucesso',
-                        text: 'Usuário cadastrado com sucesso!',
+                        text: 'Login feito com sucesso!',
                         confirmButtonText: 'OK'
                     }).then(function () {
                         window.location.href = '/Home/Index'; // Redireciona após o clique no botão OK
                     });
                 } else {
                     Swal.fire({
+                        position: "top-end",
                         icon: 'error',
                         title: 'Erro',
                         text: result.message,
