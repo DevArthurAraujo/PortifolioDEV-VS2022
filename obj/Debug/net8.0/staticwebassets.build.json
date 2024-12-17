@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nRZSEdzbmx0W5sqn2gBt0Tg0Qm80PmlNO2cx4azo9HQ=",
+  "Hash": "8gLfmxrPT/yqAcul7/2mmmJzQuVGJkdHfEDILLx/lNM=",
   "Source": "PortifolioDEV",
   "BasePath": "_content/PortifolioDEV",
   "Mode": "Default",
@@ -94,8 +94,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "zfwzhrme4i",
-      "Integrity": "AZS06fO7aHiLlO+j826sOiBeCzRCxjXOCEVa8FCnMms=",
+      "Fingerprint": "b9c5ggz2je",
+      "Integrity": "T83eLoNmVv4CZ+dZ6TQ5tCj1dKUrum6BgZaR/mgfZZ8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\loader.css"
@@ -4301,6 +4301,51 @@
       ]
     },
     {
+      "Route": "css/loader.b9c5ggz2je.css",
+      "AssetFile": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\css\\loader.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1639"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T83eLoNmVv4CZ+dZ6TQ5tCj1dKUrum6BgZaR/mgfZZ8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Dec 2024 18:18:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b9c5ggz2je"
+        },
+        {
+          "Name": "label",
+          "Value": "css/loader.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-T83eLoNmVv4CZ+dZ6TQ5tCj1dKUrum6BgZaR/mgfZZ8="
+        }
+      ]
+    },
+    {
       "Route": "css/loader.css",
       "AssetFile": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\css\\loader.css",
       "Selectors": [],
@@ -4311,7 +4356,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1590"
+          "Value": "1639"
         },
         {
           "Name": "Content-Type",
@@ -4319,11 +4364,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"AZS06fO7aHiLlO+j826sOiBeCzRCxjXOCEVa8FCnMms=\""
+          "Value": "\"T83eLoNmVv4CZ+dZ6TQ5tCj1dKUrum6BgZaR/mgfZZ8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 17 Dec 2024 17:32:01 GMT"
+          "Value": "Tue, 17 Dec 2024 18:18:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4333,52 +4378,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-AZS06fO7aHiLlO+j826sOiBeCzRCxjXOCEVa8FCnMms="
-        }
-      ]
-    },
-    {
-      "Route": "css/loader.zfwzhrme4i.css",
-      "AssetFile": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\css\\loader.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1590"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"AZS06fO7aHiLlO+j826sOiBeCzRCxjXOCEVa8FCnMms=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 17 Dec 2024 17:32:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "zfwzhrme4i"
-        },
-        {
-          "Name": "label",
-          "Value": "css/loader.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-AZS06fO7aHiLlO+j826sOiBeCzRCxjXOCEVa8FCnMms="
+          "Value": "sha256-T83eLoNmVv4CZ+dZ6TQ5tCj1dKUrum6BgZaR/mgfZZ8="
         }
       ]
     },
