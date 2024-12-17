@@ -353,6 +353,10 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
 
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Adiciona o SweetAlert2 -->
+
+
     <script>
 
         var listaOriginalHorario;
@@ -689,20 +693,56 @@
                 type: "POST",
                 dataType: "json",
                 data: dados,
-                success: function (response) {
+                success: function (resultado) {
                     // Hide the overlay and loader after the response
                     $("#overlay").hide();
                     $("#loader").hide();
-                    if (response.success) {
-                        alert("Agendamento(s) cadastrado(s) com sucesso!");
-                        $('#InserirAgendamento').modal('hide');  // Close the modal
-                        location.reload();  // Reload the page
+                    if (resultado.success) {
+                        Swal.fire({
+                            position: "top-end",
+                            icon: 'success',
+                            title: 'Sucesso',
+                            text: 'Agendamento cadastrado com sucesso!',
+                            confirmButtonText: 'OK',
+                            width: '400px',  // Defina a largura desejada aqui
+                            padding: '20px', // Ajuste o preenchimento interno do alerta
+                            customClass: {
+                                popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                            }
+                        }).then(function () {
+                            // Fecha o modal
+                            $('#InserirAgendamento').modal('hide');
+                            // Recarrega a página
+                            location.reload(); // Recarrega a página atual
+                        });
                     } else {
-                        alert("Erro ao cadastrar agendamento(s).");
+                        Swal.fire({
+                            position: "top-end",
+                            icon: 'error',
+                            title: 'Erro',
+                            text: resultado.message,
+                            confirmButtonText: 'OK',
+                            width: '400px',  // Defina a largura desejada aqui
+                            padding: '20px', // Ajuste o preenchimento interno do alerta
+                            customClass: {
+                                popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                            }
+                        });
                     }
                 },
                 error: function (xhr, textStatus, errorThrown) {
-                    alert("Erro ao cadastrar agendamento(s): " + errorThrown);
+                    Swal.fire({
+                            position: "top-end",
+                            icon: 'error',
+                            title: 'Erro',
+                            text: resultado.message,
+                            confirmButtonText: 'OK',
+                            width: '400px',  // Defina a largura desejada aqui
+                            padding: '20px', // Ajuste o preenchimento interno do alerta
+                            customClass: {
+                                popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                            }
+                    });
                 }
             });
         }
@@ -730,9 +770,6 @@
                     return;
                 }
 
-
-
-
             }
             else {
 
@@ -758,22 +795,57 @@
                 type: "POST",
                 dataType: "json",
                 data: dados,
-                success: function (response) {
+                success: function (resultado) {
                     // Hide the overlay and loader after the response
                     $("#overlay").hide();
                     $("#loader").hide();
 
-                    if (response.success) {
-                        alert("Agendamento(s) Alterados(s) com sucesso!");
-                        $('#EditarAgendamento').modal('hide'); // Substitua 'seuModal' pelo ID do seu modal
-                        // Atualizar a página
-                        location.reload();
+                    if (resultado.success) {
+                        Swal.fire({
+                            position: "top-end",
+                            icon: 'success',
+                            title: 'Sucesso',
+                            text: 'Agendamento alterado com sucesso!',
+                            confirmButtonText: 'OK',
+                            width: '400px',  // Defina a largura desejada aqui
+                            padding: '20px', // Ajuste o preenchimento interno do alerta
+                            customClass: {
+                                popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                            }
+                        }).then(function () {
+                            // Fecha o modal
+                            $('#EditarAgendamento').modal('hide');
+                            // Recarrega a página
+                            location.reload(); // Recarrega a página atual
+                        });
                     } else {
-                        alert("Erro ao alterar agendamento(s).");
+                        Swal.fire({
+                            position: "top-end",
+                            icon: 'error',
+                            title: 'Erro',
+                            text: resultado.message,
+                            confirmButtonText: 'OK',
+                            width: '400px',  // Defina a largura desejada aqui
+                            padding: '20px', // Ajuste o preenchimento interno do alerta
+                            customClass: {
+                                popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                            }
+                        });
                     }
                 },
                 error: function (xhr, textStatus, errorThrown) {
-                    alert("Erro ao cadastrar agendamento(s): " + errorThrown);
+                    Swal.fire({
+                            position: "top-end",
+                            icon: 'error',
+                            title: 'Erro',
+                            text: resultado.message,
+                            confirmButtonText: 'OK',
+                            width: '400px',  // Defina a largura desejada aqui
+                            padding: '20px', // Ajuste o preenchimento interno do alerta
+                            customClass: {
+                                popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                            }
+                    });
                 }
             });
         }
@@ -783,27 +855,66 @@
 
             var userId = $('#ExcId').val();
 
+            // Show the overlay and loader
+            $("#overlay").show();  // Exibir o overlay escuro
+            $("#loader").show();   // Exibir o loader
+
             $.ajax({
                 type: "POST",
                 url: "/Agendamento/ExcluirAgendamento",
                 dataType: "json",
                 data: { id: userId },
-                success: function (response) {
+                success: function (resultado) {
+                    // Hide the overlay and loader after the response
+                    $("#overlay").hide();
+                    $("#loader").hide();
 
-                    if (response.success) {
-
-                        alert("Agendamento excluido com sucesso!");
-                        $('#ExcluirAgendamento').modal('hide');
-                        location.reload();
-
+                    if (resultado.success) {
+                        Swal.fire({
+                            position: "top-end",
+                            icon: 'success',
+                            title: 'Sucesso',
+                            text: 'Agendamento excluido com sucesso!',
+                            confirmButtonText: 'OK',
+                            width: '400px',  // Defina a largura desejada aqui
+                            padding: '20px', // Ajuste o preenchimento interno do alerta
+                            customClass: {
+                                popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                            }
+                        }).then(function () {
+                            // Fecha o modal
+                            $('#ExcluirAgendamento').modal('hide');
+                            // Recarrega a página
+                            location.reload(); // Recarrega a página atual
+                        });
                     } else {
-
-                        alert("Falha ao excluir usuário.");
+                        Swal.fire({
+                            position: "top-end",
+                            icon: 'error',
+                            title: 'Erro',
+                            text: resultado.message,
+                            confirmButtonText: 'OK',
+                            width: '400px',  // Defina a largura desejada aqui
+                            padding: '20px', // Ajuste o preenchimento interno do alerta
+                            customClass: {
+                                popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                            }
+                        });
                     }
                 },
                 error: function () {
-
-                    alert("Erro na requisição AJAX.");
+                    Swal.fire({
+                            position: "top-end",
+                            icon: 'error',
+                            title: 'Erro',
+                            text: resultado.message,
+                            confirmButtonText: 'OK',
+                            width: '400px',  // Defina a largura desejada aqui
+                            padding: '20px', // Ajuste o preenchimento interno do alerta
+                            customClass: {
+                                popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                            }
+                    });
                 }
             });
         }

@@ -107,6 +107,9 @@
 
 
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Adiciona o SweetAlert2 -->
+
+
 <script>
         // Impede a digitação manual no campo de data
         document.getElementById('data_agdt').addEventListener('keydown', function (e) {
@@ -303,20 +306,57 @@
                 type: "POST",
                 dataType: "json",
                 data: dados,
-                success: function (response) {
-                    // Hide the overlay and loader after the response
+                success: function (resultado) {
+                    // Hide the overlay and loader after the resultado
                     $("#overlay").hide();
                     $("#loader").hide();
 
-                    if (response.success) {
-                        alert("Agendamento cadastrado com sucesso!");
-                        location.reload();  // Reload the page
+                    if (resultado.success) {
+                        Swal.fire({
+                            position: "top-end",
+                            icon: 'success',
+                            title: 'Sucesso',
+                            text: 'Agendamento cadastrado com sucesso!',
+                            confirmButtonText: 'OK',
+                            width: '400px',  // Defina a largura desejada aqui
+                            padding: '20px', // Ajuste o preenchimento interno do alerta
+                            customClass: {
+                                popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                            }
+                        }).then(function () {
+                            // Fecha o modal
+                            $('#InserirAgendamento').modal('hide');
+                            // Recarrega a página
+                            location.reload(); // Recarrega a página atual
+                        });
                     } else {
-                        alert("Erro ao cadastrar agendamento(s).");
+                        Swal.fire({
+                            position: "top-end",
+                            icon: 'error',
+                            title: 'Erro',
+                            text: resultado.message,
+                            confirmButtonText: 'OK',
+                            width: '400px',  // Defina a largura desejada aqui
+                            padding: '20px', // Ajuste o preenchimento interno do alerta
+                            customClass: {
+                                popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                            }
+                        });
                     }
                 },
                 error: function (xhr, textStatus, errorThrown) {
-                    alert("Erro ao cadastrar agendamento(s): " + errorThrown);
+                    Swal.fire({
+                            position: "top-end",
+                            icon: 'error',
+                            title: 'Erro',
+                            text: resultado.message,
+                            confirmButtonText: 'OK',
+                            width: '400px',  // Defina a largura desejada aqui
+                            padding: '20px', // Ajuste o preenchimento interno do alerta
+                            customClass: {
+                                popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                            }
+                    });
                 }
             });
         }

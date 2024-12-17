@@ -167,8 +167,13 @@
                 }
             },
             error: function (error) {
-                console.error(error);
-                // Lógica para lidar com erros de chamada Ajax
+                Swal.fire({
+                        position: "top-end",
+                        icon: 'error',
+                        title: 'Erro',
+                        text: result.message,
+                        confirmButtonText: 'OK'
+                });
             }
         });
     }
