@@ -68,7 +68,7 @@
 
                         </div>
                         <div class="form-outline mb-4">
-                            <input type="text" id="loginTelefone" class="form-control" placeholder="Digite seu Telefone"
+                            <input type="text" id="loginTelefone" onkeypress="mask(this, mphone);" onblur="mask(this, mphone);" class="form-control" placeholder="Digite seu Telefone"
                                    required />
                         </div>
                         <!-- 2 column grid layout
@@ -138,12 +138,6 @@
             return;
         }
 
-        // Validação de formato de telefone (exemplo simples para número de 10 dígitos)
-        var telefoneRegex = /^\d{10}$/;
-        if (!telefoneRegex.test(telefone)) {
-            Swal.fire('Erro', 'Por favor, insira um número de telefone válido (10 dígitos).', 'error');
-            return;
-        }
 
         // Show the overlay and loader
          $("#overlay").show();  // Exibir o overlay escuro
@@ -202,6 +196,30 @@
             }
         });
 
+    }
+
+    function mask(o, f) {
+         setTimeout(function () {
+             var v = mphone(o.value);
+             if (v != o.value) {
+                    o.value = v;
+             }
+         }, 1);
+    }
+
+    function mphone(v) {
+            var r = v.replace(/\D/g, "");
+            r = r.replace(/^0/, "");
+            if (r.length > 10) {
+                r = r.replace(/^(\d\d)(\d{5})(\d{4}).*/, "($1) $2-$3");
+            } else if (r.length > 5) {
+                r = r.replace(/^(\d\d)(\d{4})(\d{0,4}).*/, "($1) $2-$3");
+            } else if (r.length > 2) {
+                r = r.replace(/^(\d\d)(\d{0,5})/, "($1) $2");
+            } else {
+                r = r.replace(/^(\d*)/, "($1");
+            }
+       return r;
     }
 </script>
 
