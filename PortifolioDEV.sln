@@ -5,8 +5,6 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PortifolioDEV", "PortifolioDEV.csproj", "{21D3B6D4-D14A-436D-9BD4-ED9356666937}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPortifolioDEV", "..\TestPortifolioDEV\TestPortifolioDEV.csproj", "{D949FC4E-FD6D-40D0-8626-692E49C7BF9A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{21D3B6D4-D14A-436D-9BD4-ED9356666937}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21D3B6D4-D14A-436D-9BD4-ED9356666937}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21D3B6D4-D14A-436D-9BD4-ED9356666937}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D949FC4E-FD6D-40D0-8626-692E49C7BF9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D949FC4E-FD6D-40D0-8626-692E49C7BF9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D949FC4E-FD6D-40D0-8626-692E49C7BF9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D949FC4E-FD6D-40D0-8626-692E49C7BF9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

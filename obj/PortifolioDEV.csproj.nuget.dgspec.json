@@ -78,6 +78,14 @@
               "target": "Package",
               "version": "[4.20.72, )"
             },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            },
+            "System.Text.Encodings.Web": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "xunit": {
               "target": "Package",
               "version": "[2.9.2, )"

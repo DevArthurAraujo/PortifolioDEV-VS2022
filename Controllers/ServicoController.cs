@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using PortifolioDEV.Models;
@@ -17,6 +18,7 @@ namespace PortifolioDEV.Controllers
             _logger = logger;
         }
 
+        [Authorize]
         public IActionResult Index()
         {
             // Chama o método ListarNomesAgendamentos para obter a lista de usuários
@@ -38,6 +40,7 @@ namespace PortifolioDEV.Controllers
             var Servicos = _servicoRepositorio.ListarServicos();
             return View(Servicos);
         }
+
         public IActionResult InserirServico(string tipoServico, decimal valor)
         {
             try

@@ -9,9 +9,11 @@ namespace PortifolioDEV.Repositorios
     {
 
         private BdPortfolioDevContext _context;
-        public UsuarioRepositorio(BdPortfolioDevContext context)
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        public UsuarioRepositorio(BdPortfolioDevContext context, IHttpContextAccessor httpContextAccessor)
         {
             _context = context;
+            _httpContextAccessor = httpContextAccessor;
         }
 
         public UsuarioVM VerificarLogin(string email, string senha)
@@ -32,22 +34,16 @@ namespace PortifolioDEV.Repositorios
                     Senha = usuario.Senha, // Senha pode ser omitida por questões de segurança
                     TipoUsuario = usuario.TipoUsuario
                 };
-                // Definindo variáveis de ambiente
-                Environment.SetEnvironmentVariable("USUARIO_ID", usuario.IdUsuario.ToString());
-                Environment.SetEnvironmentVariable("USUARIO_NOME", usuario.Nome);
-                Environment.SetEnvironmentVariable("USUARIO_EMAIL", usuario.Email);
-                Environment.SetEnvironmentVariable("USUARIO_TELEFONE", usuario.Senha);
-                Environment.SetEnvironmentVariable("USUARIO_TIPO", usuario.TipoUsuario.ToString());
+
+                // Armazenando informações do usuário na sessão
+                _httpContextAccessor.HttpContext.Session.SetInt32("USUARIO_ID", usuario.IdUsuario);
+                _httpContextAccessor.HttpContext.Session.SetString("USUARIO_NOME", usuario.Nome);
+                _httpContextAccessor.HttpContext.Session.SetString("USUARIO_EMAIL", usuario.Email);
+                _httpContextAccessor.HttpContext.Session.SetString("USUARIO_TELEFONE", usuario.Telefone);
+                _httpContextAccessor.HttpContext.Session.SetString("USUARIO_TIPO", usuario.TipoUsuario.ToString());
                 return usuarioVM;
             }
-            // Acessando as variáveis de ambiente
-            /*string id = Environment.GetEnvironmentVariable("USUARIO_ID");
-            string nome = Environment.GetEnvironmentVariable("USUARIO_NOME");
-            string email = Environment.GetEnvironmentVariable("USUARIO_EMAIL");
-            string telefone = Environment.GetEnvironmentVariable("USUARIO_TELEFONE");
-            string tipoUsuario = Environment.GetEnvironmentVariable("USUARIO_TIPO");
-            // Se não encontrar o usuário, retorna null ou uma exceção
-            */
+            
             return null; // Ou você pode lançar uma exceção, dependendo de sua estratégia
         }
 
@@ -161,6 +157,7 @@ namespace PortifolioDEV.Repositorios
                 throw new Exception($"Erro ao excluir o usuário: {ex.Message}");
             }
         }
+
 
 
     }

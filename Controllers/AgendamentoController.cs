@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using PortifolioDEV.Models;
@@ -18,6 +19,7 @@ namespace PortifolioDEV.Controllers
             _context = context;
         }
 
+        [Authorize]
         public IActionResult Index()
         {
             var servicos = new ServicoRepositorio(_context);
@@ -67,6 +69,7 @@ namespace PortifolioDEV.Controllers
             return View(agendamentos);
         }
 
+        [Authorize]
         public IActionResult Cadastro()
         {
             var servicos = new ServicoRepositorio(_context);
@@ -87,6 +90,7 @@ namespace PortifolioDEV.Controllers
             return View();
         }
 
+        [Authorize]
         public IActionResult Gerenciamento_Agendamento_Usuario()
         {
             var servicos = new ServicoRepositorio(_context);
@@ -178,8 +182,7 @@ namespace PortifolioDEV.Controllers
 
         public IActionResult InserirAgendamentoCliente(DateTime dtHoraAgendamento, DateOnly dataAtendimento, TimeOnly horario, int IdUsuario, int IdServico)
         {
-            string id = Environment.GetEnvironmentVariable("USUARIO_ID");
-            int IdUsuarioLocal = Int32.Parse(id);
+            int IdUsuarioLocal = HttpContext.Session.GetInt32("USUARIO_ID") ?? 0;
             try
             {
                 // Chama o método do repositório que realiza a inserção no banco de dados

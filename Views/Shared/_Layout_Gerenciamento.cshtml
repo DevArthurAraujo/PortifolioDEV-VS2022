@@ -21,11 +21,11 @@
     <!-------------------- Header Area (Start) -------------------->
     <header class="header">
         @{
-            // Verifica se o usuário está autenticado e recupera os dados de ambiente
-            bool usuarioAutenticado = !string.IsNullOrEmpty(Environment.GetEnvironmentVariable("USUARIO_ID"));
-            string usuarioNome = Environment.GetEnvironmentVariable("USUARIO_NOME");
-            string tipoUsuario = Environment.GetEnvironmentVariable("USUARIO_TIPO");
+            bool usuarioAutenticado = (Context.Session.GetInt32("USUARIO_ID") != null);
+            string usuarioNome = Context.Session.GetString("USUARIO_NOME") ?? "Usuário não autenticado";
+            string tipoUsuario = Context.Session.GetString("USUARIO_TIPO") ?? "Desconhecido";
         }
+
         <!-- Logo --> 
         <h1 class="section-title">
             <a href="/Home/Index"><img src="~/images/Portfolio/Arthur-logo-A.png" alt="About-Image" style="width: 100px; height: 100px; "></a>
@@ -67,9 +67,6 @@
                                 <i class="fa fa-file-archive" aria-hidden="true" style="margin-right: 20px; color: #ac0404;"></i>
                                 Relatório
                             </a>
-                            <a href="javascript:void(0);" onclick="logout()" style="padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
-                                <i class="fa fa-sign-out-alt" aria-hidden="true" style="margin-right: 8px;"></i> Sair
-                            </a>
                         </div>
                     </div>
                     
@@ -89,9 +86,6 @@
                             <a href="/Agendamento/Cadastro">
                                 <i class="fa fa-file" aria-hidden="true" style="margin-right: 20px; color: #ac0404;"></i>
                                 Cadastro Agendamento
-                            </a>
-                            <a href="javascript:void(0);" onclick="logout()" style="padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
-                                <i class="fa fa-sign-out-alt" aria-hidden="true" style="margin-right: 8px;"></i> Sair
                             </a>
                         </div>
                     </div>

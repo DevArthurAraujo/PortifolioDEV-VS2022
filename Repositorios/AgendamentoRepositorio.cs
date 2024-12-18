@@ -10,12 +10,16 @@ namespace PortifolioDEV.Repositorios
 {
     public class AgendamentoRepositorio
     {
-        private BdPortfolioDevContext _context;
-        public AgendamentoRepositorio(BdPortfolioDevContext context)
+
+        private readonly BdPortfolioDevContext _context;
+        private readonly IHttpContextAccessor _httpContextAccessor;
+
+        // Construtor
+        public AgendamentoRepositorio(BdPortfolioDevContext context, IHttpContextAccessor httpContextAccessor)
         {
             _context = context;
+            _httpContextAccessor = httpContextAccessor;  // Injeção de IHttpContextAccessor
         }
-
 
         // Método para inserir um novo agendamento
         public bool InserirAgendamento(DateTime dtHoraAgendamento, DateOnly dataAtendimento, TimeOnly horario, int IdUsuario, int IdServico)
@@ -138,7 +142,7 @@ namespace PortifolioDEV.Repositorios
         public List<AgendamentoVM> ListarAgendamentosClientes()
         {
             // Obtendo o ID do usuário a partir da variável de ambiente
-            string nome = Environment.GetEnvironmentVariable("USUARIO_NOME");
+            string nome = _httpContextAccessor.HttpContext.Session.GetString("USUARIO_NOME");
 
             var listAtendimentos = new List<AgendamentoVM>();
 
