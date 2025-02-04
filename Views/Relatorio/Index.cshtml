@@ -1,72 +1,134 @@
-﻿
-
-<body>
-
+﻿<body>
+    <!-- Botão de Scroll para o topo -->
     <a href="#home" class="scroll-top">
         <i class="fas fa-angle-up"></i>
     </a>
 
-    <section class="home" id="home">
+    <section>
+        
+        <div class="box-container" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+            <div class="content" style="width: 50%; margin-top: 100px;"> <!-- Aumentei a largura do container da caixa de filtros -->
+                <div class="filter-container">
+                    <h3>Filtrar Relatório</h3>
 
-        <div class="box-container">
+                    <div class="filter-group">
+                        <label for="campoFiltro1">Filtro 1:</label>
+                        <input type="text" id="campoFiltro1" placeholder="Digite o filtro" class="filter-input">
+                    </div>
 
-            <div class="content">
-                <div class="text">
-                    <h2>Bem-vindo à relatorio!</h2>
-                    <h1>Nós Somos Especialistas em <span class="typing-text"></span></h1>
-                    <p>
-                        Relatorio
-                    </p>
-                    <a href="#about" class="btn">Sobre Nós <i class="fas fa-user"></i></a>
+                    <div class="filter-group">
+                        <label for="campoFiltro2">Filtro 2:</label>
+                        <input type="text" id="campoFiltro2" placeholder="Digite o filtro" class="filter-input">
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="campoFiltro3">Filtro 3:</label>
+                        <input type="text" id="campoFiltro3" placeholder="Digite o filtro" class="filter-input">
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="colunaFiltro1">Escolha a coluna 1:</label>
+                        <select id="colunaFiltro1" class="filter-select">
+                            <option value="coluna1">Coluna 1</option>
+                            <option value="coluna2">Coluna 2</option>
+                            <option value="coluna3">Coluna 3</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="colunaFiltro2">Escolha a coluna 2:</label>
+                        <select id="colunaFiltro2" class="filter-select">
+                            <option value="coluna1">Coluna 1</option>
+                            <option value="coluna2">Coluna 2</option>
+                            <option value="coluna3">Coluna 3</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="colunaFiltro3">Escolha a coluna 3:</label>
+                        <select id="colunaFiltro3" class="filter-select">
+                            <option value="coluna1">Coluna 1</option>
+                            <option value="coluna2">Coluna 2</option>
+                            <option value="coluna3">Coluna 3</option>
+                        </select>
+                    </div>
+
+                    <button id="pesquisarBtn" class="btn">Pesquisar</button>
                 </div>
             </div>
-
-            <div class="image">
-                <img src="~/images/Home/Home-Image.png" alt="Home-Image">
-            </div>
-
         </div>
-
     </section>
 
+    <!-- Tabela jTable -->
+    <section class="tabela-relatorio">
+        <div id="tabelaContainer"></div>
+    </section>
 
+    <!-- Scripts -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/vendors/typed/typed.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jtable@2.5.0/dist/jtable.min.js"></script>
 
-    <!---------------- Custom Script ---------------->
-    <!-- Typed Script -->
-    <script>
-        var typed = new Typed('.typing-text', {
-
-            strings: ['tratamentos Faciais ', 'tratamentos corporais', 'tratamentos capilares', 'podologia', 'bem-estar e terapias alternativas'],
-            typeSpeed: 120,
-            loop: true
-        });
-    </script>
-
-
-    <script>
-
-        function verificarUsuarioLogado() {
-            var usuarioId = '@Context.Session.GetInt32("USUARIO_ID")'; // Variável do ambiente passada pelo backend
-            console.log(usuarioId)
-            if (usuarioId !== "") { // Verifica se o usuário está logado
-                // Se o usuário estiver logado, redireciona para a página de agendamento
-                window.location.href = "/Agendamento/Cadastro_Agendamento";
-            } else {
-                // Se não estiver logado, redireciona para a página de login
-                window.location.href = "/Usuario/Login";
-            }
+    <!-- Estilo CSS -->
+    <style>
+        .filters {
+            padding: 30px 0;
+            background-color: #F7F5F2;
+            text-align: center;
         }
-        // Script to handle the dropdown functionality
-        document.querySelector('.dropdown').addEventListener('mouseover', function () {
-            this.querySelector('.dropdown-content').style.display = 'block';
-        });
 
-        document.querySelector('.dropdown').addEventListener('mouseout', function () {
-            this.querySelector('.dropdown-content').style.display = 'none';
-        });
-    </script>
+        .filter-container {
+            max-width: 1000px; /* Aumentei o tamanho máximo */
+            margin: 0 auto;
+            background-color: #F7F3F0;
+            border: 1px solid #ac0404;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .filter-container h3 {
+            text-align: center;
+            padding-bottom: 2rem;
+            color: #ac0404;
+            font-size: 3rem;
+        }
+
+        .filter-group {
+            margin-bottom: 15px;
+        }
+
+        .filter-group label {
+            display: block;
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        .filter-input,
+        .filter-select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        .filter-input:focus,
+        .filter-select:focus {
+            border-color: #ac0404;
+            outline: none;
+        }
+
+
+        #tabelaContainer {
+            margin-top: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </body>
-
-
