@@ -1,0 +1,72 @@
+﻿
+
+<body>
+
+    <a href="#home" class="scroll-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <section class="home" id="home">
+
+        <div class="box-container">
+
+            <div class="content">
+                <div class="text">
+                    <h2>Bem-vindo à relatorio!</h2>
+                    <h1>Nós Somos Especialistas em <span class="typing-text"></span></h1>
+                    <p>
+                        Relatorio
+                    </p>
+                    <a href="#about" class="btn">Sobre Nós <i class="fas fa-user"></i></a>
+                </div>
+            </div>
+
+            <div class="image">
+                <img src="~/images/Home/Home-Image.png" alt="Home-Image">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/vendors/typed/typed.js"></script>
+
+    <!---------------- Custom Script ---------------->
+    <!-- Typed Script -->
+    <script>
+        var typed = new Typed('.typing-text', {
+
+            strings: ['tratamentos Faciais ', 'tratamentos corporais', 'tratamentos capilares', 'podologia', 'bem-estar e terapias alternativas'],
+            typeSpeed: 120,
+            loop: true
+        });
+    </script>
+
+
+    <script>
+
+        function verificarUsuarioLogado() {
+            var usuarioId = '@Context.Session.GetInt32("USUARIO_ID")'; // Variável do ambiente passada pelo backend
+            console.log(usuarioId)
+            if (usuarioId !== "") { // Verifica se o usuário está logado
+                // Se o usuário estiver logado, redireciona para a página de agendamento
+                window.location.href = "/Agendamento/Cadastro_Agendamento";
+            } else {
+                // Se não estiver logado, redireciona para a página de login
+                window.location.href = "/Usuario/Login";
+            }
+        }
+        // Script to handle the dropdown functionality
+        document.querySelector('.dropdown').addEventListener('mouseover', function () {
+            this.querySelector('.dropdown-content').style.display = 'block';
+        });
+
+        document.querySelector('.dropdown').addEventListener('mouseout', function () {
+            this.querySelector('.dropdown-content').style.display = 'none';
+        });
+    </script>
+</body>
+
+

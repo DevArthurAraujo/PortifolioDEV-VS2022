@@ -66,11 +66,11 @@ namespace PortifolioDEV.Controllers
                 {
                     // Criação das claims do usuário para o cookie de autenticação
                     var claims = new List<Claim>
-     {
-         new Claim(ClaimTypes.Name, usuario.Nome),
-         new Claim(ClaimTypes.Email, usuario.Email),
-         // Você pode adicionar outras claims, como roles ou permissões, se necessário
-     };
+                     {
+                         new Claim(ClaimTypes.Name, usuario.Nome),
+                         new Claim(ClaimTypes.Email, usuario.Email),
+                         // Você pode adicionar outras claims, como roles ou permissões, se necessário
+                     };
 
                     // Criação da identidade do usuário para o cookie de autenticação
                     var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);

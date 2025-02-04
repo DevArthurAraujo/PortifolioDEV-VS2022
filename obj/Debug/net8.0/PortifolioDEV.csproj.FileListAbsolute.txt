@@ -206,7 +206,3 @@ C:\Users\Aluno Noite\Documents\GitHub\PortifolioDEV-VS2022\bin\Debug\net8.0\runt
 C:\Users\Aluno Noite\Documents\GitHub\PortifolioDEV-VS2022\bin\Debug\net8.0\Castle.Core.dll
 C:\Users\Aluno Noite\Documents\GitHub\PortifolioDEV-VS2022\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\Aluno Noite\Documents\GitHub\PortifolioDEV-VS2022\bin\Debug\net8.0\Moq.dll
-C:\Users\Aluno Noite\Documents\GitHub\PortifolioDEV-VS2022\bin\Debug\net8.0\PortifolioDEV.staticwebassets.endpoints.json
-C:\Users\Aluno Noite\Documents\GitHub\PortifolioDEV-VS2022\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\Aluno Noite\Documents\GitHub\PortifolioDEV-VS2022\obj\Debug\net8.0\staticwebassets\msbuild.PortifolioDEV.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\Users\Aluno Noite\Documents\GitHub\PortifolioDEV-VS2022\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
