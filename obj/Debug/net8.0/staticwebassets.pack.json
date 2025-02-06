@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\css\\main.css"
     },
     {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\css\\relatorio.css",
+      "PackagePath": "staticwebassets\\css\\relatorio.css"
+    },
+    {
       "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\css\\responsive.css",
       "PackagePath": "staticwebassets\\css\\responsive.css"
     },

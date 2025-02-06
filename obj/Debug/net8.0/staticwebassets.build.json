@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8kiSImGxXL0MNtO8gJJjaz+7Y8ItzuJXjL3mfp3IDIo=",
+  "Hash": "FGPLeqdP4ICCkYtraFCYmBwDjLorOVHwTzWJWZI2ZyY=",
   "Source": "PortifolioDEV",
   "BasePath": "_content/PortifolioDEV",
   "Mode": "Default",
@@ -129,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\main.css"
+    },
+    {
+      "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\css\\relatorio.css",
+      "SourceId": "PortifolioDEV",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\",
+      "BasePath": "_content/PortifolioDEV",
+      "RelativePath": "css/relatorio.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\relatorio.css"
     },
     {
       "Identity": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\css\\responsive.css",

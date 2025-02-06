@@ -1,134 +1,291 @@
-﻿<body>
-    <!-- Botão de Scroll para o topo -->
-    <a href="#home" class="scroll-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
-
-    <section>
-        
-        <div class="box-container" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-            <div class="content" style="width: 50%; margin-top: 100px;"> <!-- Aumentei a largura do container da caixa de filtros -->
-                <div class="filter-container">
-                    <h3>Filtrar Relatório</h3>
-
-                    <div class="filter-group">
-                        <label for="campoFiltro1">Filtro 1:</label>
-                        <input type="text" id="campoFiltro1" placeholder="Digite o filtro" class="filter-input">
-                    </div>
-
-                    <div class="filter-group">
-                        <label for="campoFiltro2">Filtro 2:</label>
-                        <input type="text" id="campoFiltro2" placeholder="Digite o filtro" class="filter-input">
-                    </div>
-
-                    <div class="filter-group">
-                        <label for="campoFiltro3">Filtro 3:</label>
-                        <input type="text" id="campoFiltro3" placeholder="Digite o filtro" class="filter-input">
-                    </div>
-
-                    <div class="filter-group">
-                        <label for="colunaFiltro1">Escolha a coluna 1:</label>
-                        <select id="colunaFiltro1" class="filter-select">
-                            <option value="coluna1">Coluna 1</option>
-                            <option value="coluna2">Coluna 2</option>
-                            <option value="coluna3">Coluna 3</option>
-                        </select>
-                    </div>
-
-                    <div class="filter-group">
-                        <label for="colunaFiltro2">Escolha a coluna 2:</label>
-                        <select id="colunaFiltro2" class="filter-select">
-                            <option value="coluna1">Coluna 1</option>
-                            <option value="coluna2">Coluna 2</option>
-                            <option value="coluna3">Coluna 3</option>
-                        </select>
-                    </div>
-
-                    <div class="filter-group">
-                        <label for="colunaFiltro3">Escolha a coluna 3:</label>
-                        <select id="colunaFiltro3" class="filter-select">
-                            <option value="coluna1">Coluna 1</option>
-                            <option value="coluna2">Coluna 2</option>
-                            <option value="coluna3">Coluna 3</option>
-                        </select>
-                    </div>
-
-                    <button id="pesquisarBtn" class="btn">Pesquisar</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Tabela jTable -->
-    <section class="tabela-relatorio">
-        <div id="tabelaContainer"></div>
-    </section>
-
-    <!-- Scripts -->
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/vendors/typed/typed.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jtable@2.5.0/dist/jtable.min.js"></script>
-
-    <!-- Estilo CSS -->
+﻿@{
+    Layout = "~/Views/Shared/_Layout_Gerenciamento.cshtml";
+}
     <style>
-        .filters {
-            padding: 30px 0;
+
+        /* Estilo para a box-container */
+        .box-container {
+            padding: 30px;
+            margin-bottom: 30px;
             background-color: #F7F5F2;
-            text-align: center;
-        }
-
-        .filter-container {
-            max-width: 1000px; /* Aumentei o tamanho máximo */
-            margin: 0 auto;
-            background-color: #F7F3F0;
-            border: 1px solid #ac0404;
-            padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px #ac0404;
+            height: auto; /* Ajuste para a altura ser dinâmica */
         }
 
-        .filter-container h3 {
-            text-align: center;
-            padding-bottom: 2rem;
-            color: #ac0404;
-            font-size: 3rem;
+        /* Estilo para a container da página */
+        .container.page-maneger {
+            padding: 20px;
+            background-color: #F7F5F2;
+            border-radius: 8px;
+            box-shadow: 2px 0 10px -2px #ac0404;
+            min-height: 400px; /* Altura mínima para a div */
+            height: auto; /* Deixe a altura da div crescer conforme o conteúdo */
+            border-top: 4px solid #ac0404; /* Borda no topo */
         }
 
+
+        /* Filtro Input e Select */
         .filter-group {
-            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
         }
 
-        .filter-group label {
-            display: block;
-            font-size: 14px;
-            color: #555;
-            margin-bottom: 5px;
-        }
+            .filter-group > div {
+                flex: 1;
+                margin-right: 10px;
+            }
+
+                .filter-group > div:last-child {
+                    margin-right: 0;
+                }
 
         .filter-input,
         .filter-select {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             font-size: 16px;
             border-radius: 5px;
-            border: 1px solid #ddd;
+            border: 1px solid black;
             box-sizing: border-box;
             transition: all 0.3s ease;
         }
 
-        .filter-input:focus,
-        .filter-select:focus {
-            border-color: #ac0404;
-            outline: none;
-        }
+            .filter-input:focus,
+            .filter-select:focus {
+                border-color: #ac0404;
+                outline: none;
+            }
 
 
-        #tabelaContainer {
-            margin-top: 30px;
-            background-color: #fff;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Estilos para a tabela */
+        #tabelaAgendamentos {
+            margin-top: 20px;
+            width: 100%;
+            color: white; /* Texto verde */
+            background-color: white; /* Fundo preto para a tabela */
+            border-collapse: collapse; /* Garante que as bordas fiquem colapsadas */
+            font-family: Arial, sans-serif; /* Fonte mais clean */
         }
+
+            /* Estilo das células da tabela */
+            #tabelaAgendamentos th, #tabelaAgendamentos td {
+                padding: 12px 15px;
+                text-align: left; /* Alinha o texto à esquerda */
+                border: 1px solid white; /* Cor escura nas bordas */
+            }
+
+            /* Estilo para os cabeçalhos da tabela */
+            #tabelaAgendamentos th {
+                background-color: #ac0404; /* Fundo escuro para os cabeçalhos */
+                color: white; /* Cor verde neon para o texto dos cabeçalhos */
+                font-weight: bold;
+            }
+
+            /* Estilo para as linhas da tabela (alternando a cor das linhas para facilitar leitura) */
+            #tabelaAgendamentos tr:nth-child(even) {
+                background-color: #333; /* Cor escura para linhas pares */
+            }
+
+            #tabelaAgendamentos tr:nth-child(odd) {
+                background-color: #444; /* Cor um pouco mais clara para as linhas ímpares */
+            }
+
+            /* Estilo para o foco nos links (caso haja links na tabela) */
+            #tabelaAgendamentos a {
+                color: chocolate; /* Verde neon para links */
+                text-decoration: none; /* Remove o sublinhado */
+            }
+
+                #tabelaAgendamentos a:hover {
+                    text-decoration: underline; /* Sublinha ao passar o mouse */
+                }
+
+        /* Adicionando espaçamento entre a tabela e o "Mostrar registros" */
+        .dataTables_info {
+            margin-top: 20px; /* Espaço superior maior entre a tabela e a contagem */
+        }
+
+        #tabelaAgendamentos_filter {
+            padding: 2px; /* Espaçamento interno ao redor do campo de filtro */
+            border-radius: 2px; /* Borda arredondada */
+        }
+
+            #tabelaAgendamentos_filter input {
+                border: none; /* Remove a borda do campo de entrada */
+                padding: 5px; /* Ajusta o preenchimento interno do campo de entrada */
+                color: white; /* Cor do texto no campo */
+                background-color: #ac0404; /* Cor de fundo preta para o campo de entrada */
+            }
+
     </style>
-</body>
+
+    <body>
+
+        <section class="maneger-page-section">
+            <div class="container page-maneger">
+
+                <div class="add-user-button">               
+                    <h1 class="section-title cliente-title-maneger">Relatório </h1>
+                </div>
+                <section class="home" id="home">
+                    <div class="filter-group">
+                        <div>
+                            <label for="campo1" style="color:#ac0404;">Escolha a coluna 1:</label>
+                            <select id="campo1" class="filter-select">
+                                <option value="" selected disabled>Selecione um campo para filtrar</option>
+                                <option value="DataAtendimento">Data do Agendamento</option>
+                                <option value="Horario">Horario do Atendimento</option>
+                                <option value="TipoServico">Tipo do serviço</option>
+                                <option value="Valor">Valor do serviço</option>
+                                <option value="Nome">Nome do cliente</option>
+                                <option value="Email">Email do cliente</option>
+                                <option value="Telefone">Telefone do cliente</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="valor1" style="color:#ac0404">Filtro 1:</label>
+                            <input type="text" id="valor1" placeholder="Digite o filtro" class="filter-input">
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <div>
+                            <label for="campo2" style="color:#ac0404">Escolha a coluna 2:</label>
+                            <select id="campo2" class="filter-select">
+                                <option value="" selected disabled>Selecione um campo para filtrar</option>
+                                <option value="DataAtendimento">Data do Agendamento</option>
+                                <option value="Horario">Horario do Atendimento</option>
+                                <option value="TipoServico">Tipo do serviço</option>
+                                <option value="Valor">Valor do serviço</option>
+                                <option value="Nome">Nome do cliente</option>
+                                <option value="Email">Email do cliente</option>
+                                <option value="Telefone">Telefone do cliente</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="valor2" style="color:#ac0404">Filtro 2:</label>
+                            <input type="text" id="valor2" placeholder="Digite o filtro" class="filter-input">
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <div>
+                            <label for="campo3" style="color:#ac0404">Escolha a coluna 3:</label>
+                            <select id="campo3" class="filter-select">
+                                <option value="" selected disabled>Selecione um campo para filtrar</option>
+                                <option value="DataAtendimento">Data do Agendamento</option>
+                                <option value="Horario">Horario do Atendimento</option>
+                                <option value="TipoServico">Tipo do serviço</option>
+                                <option value="Valor">Valor do serviço</option>
+                                <option value="Nome">Nome do cliente</option>
+                                <option value="Email">Email do cliente</option>
+                                <option value="Telefone">Telefone do cliente</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="valor3" style="color:#ac0404">Filtro 3:</label>
+                            <input type="text" id="valor3" placeholder="Digite o filtro" class="filter-input">
+                        </div>
+                    </div>
+                    <button id="pesquisarBtn" class="btn" onclick="filtrarAgendamentos()">Pesquisar</button>
+
+                    <!-- Tabela para exibir os agendamentos -->
+                    <div class="box-container">
+                        <table id="tabelaAgendamentos" class="table table-striped"></table>
+                    </div>
+                    <br />
+                </section>
+            </div>
+        </section>
+
+        <!-- Inclusão do jQuery e DataTables -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.70/pdfmake.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.70/vfs_fonts.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.pdfMake.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+
+        <script>
+            function filtrarAgendamentos() {
+                var campo1 = $('#campo1').val();
+                var campo2 = $('#campo2').val();
+                var campo3 = $('#campo3').val();
+                var valor1 = $('#valor1').val();
+                var valor2 = $('#valor2').val();
+                var valor3 = $('#valor3').val();
+
+                console.log(campo1, campo2, campo3, valor1, valor2, valor3);
+
+
+                // Fazer a requisição AJAX para filtrar os agendamentos
+                $.ajax({
+                    url: '/Relatorio/GetAgendamentos',  // Substitua 'SeuController' pelo nome do seu controller
+                    type: 'GET',
+                    data: {
+                        campo1: campo1,
+                        campo2: campo2,
+                        campo3: campo3,
+                        valor1: valor1,
+                        valor2: valor2,
+                        valor3: valor3
+                    },
+                    success: function (resultado) {
+                        console.log('Resultado:', resultado);  // Verifique o que está sendo retornado
+                        if (resultado && resultado.length > 0) {
+                            // Inicializa ou reinicializa a tabela com os novos dados
+                            $('#tabelaAgendamentos').DataTable({
+                                destroy: true,  // Permite reinicializar a tabela ao aplicar novos filtros
+                                data: resultado,
+                                columns: [
+                                    { title: 'Data do Agendamento', data: 'dataAtendimento' },
+                                    { title: 'Horario do Atendimento', data: 'horario' },
+                                    { title: 'Tipo do Serviço', data: 'tipoServico' },
+                                    { title: 'Valor do Serviço', data: 'valor' },
+                                    { title: 'Nome do Cliente', data: 'nome' },
+                                    { title: 'Email do Cliente', data: 'email' },
+                                    { title: 'Telefone do Cliente', data: 'telefone' }
+                                ],
+                                language: {
+                                    url: 'https://cdn.datatables.net/plug-ins/1.10.21/i18n/Portuguese.json'
+                                },
+                                dom: '<"left-buttons"B>lfrtip', // Centraliza os botões de exportação
+
+                                initComplete: function () {
+                                    var api = this.api();
+                                    api.columns().every(function () {
+                                        var column = this;
+                                        $(column.header()).css('background-color', 'color:#ac0404');
+                                        $(column.header()).css('color', 'white'); // Cabeçalhos
+                                    });
+                                },
+                                rowCallback: function (row, data, index) {
+                                    if (index % 2 === 0) {
+                                        $(row).css('background-color', '#F7F5F2'); // Linhas pares com fundo mais escuro
+                                    } else {
+                                        $(row).css('background-color', '#F7F5F9'); // Linhas ímpares com fundo mais claro
+                                    }
+                                }
+                            });
+                        } else {
+                            alert('Nenhum agendamento encontrado.');
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        console.error('Erro ao buscar agendamentos:', error);
+                    }
+                });
+            }
+
+
+
+
+
+        </script>
+    </body>
+
+
