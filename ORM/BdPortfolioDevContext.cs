@@ -66,6 +66,9 @@ public partial class BdPortfolioDevContext : DbContext
 
             entity.ToTable("Tb_Usuario");
 
+            entity.Property(e => e.DataHoraCadastro)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
             entity.Property(e => e.Email)
                 .HasMaxLength(500)
                 .IsUnicode(false);

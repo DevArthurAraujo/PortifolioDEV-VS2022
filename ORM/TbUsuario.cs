@@ -17,5 +17,7 @@ public partial class TbUsuario
 
     public int TipoUsuario { get; set; }
 
+    public DateTime DataHoraCadastro { get; set; }
+
     public virtual ICollection<TbAgendamento> TbAgendamentos { get; set; } = new List<TbAgendamento>();
 }
