@@ -76,20 +76,25 @@
 <body>
     <!-- Cabeçalho com 3 divs grandes e o select -->
     <div class="dashboard-header">
+        <!-- Caixa para o total de usuários cadastrados -->
         <div class="box-container">
             <div class="box">Total de usuários cadastrados em 2025:</div>
-            <div class="small-box">+15% em relação a 2024</div>
-        </div>
-        <div class="box-container">
-            <div class="box">Total de agendamentos feitos em 2025:</div>
-            <div class="small-box">+20% comparado ao mês passado</div>
-        </div>
-        <div class="box-container">
-            <div class="box">Lucro total em 2025:</div>
-            <div class="small-box">R$ 1.500.000,00</div>
+            <div class="small-box" id="totalUsuarios">Carregando...</div>
         </div>
 
-        <select id="anoSelect">
+        <!-- Caixa para o total de agendamentos -->
+        <div class="box-container">
+            <div class="box">Total de agendamentos feitos em 2025:</div>
+            <div class="small-box" id="totalAgendamentos">Carregando...</div>
+        </div>
+
+        <!-- Caixa para o lucro total -->
+        <div class="box-container">
+            <div class="box">Lucro total em 2025:</div>
+            <div class="small-box" id="lucroTotal">Carregando...</div>
+        </div>
+
+        <select id="anoSelect" onchange="mudarAno()">
             <option value="2025">2025</option>
             <option value="2024">2024</option>
             <option value="2023">2023</option>
@@ -98,7 +103,7 @@
 
     <!-- Container do Gráfico -->
     <div id="chart-container"></div>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             Highcharts.chart('chart-container', {
@@ -111,7 +116,66 @@
                         }]
             });
         });
+
+        function mudarAno() {
+            var anoSelecionado = document.getElementById('anoSelect').value;  // Obtém o valor do ano selecionado
+
+            // Chama as funções passando o ano selecionado
+            contarAgendamentosPorAno(anoSelecionado);
+            contarUsuariosPorAno(anoSelecionado);
+            somarLucroPorAno(anoSelecionado);
+        }
+
+        // Função para contar agendamentos por ano
+        function contarAgendamentosPorAno() {
+            var ano = $('#anoSelect').val();  // Obtém o valor do ano do input
+            $.ajax({
+                url: '/Dashboard/ContarAgendamentosPorAno',  // URL da action
+                type: 'GET',
+                data: { ano: ano },
+                success: function (data) {
+                    $('#totalAgendamentos').text('Total de Agendamentos: ' + data);  // Exibe o resultado na página
+                },
+                error: function (xhr, status, error) {
+                    console.error('Erro na chamada Ajax:', status, error);
+                }
+            });
+        }
+
+        // Função para contar usuários por ano
+        function contarUsuariosPorAno() {
+            var ano = $('#anoSelect').val();  // Obtém o valor do ano do input
+            $.ajax({
+                url: '/Dashboard/ContarUsuariosPorAno',  // URL da action
+                type: 'GET',
+                data: { ano: ano },
+                success: function (data) {
+                    $('#totalUsuarios').text('Total de Usuários: ' + data);
+                },
+                error: function (xhr, status, error) {
+                    console.error('Erro na chamada Ajax:', status, error);
+                }
+            });
+        }
+
+        // Função para somar lucro por ano
+        function somarLucroPorAno() {
+            var ano = $('#anoSelect').val();  // Obtém o valor do ano do input
+            $.ajax({
+                url: '/Dashboard/SomarLucroPorAno',  // URL da action
+                type: 'GET',
+                data: { ano: ano },
+                success: function (data) {
+                    $('#lucroTotal').text('Lucro Total: ' + data);
+                },
+                error: function (xhr, status, error) {
+                    console.error('Erro na chamada Ajax:', status, error);
+                }
+            });
+        }
     </script>
+
+
 
 </body>
 </html>
