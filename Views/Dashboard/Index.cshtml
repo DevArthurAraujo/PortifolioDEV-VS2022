@@ -1,6 +1,6 @@
 ﻿@{
     ViewData["Title"] = "Dashboard";
-    Layout = null;
+    Layout = "~/Views/Shared/_Layout_Gerenciamento.cshtml";
 }
 
 <!DOCTYPE html>
@@ -11,23 +11,39 @@
     <title>Dashboard</title>
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            text-align: center;
+        /* Caixa do Dashboard */
+        .maneger-page-section {
+            width: 90%;
+            padding: 20px;
+            box-sizing: border-box;
+            margin: 0 auto; /* Garantir que a seção seja centralizada */
+            text-align: center; /* Centraliza o conteúdo do texto na seção */
         }
 
+        /* Containers para os gráficos */
+        .container, .page-maneger {
+            width: 100%; /* Garante que o conteúdo ocupe toda a largura */
+            padding: 0; /* Remover qualquer padding que possa causar deslocamento */
+            margin: 0 auto; /* Centraliza o container na tela */
+        }
+
+        /* Cabeçalho do Dashboard */
         .dashboard-header {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
             margin-bottom: 20px;
+            flex-wrap: wrap;
+            text-align: center; /* Centraliza o conteúdo do cabeçalho */
         }
 
+        /* Caixas de informações */
         .box-container {
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin: 10px;
+            text-align: center; /* Centraliza o conteúdo das caixas */
         }
 
         .box {
@@ -42,7 +58,8 @@
             color: white;
             border-radius: 10px;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-            margin-bottom: 5px;
+            margin-bottom: 10px;
+            text-align: center; /* Centraliza o texto dentro da caixa */
         }
 
         .small-box {
@@ -57,64 +74,108 @@
             color: #444;
             border-radius: 5px;
             box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+            text-align: center; /* Centraliza o texto dentro da small-box */
         }
 
+        /* Layout flex para os gráficos */
+        .grafico-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px; /* Espaçamento reduzido entre os gráficos */
+            margin-bottom: 60px; /* Espaço extra de 60px no final para margem */
+            width: 100%; /* Garante que os gráficos ocupem toda a largura disponível */
+            margin: 0 auto; /* Centraliza os gráficos na página */
+        }
+
+            .grafico-container > div {
+                width: 32%; /* Ajuste para 3 gráficos por linha */
+                max-width: 400px;
+                height: 400px;
+            }
+
+        /* Estilo do select */
         select {
             padding: 8px;
             font-size: 16px;
             border-radius: 5px;
             border: 1px solid #ccc;
+            margin-top: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto; /* Centraliza o select */
         }
 
-        #chart-container {
-            width: 80%;
-            margin: auto;
-            height: 400px;
-        }
     </style>
+
 </head>
 <body>
-    <!-- Cabeçalho com 3 divs grandes e o select -->
-    <div class="dashboard-header">
-        <!-- Caixa para o total de usuários cadastrados -->
-        <div class="box-container">
-            <div class="box">Total de usuários cadastrados em 2025:</div>
-            <div class="small-box" id="totalUsuarios">Carregando...</div>
+    <section class="maneger-page-section">
+        <div class="container page-maneger">
+            <!-- Cabeçalho com 3 divs grandes e o select -->
+            <div class="dashboard-header">
+                <!-- Caixa para o total de usuários cadastrados -->
+                <div class="box-container">
+                    <div class="box">Total de usuários cadastrados em 2025:</div>
+                    <div class="small-box" id="totalUsuarios">Carregando...</div>
+                </div>
+
+                <!-- Caixa para o total de agendamentos -->
+                <div class="box-container">
+                    <div class="box">Total de agendamentos feitos em 2025:</div>
+                    <div class="small-box" id="totalAgendamentos">Carregando...</div>
+                </div>
+
+                <!-- Caixa para o lucro total -->
+                <div class="box-container">
+                    <div class="box">Lucro total em 2025:</div>
+                    <div class="small-box" id="lucroTotal">Carregando...</div>
+                </div>
+
+                <select id="anoSelect" onchange="mudarAno()">
+                </select>
+
+            </div>
+            <!-- Divs para os gráficos -->
+            <div style="display: flex; justify-content: space-between;">
+                <div id="graficoUsuarios" style="height: 400px; width: 400px;"></div>
+                <div id="graficoAgendamentos" style="height: 400px; width: 400px;"></div>
+                <div id="graficoLucros" style="height: 400px; width: 400px;"></div>
+            </div>
         </div>
-
-        <!-- Caixa para o total de agendamentos -->
-        <div class="box-container">
-            <div class="box">Total de agendamentos feitos em 2025:</div>
-            <div class="small-box" id="totalAgendamentos">Carregando...</div>
+        <div class="container page-maneger">
+            <div style="display: flex; justify-content: space-between;">
+                <div id="container"></div>
+                <div id="grafico"></div>
+            </div>
         </div>
+    </section>
 
-        <!-- Caixa para o lucro total -->
-        <div class="box-container">
-            <div class="box">Lucro total em 2025:</div>
-            <div class="small-box" id="lucroTotal">Carregando...</div>
-        </div>
-
-        <select id="anoSelect" onchange="mudarAno()">
-            <option value="2025">2025</option>
-            <option value="2024">2024</option>
-            <option value="2023">2023</option>
-        </select>
-    </div>
-
-    <!-- Container do Gráfico -->
-    <div id="chart-container"></div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            Highcharts.chart('chart-container', {
-                chart: { type: 'line' },
-                title: { text: 'Gráfico de Exemplo' },
-                xAxis: { categories: ['Jan', 'Fev', 'Mar', 'Abr'] },
-                series: [{
-                    name: 'Vendas',
-                    data: @Html.Raw(ViewBag.ChartData)
-                        }]
-            });
+        $(document).ready(function () {
+            var anoAtual = new Date().getFullYear();
+
+            // Preencher o select com o ano atual e os dois anos anteriores
+            for (var i = 0; i < 3; i++) {
+                var ano = anoAtual - i;
+                $('#anoSelect').append(new Option(ano, ano)); // Adiciona cada ano como opção
+            }
+
+            // Define o ano atual como o selecionado por padrão
+            $('#anoSelect').val(anoAtual);
+
+
+            contarAgendamentosPorAno(anoAtual);
+            contarUsuariosPorAno(anoAtual);
+            somarLucroPorAno(anoAtual);
+            carregarGraficoAgendamentos(anoAtual);
+            carregarGraficoUsuarios(anoAtual);
+            carregarGraficoLucros(anoAtual);
+            carregarGraficoPizza(anoAtual);
         });
 
         function mudarAno() {
@@ -124,6 +185,10 @@
             contarAgendamentosPorAno(anoSelecionado);
             contarUsuariosPorAno(anoSelecionado);
             somarLucroPorAno(anoSelecionado);
+            carregarGraficoAgendamentos(anoSelecionado);
+            carregarGraficoUsuarios(anoSelecionado);
+            carregarGraficoLucros(anoSelecionado);
+            carregarGraficoPizza(anoSelecionado);
         }
 
         // Função para contar agendamentos por ano
@@ -173,9 +238,349 @@
                 }
             });
         }
+
+        // Função para carregar os dados e gerar o gráfico de agendamentos por mês
+        function carregarGraficoAgendamentos(ano) {
+            $.getJSON('@Url.Action("ContarAgendamentosPorMes", "Dashboard")', { ano: ano }, function (dados) {
+                Highcharts.chart('graficoAgendamentos', {
+                    chart: {
+                        type: 'column',
+                        backgroundColor: '#F7F5F2'  // Fundo preto
+                    },
+                    title: {
+                        text: 'Agendamentos por Mês',
+                        style: {
+                            color: '#ac0404'  // Cor do título em branco
+                        }
+                    },
+                    xAxis: {
+                        categories: dados.categorias, // Meses
+                        labels: {
+                            style: {
+                                color: '#ac0404'  // Cor das labels do eixo X em branco
+                            }
+                        }
+                    },
+                    yAxis: {
+                        title: {
+                            text: 'Total de Agendamentos',
+                            style: {
+                                color: '#ac0404'  // Cor do título do eixo Y em branco
+                            }
+                        },
+                        labels: {
+                            style: {
+                                color: '#ac0404'  // Cor das labels do eixo Y em branco
+                            }
+                        }
+                    },
+                    series: dados.series, // Dados dos agendamentos
+                    plotOptions: {
+                        column: {
+                            dataLabels: {
+                                color: '#ac0404'  // Cor das labels de dados em branco
+                            }
+                        }
+                    },
+                    tooltip: {
+                        backgroundColor: '#333333',  // Cor de fundo do tooltip
+                        style: {
+                            color: '#ac0404'  // Cor do texto no tooltip
+                        }
+                    }
+                });
+            });
+        }
+
+        // Função para carregar os dados e gerar o gráfico de usuários cadastrados por mês
+        function carregarGraficoUsuarios(ano) {
+            $.getJSON('@Url.Action("ContarUsuariosPorMes", "Dashboard")', { ano: ano }, function (dados) {
+                Highcharts.chart('graficoUsuarios', {
+                    chart: {
+                        type: 'column',
+                        backgroundColor: '#F7F5F2'  // Fundo preto
+                    },
+                    title: {
+                        text: 'Usuários Cadastrados por Mês',
+                        style: {
+                            color: '#ac0404'  // Cor do título em branco
+                        }
+                    },
+                    xAxis: {
+                        categories: dados.categorias, // Meses
+                        labels: {
+                            style: {
+                                color: '#ac0404'  // Cor das labels do eixo X em branco
+                            }
+                        }
+                    },
+                    yAxis: {
+                        title: {
+                            text: 'Total de Usuários',
+                            style: {
+                                color: '#ac0404'  // Cor do título do eixo Y em branco
+                            }
+                        },
+                        labels: {
+                            style: {
+                                color: '#ac0404'  // Cor das labels do eixo Y em branco
+                            }
+                        }
+                    },
+                    series: dados.series, // Dados dos usuários
+                    plotOptions: {
+                        column: {
+                            dataLabels: {
+                                color: '#ac0404'  // Cor das labels de dados em branco
+                            }
+                        }
+                    },
+                    tooltip: {
+                        backgroundColor: '#333333',  // Cor de fundo do tooltip
+                        style: {
+                            color: '#ac0404'  // Cor do texto no tooltip
+                        }
+                    },
+                    legend: {
+                        itemStyle: {
+                            color: '#ac0404',  // Cor do nome da série (na legenda)
+                            fontWeight: 'bold', // Se você quiser deixar o nome em negrito
+                            fontSize: '16px'    // Se quiser mudar o tamanho da fonte
+                        }
+                    }
+                });
+            });
+        }
+
+        // Função para carregar os dados e gerar o gráfico de usuários cadastrados por mês
+        function carregarGraficoUsuarios(ano) {
+            $.getJSON('@Url.Action("ContarUsuariosPorMes", "Dashboard")', { ano: ano }, function (dados) {
+                Highcharts.chart('graficoUsuarios', {
+                    chart: {
+                        type: 'column',
+                        backgroundColor: '#F7F5F2'  // Fundo preto
+                    },
+                    title: {
+                        text: 'Usuários Cadastrados por Mês',
+                        style: {
+                            color: '#ac0404'  // Cor do título em branco
+                        }
+                    },
+                    xAxis: {
+                        categories: dados.categorias, // Meses
+                        labels: {
+                            style: {
+                                color: '#ac0404'  // Cor das labels do eixo X em branco
+                            }
+                        }
+                    },
+                    yAxis: {
+                        title: {
+                            text: 'Total de Usuários',
+                            style: {
+                                color: '#ac0404'  // Cor do título do eixo Y em branco
+                            }
+                        },
+                        labels: {
+                            style: {
+                                color: '#ac0404'  // Cor das labels do eixo Y em branco
+                            }
+                        }
+                    },
+                    series: dados.series, // Dados dos usuários
+                    plotOptions: {
+                        column: {
+                            dataLabels: {
+                                color: '#ac0404'  // Cor das labels de dados em branco
+                            }
+                        }
+                    },
+                    tooltip: {
+                        backgroundColor: '#333333',  // Cor de fundo do tooltip
+                        style: {
+                            color: '#ac0404'  // Cor do texto no tooltip
+                        }
+                    },
+                    legend: {
+                        itemStyle: {
+                            color: '#ac0404',  // Cor do nome da série (na legenda)
+                            fontWeight: 'bold', // Se você quiser deixar o nome em negrito
+                            fontSize: '16px'    // Se quiser mudar o tamanho da fonte
+                        }
+                    }
+                });
+            });
+        }
+
+        // Função para carregar os dados e gerar o gráfico de lucros por mês
+        function carregarGraficoLucros(ano) {
+            $.getJSON('@Url.Action("SomarLucroPorMes", "Dashboard")', { ano: ano }, function (dados) {
+                Highcharts.chart('graficoLucros', {
+                    chart: {
+                        type: 'column',
+                        backgroundColor: '#F7F5F2'  // Fundo preto
+                    },
+                    title: {
+                        text: 'Lucro por Mês',
+                        style: {
+                            color: '#ac0404'  // Cor do título em branco
+                        }
+                    },
+                    xAxis: {
+                        categories: dados.categorias, // Meses
+                        labels: {
+                            style: {
+                                color: '#ac0404'  // Cor das labels do eixo X em branco
+                            }
+                        }
+                    },
+                    yAxis: {
+                        title: {
+                            text: 'Lucro (R$)',
+                            style: {
+                                color: '#ac0404'  // Cor do título do eixo Y em branco
+                            }
+                        },
+                        labels: {
+                            style: {
+                                color: '#ac0404'  // Cor das labels do eixo Y em branco
+                            }
+                        }
+                    },
+                    series: dados.series, // Dados do lucro
+                    plotOptions: {
+                        column: {
+                            dataLabels: {
+                                color: '#ac0404'  // Cor das labels de dados em branco
+                            }
+                        }
+                    },
+                    tooltip: {
+                        backgroundColor: '#333333',  // Cor de fundo do tooltip
+                        style: {
+                            color: '#ac0404'  // Cor do texto no tooltip
+                        }
+                    },
+                    legend: {
+                        itemStyle: {
+                            color: '#ac0404',  // Cor do nome da série (na legenda)
+                            fontWeight: 'bold', // Se você quiser deixar o nome em negrito
+                            fontSize: '16px'    // Se quiser mudar o tamanho da fonte
+                        }
+                    }
+                });
+            });
+        }
+
+        // Carregar os gráficos quando a página carregar
+
+        function carregarGraficoPizza(ano) {
+            $.getJSON('@Url.Action("SomarServicosMaisUsadosPorAno", "Dashboard")', { ano: ano }, function (dados) {
+                // Verifica se os dados estão presentes
+                if (dados && dados.categorias && dados.series) {
+                    // Prepara os dados para o gráfico
+                    var categorias = dados.categorias;  // Lista de serviços (nomes ou tipos dos serviços)
+                    var valores = dados.series[0].data.map(item => item.y);  // Quantidade de usos dos serviços
+
+                    // Cria o gráfico de pizza usando Highcharts
+                    Highcharts.chart('container', {
+                        chart: {
+                            type: 'pie',  // Tipo de gráfico: pizza
+                            backgroundColor: '#000000'  // Fundo preto
+                        },
+                        title: {
+                            text: `Serviços Mais Usados em ${ano}`,  // Título do gráfico
+                            style: {
+                                color: '#FFFFFF'  // Cor do título em branco
+                            }
+                        },
+                        tooltip: {
+                            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>',  // Exibe a porcentagem de cada fatia
+                            backgroundColor: '#333333',  // Cor de fundo do tooltip
+                            style: {
+                                color: '#FFFFFF'  // Cor do texto no tooltip
+                            }
+                        },
+                        series: [{
+                            name: 'Serviços Mais Usados',
+                            data: categorias.map((categoria, index) => ({
+                                name: categoria,  // Nome do serviço
+                                y: valores[index]  // Quantidade de vezes que o serviço foi usado
+                            })),
+                            colors: [  // Definindo as cores das fatias do gráfico
+                                '#1E90FF', // Azul
+                                '#32CD32', // Verde
+                                '#FF6347', // Tomate
+                                '#FFD700', // Amarelo
+                                '#8A2BE2', // Azul violeta
+                                '#FF4500'  // Laranja escuro
+                            ]
+                        }],
+                        plotOptions: {
+                            pie: {
+                                dataLabels: {
+                                    enabled: true,  // Habilita rótulos de dados
+                                    format: '{point.name}: {point.percentage:.1f}%',  // Exibe a porcentagem ao lado de cada fatia
+                                    style: {
+                                        color: '#FFFFFF'  // Cor das labels em branco
+                                    }
+                                }
+                            }
+                        }
+                    });
+                } else {
+                    console.error("Dados inválidos recebidos:", dados);
+                }
+            })
+                .fail(function (xhr, status, error) {
+                    console.error("Erro ao carregar os dados do gráfico:", error);
+                });
+        }
     </script>
 
+    <script>
+        $(document).ready(function () {
+            // Faz a requisição para pegar os dados da evolução mensal
+            $.getJSON('/Dashboard/ConsultarEvolucaoMensalPorAno', function (data) {
+                console.log(data);  // Verifique os dados recebidos no console
 
+                // Verifique se as categorias e as séries estão corretamente preenchidas
+                if (data && data.categorias && data.series) {
+                    // Cria o gráfico Highcharts
+                    Highcharts.chart('grafico', {
+                        chart: {
+                            type: 'line'  // Tipo de gráfico: linha
+                        },
+                        title: {
+                            text: 'Evolução Mensal dos Atendimentos por Ano'  // Título do gráfico
+                        },
+                        xAxis: {
+                            categories: data.categorias,  // Meses (01, 02, ..., 12)
+                            title: {
+                                text: 'Meses'
+                            }
+                        },
+                        yAxis: {
+                            title: {
+                                text: 'Total de Atendimentos'
+                            }
+                        },
+                        series: data.series,  // Dados das séries por ano
+                        tooltip: {
+                            shared: true,  // Mostra todos os pontos de dados ao passar o mouse
+                            valueSuffix: ' atendimentos'  // Sufixo para os valores
+                        }
+                    });
+                } else {
+                    console.error("Dados inválidos recebidos:", data);
+                }
+            })
+                .fail(function (xhr, status, error) {
+                    console.error("Erro ao carregar os dados do gráfico:", error);
+                });
+        });
+
+    </script>
 
 </body>
 </html>

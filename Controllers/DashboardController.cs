@@ -8,6 +8,7 @@ using System.Diagnostics;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using System.Text.Json;
+using System.Globalization;
 
 namespace PortifolioDEV.Controllers
 {
@@ -49,41 +50,133 @@ namespace PortifolioDEV.Controllers
             return Json(lucroTotal);  // Redireciona para a View Index
         }
 
-        public IActionResult ContarAgendamentosPorMes(int ano)
+        // Método para contar agendamentos por mês
+        public JsonResult ContarAgendamentosPorMes(int ano)
         {
-            try
+            var dados = _dashboardRepositorio.ContarAgendamentosPorMes(ano);
+
+            var categorias = dados.Select(d => CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(d.Mes)).ToList();
+            var valores = dados.Select(d => d.TotalAgendamentos).ToList();
+
+            var seriesData = valores.Select(v => new { y = v }).ToList(); // Formatação para Highcharts
+
+            return Json(new
             {
-                var agendamentosPorMes = _dashboardRepositorio.ContarAgendamentosPorMes(ano);
-                return Ok(agendamentosPorMes);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest($"Erro ao contar agendamentos: {ex.Message}");
-            }
+                categorias,
+                series = new[]
+                {
+                     new { 
+                         name = "Agendamentos", 
+                         data = seriesData,
+                        color = "#ac0404"
+                     }
+                 }
+            });
         }
-        public IActionResult ContarUsuariosPorMes(int ano)
+
+        // Método para contar usuários cadastrados por mês
+        public JsonResult ContarUsuariosPorMes(int ano)
         {
-            try
+            var dados = _dashboardRepositorio.ContarUsuariosPorMes(ano);
+
+            var categorias = dados.Select(d => CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(d.Mes)).ToList();
+            var valores = dados.Select(d => d.TotalUsuarios).ToList();
+
+            var seriesData = valores.Select(v => new { y = v }).ToList(); // Formatação para Highcharts
+
+            return Json(new
             {
-                var usuariosPorMes = _dashboardRepositorio.ContarUsuariosPorMes(ano);
-                return Ok(usuariosPorMes);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest($"Erro ao contar usuários: {ex.Message}");
-            }
+                categorias,
+                series = new[]
+                {
+                     new { 
+                         name = "Usuários Cadastrados", 
+                         data = seriesData,
+                        color = "#ac0404"
+                     }
+                 }
+            });
         }
-        public IActionResult SomarLucroPorMes(int ano)
+
+        // Método para somar lucro por mês
+        public JsonResult SomarLucroPorMes(int ano)
         {
-            try
+            var dados = _dashboardRepositorio.SomarLucroPorMes(ano);
+
+            var categorias = dados.Select(d => CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(d.Mes)).ToList();
+            var valores = dados.Select(d => d.TotalLucro).ToList();
+
+            var seriesData = valores.Select(v => new { y = v }).ToList(); // Formatação para Highcharts
+
+            return Json(new
             {
-                var lucroPorMes = _dashboardRepositorio.SomarLucroPorMes(ano);
-                return Ok(lucroPorMes);
-            }
-            catch (Exception ex)
+                categorias,
+                series = new[]
+                {
+                     new { 
+                         name = "Lucro", 
+                         data = seriesData,
+                         color = "#ac0404"
+                     }
+                 }
+            });
+        }
+
+        public JsonResult ConsultarEvolucaoMensalPorAno()
+        {
+            var dados = _dashboardRepositorio.ConsultarEvolucaoMensalAtendimentos();
+
+            // Agrupa os dados por ano
+            var dadosAgrupadosPorAno = dados
+                .GroupBy(d => d.Ano)
+                .Select(g => new
+                {
+                    Ano = g.Key,
+                    DadosMensais = g.OrderBy(d => d.Mes).Select(d => d.TotalAtendimentos).ToList()
+                })
+                .ToList();
+
+            // Definindo as categorias (meses)
+            var categorias = Enumerable.Range(1, 12).Select(m => m.ToString("D2")).ToList(); // Meses de 01 a 12
+
+            // Preparar as séries para o gráfico (um para cada ano)
+            var series = dadosAgrupadosPorAno.Select(anoData => new
             {
-                return BadRequest($"Erro ao calcular lucro: {ex.Message}");
-            }
+                name = anoData.Ano.ToString(),
+                data = anoData.DadosMensais
+            }).ToList();
+
+            // Retorna os dados no formato correto para o Highcharts
+            return Json(new
+            {
+                categorias,
+                series
+            });
+        }
+
+        public JsonResult SomarServicosMaisUsadosPorAno(int ano)
+        {
+            // Chama o serviço para obter os dados
+            var dados = _dashboardRepositorio.ConsultarServicosMaisUsadosPorAno(ano);
+
+            // Cria as categorias com os nomes dos serviços
+            var categorias = dados.Select(d => d.TipoServico).ToList();  // Utilizando TipoServico para a categoria
+
+            // Cria os valores (quantidade de usos de cada serviço)
+            var valores = dados.Select(d => d.TotalUsos).ToList();
+
+            // Formatação para o gráfico, onde cada valor se torna um objeto com a chave 'y'
+            var seriesData = valores.Select(v => new { y = v }).ToList();
+
+            // Retorna os dados em formato JSON compatível com o gráfico
+            return Json(new
+            {
+                categorias,  // Os nomes dos serviços
+                series = new[]
+                {
+                    new { name = "Serviços Mais Usados", data = seriesData }
+                }
+            });
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
@@ -91,7 +184,5 @@ namespace PortifolioDEV.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-
-
     }
 }
