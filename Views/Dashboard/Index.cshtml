@@ -11,45 +11,24 @@
     <title>Dashboard</title>
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <style>
-        /* Caixa do Dashboard */
-        .maneger-page-section {
-            width: 90%;
-            padding: 20px;
-            box-sizing: border-box;
-            margin: 0 auto; /* Garantir que a seção seja centralizada */
-            text-align: center; /* Centraliza o conteúdo do texto na seção */
-        }
 
-        /* Containers para os gráficos */
-        .container, .page-maneger {
-            width: 100%; /* Garante que o conteúdo ocupe toda a largura */
-            padding: 0; /* Remover qualquer padding que possa causar deslocamento */
-            margin: 0 auto; /* Centraliza o container na tela */
-        }
-
-        /* Cabeçalho do Dashboard */
         .dashboard-header {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
             margin-bottom: 20px;
-            flex-wrap: wrap;
-            text-align: center; /* Centraliza o conteúdo do cabeçalho */
         }
 
-        /* Caixas de informações */
         .box-container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin: 10px;
-            text-align: center; /* Centraliza o conteúdo das caixas */
         }
 
         .box {
             width: 250px;
             height: 80px;
-            background-color: orange;
+            background-color: #ac0404;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -57,99 +36,88 @@
             font-weight: bold;
             color: white;
             border-radius: 10px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-            margin-bottom: 10px;
-            text-align: center; /* Centraliza o texto dentro da caixa */
+            box-shadow: 2px 2px 10px #ac0404;
+            margin-bottom: 5px;
         }
 
         .small-box {
             width: 200px;
             height: 40px;
-            background-color: #ffcc80;
+            background-color: #ac0404;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 14px;
             font-weight: bold;
-            color: #444;
+            color: white;
             border-radius: 5px;
-            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-            text-align: center; /* Centraliza o texto dentro da small-box */
+            box-shadow: 1px 1px 5px #ac0404;
         }
 
-        /* Layout flex para os gráficos */
-        .grafico-container {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 10px; /* Espaçamento reduzido entre os gráficos */
-            margin-bottom: 60px; /* Espaço extra de 60px no final para margem */
-            width: 100%; /* Garante que os gráficos ocupem toda a largura disponível */
-            margin: 0 auto; /* Centraliza os gráficos na página */
-        }
-
-            .grafico-container > div {
-                width: 32%; /* Ajuste para 3 gráficos por linha */
-                max-width: 400px;
-                height: 400px;
-            }
-
-        /* Estilo do select */
         select {
             padding: 8px;
             font-size: 16px;
             border-radius: 5px;
             border: 1px solid #ccc;
-            margin-top: 10px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto; /* Centraliza o select */
         }
 
+        #chart-container {
+            width: 80%;
+            margin: auto;
+            height: 400px;
+        }
     </style>
-
 </head>
 <body>
-    <section class="maneger-page-section">
-        <div class="container page-maneger">
-            <!-- Cabeçalho com 3 divs grandes e o select -->
-            <div class="dashboard-header">
-                <!-- Caixa para o total de usuários cadastrados -->
-                <div class="box-container">
-                    <div class="box">Total de usuários cadastrados em 2025:</div>
-                    <div class="small-box" id="totalUsuarios">Carregando...</div>
-                </div>
+    <!-- Cabeçalho com 3 divs grandes e o select -->
+    <div class="container" style="padding: 20px; width: 1500px; margin: 0 auto; text-align: center;">
+        <label for="anoSelect" style="font-size: 18px; color: #ac0404; font-weight: bold;">Selecione o Ano</label>
+        <select id="anoSelect" onchange="mudarAno()" style="padding: 10px; border-radius: 8px; font-size: 16px; background-color: white!important; box-shadow: 2px 0 10px -2px #ac0404; width: 300px;">
+        </select>
+    </div>
 
-                <!-- Caixa para o total de agendamentos -->
-                <div class="box-container">
-                    <div class="box">Total de agendamentos feitos em 2025:</div>
-                    <div class="small-box" id="totalAgendamentos">Carregando...</div>
-                </div>
-
-                <!-- Caixa para o lucro total -->
-                <div class="box-container">
-                    <div class="box">Lucro total em 2025:</div>
-                    <div class="small-box" id="lucroTotal">Carregando...</div>
-                </div>
-
-                <select id="anoSelect" onchange="mudarAno()">
-                </select>
-
+    <div class="container" style="padding: 20px; width: 1500px; margin: 0 auto; border-radius: 8px 8px 0 0; box-shadow: 2px 0 10px -2px #ac0404;">
+        <h2 style="text-align: center; margin-bottom: 20px;">Indicadores Globais</h2>
+        <div class="dashboard-header">
+            <!-- Caixa para o total de usuários cadastrados -->
+            <div class="box-container">
+                <div class="box">Usuarios:</div>
+                <div class="small-box" id="totalUsuarios">Carregando...</div>
             </div>
-            <!-- Divs para os gráficos -->
-            <div style="display: flex; justify-content: space-between;">
-                <div id="graficoUsuarios" style="height: 400px; width: 400px;"></div>
-                <div id="graficoAgendamentos" style="height: 400px; width: 400px;"></div>
-                <div id="graficoLucros" style="height: 400px; width: 400px;"></div>
+
+            <!-- Caixa para o total de agendamentos -->
+            <div class="box-container">
+                <div class="box">Agendamentos:</div>
+                <div class="small-box" id="totalAgendamentos">Carregando...</div>
             </div>
+
+            <!-- Caixa para o lucro total -->
+            <div class="box-container">
+                <div class="box">Lucro:</div>
+                <div class="small-box" id="lucroTotal">Carregando...</div>
+            </div>
+
         </div>
-        <div class="container page-maneger">
-            <div style="display: flex; justify-content: space-between;">
-                <div id="container"></div>
-                <div id="grafico"></div>
-            </div>
+    </div>
+     <br>
+
+    <!-- Divs para os gráficos -->
+    <div class="container" style="padding: 20px; border:1px 0 solid #ac0404; width: 1500px; margin: 0 auto;  border-radius: 0 0 8px 8px; box-shadow: 2px 0 10px -2px #ac0404;">
+        <h2 style="text-align: center; margin-bottom: 20px;">Indicadores Especificos</h2>
+
+        <div style="display: flex; justify-content: space-between;">
+            <div id="graficoAgendamentos" style="height: 400px; width: 400px;"></div>
+            <div id="graficoUsuarios" style="height: 400px; width: 400px;"></div>
+            <div id="graficoLucros" style="height: 400px; width: 400px;"></div>
         </div>
-    </section>
+        <br />
+        <div style="display: flex; justify-content: space-between;">
+            <div id="container"></div>
+            <div id="grafico"></div>
+        </div>
+    </div>
+
+
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -175,8 +143,9 @@
             carregarGraficoAgendamentos(anoAtual);
             carregarGraficoUsuarios(anoAtual);
             carregarGraficoLucros(anoAtual);
-            carregarGraficoPizza(anoAtual);
+            carregarGraficoPizza(anoAtual)
         });
+
 
         function mudarAno() {
             var anoSelecionado = document.getElementById('anoSelect').value;  // Obtém o valor do ano selecionado
@@ -188,7 +157,7 @@
             carregarGraficoAgendamentos(anoSelecionado);
             carregarGraficoUsuarios(anoSelecionado);
             carregarGraficoLucros(anoSelecionado);
-            carregarGraficoPizza(anoSelecionado);
+            carregarGraficoPizza(anoSelecionado)
         }
 
         // Função para contar agendamentos por ano
@@ -250,6 +219,7 @@
                     title: {
                         text: 'Agendamentos por Mês',
                         style: {
+                            fontWeight: 'bold',
                             color: '#ac0404'  // Cor do título em branco
                         }
                     },
@@ -257,6 +227,7 @@
                         categories: dados.categorias, // Meses
                         labels: {
                             style: {
+                                fontWeight: 'bold',
                                 color: '#ac0404'  // Cor das labels do eixo X em branco
                             }
                         }
@@ -265,11 +236,13 @@
                         title: {
                             text: 'Total de Agendamentos',
                             style: {
+                                fontWeight: 'bold',
                                 color: '#ac0404'  // Cor do título do eixo Y em branco
                             }
                         },
                         labels: {
                             style: {
+                                fontWeight: 'bold',
                                 color: '#ac0404'  // Cor das labels do eixo Y em branco
                             }
                         }
@@ -278,6 +251,7 @@
                     plotOptions: {
                         column: {
                             dataLabels: {
+                                fontWeight: 'bold',
                                 color: '#ac0404'  // Cor das labels de dados em branco
                             }
                         }
@@ -285,59 +259,7 @@
                     tooltip: {
                         backgroundColor: '#333333',  // Cor de fundo do tooltip
                         style: {
-                            color: '#ac0404'  // Cor do texto no tooltip
-                        }
-                    }
-                });
-            });
-        }
-
-        // Função para carregar os dados e gerar o gráfico de usuários cadastrados por mês
-        function carregarGraficoUsuarios(ano) {
-            $.getJSON('@Url.Action("ContarUsuariosPorMes", "Dashboard")', { ano: ano }, function (dados) {
-                Highcharts.chart('graficoUsuarios', {
-                    chart: {
-                        type: 'column',
-                        backgroundColor: '#F7F5F2'  // Fundo preto
-                    },
-                    title: {
-                        text: 'Usuários Cadastrados por Mês',
-                        style: {
-                            color: '#ac0404'  // Cor do título em branco
-                        }
-                    },
-                    xAxis: {
-                        categories: dados.categorias, // Meses
-                        labels: {
-                            style: {
-                                color: '#ac0404'  // Cor das labels do eixo X em branco
-                            }
-                        }
-                    },
-                    yAxis: {
-                        title: {
-                            text: 'Total de Usuários',
-                            style: {
-                                color: '#ac0404'  // Cor do título do eixo Y em branco
-                            }
-                        },
-                        labels: {
-                            style: {
-                                color: '#ac0404'  // Cor das labels do eixo Y em branco
-                            }
-                        }
-                    },
-                    series: dados.series, // Dados dos usuários
-                    plotOptions: {
-                        column: {
-                            dataLabels: {
-                                color: '#ac0404'  // Cor das labels de dados em branco
-                            }
-                        }
-                    },
-                    tooltip: {
-                        backgroundColor: '#333333',  // Cor de fundo do tooltip
-                        style: {
+                            fontWeight: 'bold',
                             color: '#ac0404'  // Cor do texto no tooltip
                         }
                     },
@@ -363,6 +285,7 @@
                     title: {
                         text: 'Usuários Cadastrados por Mês',
                         style: {
+                            fontWeight: 'bold',
                             color: '#ac0404'  // Cor do título em branco
                         }
                     },
@@ -370,6 +293,7 @@
                         categories: dados.categorias, // Meses
                         labels: {
                             style: {
+                                fontWeight: 'bold',
                                 color: '#ac0404'  // Cor das labels do eixo X em branco
                             }
                         }
@@ -378,11 +302,13 @@
                         title: {
                             text: 'Total de Usuários',
                             style: {
+                                fontWeight: 'bold',
                                 color: '#ac0404'  // Cor do título do eixo Y em branco
                             }
                         },
                         labels: {
                             style: {
+                                fontWeight: 'bold',
                                 color: '#ac0404'  // Cor das labels do eixo Y em branco
                             }
                         }
@@ -391,6 +317,7 @@
                     plotOptions: {
                         column: {
                             dataLabels: {
+                                fontWeight: 'bold',
                                 color: '#ac0404'  // Cor das labels de dados em branco
                             }
                         }
@@ -398,6 +325,7 @@
                     tooltip: {
                         backgroundColor: '#333333',  // Cor de fundo do tooltip
                         style: {
+                            fontWeight: 'bold',
                             color: '#ac0404'  // Cor do texto no tooltip
                         }
                     },
@@ -423,14 +351,16 @@
                     title: {
                         text: 'Lucro por Mês',
                         style: {
-                            color: '#ac0404'  // Cor do título em branco
+                            color: '#ac0404',  // Cor do título em branco
+                            fontWeight: 'bold'
                         }
                     },
                     xAxis: {
                         categories: dados.categorias, // Meses
                         labels: {
                             style: {
-                                color: '#ac0404'  // Cor das labels do eixo X em branco
+                                color: '#ac0404',  // Cor das labels do eixo X em branco
+                                fontWeight: 'bold'
                             }
                         }
                     },
@@ -438,12 +368,14 @@
                         title: {
                             text: 'Lucro (R$)',
                             style: {
-                                color: '#ac0404'  // Cor do título do eixo Y em branco
+                                color: '#ac0404',  // Cor do título do eixo Y em branco
+                                fontWeight: 'bold'
                             }
                         },
                         labels: {
                             style: {
-                                color: '#ac0404'  // Cor das labels do eixo Y em branco
+                                color: '#ac0404',  // Cor das labels do eixo Y em branco
+                                fontWeight: 'bold'
                             }
                         }
                     },
@@ -451,13 +383,15 @@
                     plotOptions: {
                         column: {
                             dataLabels: {
-                                color: '#ac0404'  // Cor das labels de dados em branco
+                                color: '#ac0404',  // Cor das labels de dados em branco
+                                fontWeight: 'bold'
                             }
                         }
                     },
                     tooltip: {
                         backgroundColor: '#333333',  // Cor de fundo do tooltip
                         style: {
+                            fontWeight: 'bold',
                             color: '#ac0404'  // Cor do texto no tooltip
                         }
                     },
@@ -472,8 +406,6 @@
             });
         }
 
-        // Carregar os gráficos quando a página carregar
-
         function carregarGraficoPizza(ano) {
             $.getJSON('@Url.Action("SomarServicosMaisUsadosPorAno", "Dashboard")', { ano: ano }, function (dados) {
                 // Verifica se os dados estão presentes
@@ -485,20 +417,22 @@
                     // Cria o gráfico de pizza usando Highcharts
                     Highcharts.chart('container', {
                         chart: {
-                            type: 'pie',  // Tipo de gráfico: pizza
-                            backgroundColor: '#000000'  // Fundo preto
+                            type: 'pie',  // Tipo de gráfico: pizza   
+                            backgroundColor: '#F7F5F2'
                         },
                         title: {
                             text: `Serviços Mais Usados em ${ano}`,  // Título do gráfico
                             style: {
-                                color: '#FFFFFF'  // Cor do título em branco
+                                color: '#ac0404',  // Cor do título em branco
+                                fontWeight: 'bold'
                             }
                         },
                         tooltip: {
                             pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>',  // Exibe a porcentagem de cada fatia
                             backgroundColor: '#333333',  // Cor de fundo do tooltip
                             style: {
-                                color: '#FFFFFF'  // Cor do texto no tooltip
+                                fontWeight: 'bold',
+                                color: '#ac0404'  // Cor do título em branco
                             }
                         },
                         series: [{
@@ -506,24 +440,15 @@
                             data: categorias.map((categoria, index) => ({
                                 name: categoria,  // Nome do serviço
                                 y: valores[index]  // Quantidade de vezes que o serviço foi usado
-                            })),
-                            colors: [  // Definindo as cores das fatias do gráfico
-                                '#1E90FF', // Azul
-                                '#32CD32', // Verde
-                                '#FF6347', // Tomate
-                                '#FFD700', // Amarelo
-                                '#8A2BE2', // Azul violeta
-                                '#FF4500'  // Laranja escuro
-                            ]
+                            }))
                         }],
                         plotOptions: {
                             pie: {
                                 dataLabels: {
                                     enabled: true,  // Habilita rótulos de dados
                                     format: '{point.name}: {point.percentage:.1f}%',  // Exibe a porcentagem ao lado de cada fatia
-                                    style: {
-                                        color: '#FFFFFF'  // Cor das labels em branco
-                                    }
+                                    fontWeight: 'bold',
+                                    color: '#ac0404'  // Cor do título em branco
                                 }
                             }
                         }
@@ -536,6 +461,7 @@
                     console.error("Erro ao carregar os dados do gráfico:", error);
                 });
         }
+
     </script>
 
     <script>
@@ -549,26 +475,56 @@
                     // Cria o gráfico Highcharts
                     Highcharts.chart('grafico', {
                         chart: {
-                            type: 'line'  // Tipo de gráfico: linha
+                            type: 'line',  // Tipo de gráfico: linha
+                            backgroundColor: '#F7F5F2'
                         },
                         title: {
-                            text: 'Evolução Mensal dos Atendimentos por Ano'  // Título do gráfico
+                            text: 'Evolução Mensal dos Atendimentos por Ano',  // Título do gráfico
+                            style: {
+                                fontWeight: 'bold',
+                                color: '#ac0404'  // Cor do título em branco
+                            }
                         },
                         xAxis: {
                             categories: data.categorias,  // Meses (01, 02, ..., 12)
                             title: {
-                                text: 'Meses'
+                                text: 'Meses',
+                                style: {
+                                    fontWeight: 'bold',
+                                    color: '#ac0404'  // Cor do título em branco
+                                }
+                            },
+                            labels: {
+                                style: {
+                                    fontWeight: 'bold',
+                                    color: '#ac0404'  // Cor das labels do eixo Y em branco
+                                }
                             }
                         },
                         yAxis: {
                             title: {
-                                text: 'Total de Atendimentos'
+                                text: 'Total de Atendimentos',
+                                style: {
+                                    fontWeight: 'bold',
+                                    color: '#ac0404'  // Cor do título em branco
+                                }
+                            },
+                            labels: {
+                                style: {
+                                    fontWeight: 'bold',
+                                    color: '#ac0404'  // Cor das labels do eixo Y em branco
+                                }
                             }
                         },
                         series: data.series,  // Dados das séries por ano
                         tooltip: {
                             shared: true,  // Mostra todos os pontos de dados ao passar o mouse
-                            valueSuffix: ' atendimentos'  // Sufixo para os valores
+                            valueSuffix: ' atendimentos',  // Sufixo para os valores
+                            backgroundColor: '#333333',  // Cor de fundo do tooltip
+                            style: {
+                                fontWeight: 'bold',
+                                color: '#ac0404'  // Cor do título em branco
+                            }
                         }
                     });
                 } else {

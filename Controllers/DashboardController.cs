@@ -174,7 +174,11 @@ namespace PortifolioDEV.Controllers
                 categorias,  // Os nomes dos serviços
                 series = new[]
                 {
-                    new { name = "Serviços Mais Usados", data = seriesData }
+                    new { 
+                        name = "Serviços Mais Usados", 
+                        data = seriesData,
+                        color = "#ac0404"
+                    }
                 }
             });
         }
