@@ -1,0 +1,167 @@
+﻿/* Estilo para a box-container */
+.box-container {
+    padding: 30px;
+    margin-bottom: 30px;
+    background-color: #EAE7DC;
+    ;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px chocolate;
+    height: auto; /* Ajuste para a altura ser dinâmica */
+}
+
+/* Estilo para a container da página */
+.container.page-maneger {
+    padding: 20px;
+    background-color: #EAE7DC;
+    border-radius: 8px;
+    box-shadow: 0 8px 8px chocolate;
+    min-height: 400px; /* Altura mínima para a div */
+    height: auto; /* Deixe a altura da div crescer conforme o conteúdo */
+    border-top: 4px solid chocolate; /* Borda no topo */
+}
+
+/* Filtro Input e Select */
+.filter-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+    .filter-group > div {
+        flex: 1;
+        margin-right: 10px;
+    }
+
+        .filter-group > div:last-child {
+            margin-right: 0;
+        }
+
+.filter-input,
+.filter-select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+    .filter-input:focus,
+    .filter-select:focus {
+        border-color: chocolate;
+        outline: none;
+    }
+
+/* Botão de pesquisa */
+.btn {
+    padding: 12px 25px;
+    background-color: chocolate;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .btn:hover {
+        background-color: chocolate;
+    }
+
+/* Estilos para a tabela */
+
+/* Estilos para a tabela */
+#tabelaAgendamentos {
+    margin-top: 20px;
+    width: 100%;
+    color: white; /* Texto verde */
+    background-color: white; /* Fundo preto para a tabela */
+    border-collapse: collapse; /* Garante que as bordas fiquem colapsadas */
+    font-family: Arial, sans-serif; /* Fonte mais clean */
+}
+
+    /* Estilo das células da tabela */
+    #tabelaAgendamentos th, #tabelaAgendamentos td {
+        padding: 12px 15px;
+        text-align: left; /* Alinha o texto à esquerda */
+        border: 1px solid black; /* Cor escura nas bordas */
+    }
+
+    /* Estilo para os cabeçalhos da tabela */
+    #tabelaAgendamentos th {
+        background-color: chocolate; /* Fundo escuro para os cabeçalhos */
+        color: white; /* Cor verde neon para o texto dos cabeçalhos */
+        font-weight: bold;
+    }
+
+    /* Estilo para as linhas da tabela (alternando a cor das linhas para facilitar leitura) */
+    #tabelaAgendamentos tr:nth-child(even) {
+        background-color: #333; /* Cor escura para linhas pares */
+    }
+
+    #tabelaAgendamentos tr:nth-child(odd) {
+        background-color: #444; /* Cor um pouco mais clara para as linhas ímpares */
+    }
+
+    /* Estilo para o foco nos links (caso haja links na tabela) */
+    #tabelaAgendamentos a {
+        color: chocolate; /* Verde neon para links */
+        text-decoration: none; /* Remove o sublinhado */
+    }
+
+        #tabelaAgendamentos a:hover {
+            text-decoration: underline; /* Sublinha ao passar o mouse */
+        }
+
+/* Estilo para o botão de pesquisa */
+.btn-pesquisar {
+    background-color: chocolate; /* Cor verde */
+    color: white;
+    padding: 8px 16px; /* Diminuir o tamanho do botão */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .btn-pesquisar:hover {
+        background-color: chocolate; /* Cor verde mais escura ao passar o mouse */
+    }
+
+/* Estilo para centralizar os botões de exportação */
+.center-buttons {
+    text-align: center;
+    margin-bottom: 20px; /* Para dar um espaçamento entre os botões e a tabela */
+    margin-top: 20px; /* Espaçamento superior para os botões de exportação */
+}
+
+    .center-buttons .btn {
+        display: inline-block;
+        margin: 0 10px; /* Espaçamento entre os botões */
+        background-color: chocolate; /* Cor verde */
+        color: white;
+        padding: 8px 16px; /* Botões menores */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .center-buttons .btn:hover {
+            background-color: chocolate; /* Cor verde mais escura ao passar o mouse */
+        }
+
+/* Adicionando espaçamento entre a tabela e o "Mostrar registros" */
+.dataTables_info {
+    margin-top: 20px; /* Espaço superior maior entre a tabela e a contagem */
+}
+
+#tabelaAgendamentos_filter {
+    padding: 2px; /* Espaçamento interno ao redor do campo de filtro */
+    border-radius: 2px; /* Borda arredondada */
+}
+
+    #tabelaAgendamentos_filter input {
+        border: none; /* Remove a borda do campo de entrada */
+        padding: 5px; /* Ajusta o preenchimento interno do campo de entrada */
+        color: white; /* Cor do texto no campo */
+        background-color: chocolate; /* Cor de fundo preta para o campo de entrada */
+    }

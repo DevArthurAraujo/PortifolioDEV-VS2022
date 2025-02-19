@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+
+:root {
+    --red: #ac0404;
+    --black: #F7F5F2;
+    --white: #000000;
+    --grey: #222222;
+   
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: var(--black);
+}
+
+html {
+    min-height: 100vh;
+}
+main{
+    min-height: calc(100vh - 100px);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.bem-vindo{
+    color: var(--red) ;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none !important;
+    color: var(--red) !important;
+}
+
+p, td, th {
+    color: var(--red);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--white);
+    border-radius: 50px;
+}
+
+input:focus, select:focus{
+    outline: 4px solid var(--red) !important;
+}
+select option:hover{
+    background-color: var(--grey);
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+    padding: 3.5em 0 2em 0;
+    overflow: hidden;
+}
+
+.section-title {
+    text-align: center;
+    /* padding-bottom: 30px; */
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    /* margin-bottom: 20px; */
+    padding-bottom: 20px;
+    position: relative;
+    color: var(--red);
+}
+
+.modal-header{
+    background-color: var(--red);
+
+}
+.modal-header h2{
+    color: var(--black);
+}
+.modal-body{
+    background-color: var(--black);
+}
+
+footer {
+    max-height: 85px;
+    padding-top: .8em;
+}
+
+
+.page-maneger{
+    background-color: var(--black);
+    margin-top: 2.5em;
+    border-radius: 8px;
+    box-shadow: 2px 0 10px -2px var(--red);
+    height: 650px;
+    overflow: hidden;
+}
+
+.cadastro-height {
+    background-color: var(--black) !important;
+    margin-top: 2.5em !important;
+    border-radius: 8px !important;
+    box-shadow: 2px 0 10px -2px #ac0404 !important;
+    height: 800px !important;
+    overflow: hidden !important;
+}
+
+label{
+    color: var(--red);
+}
+
+/*--------------------------------------------------------------
+# Butao voltar
+--------------------------------------------------------------*/
+button{
+    background-color: var(--red) !important;
+    border: none !important;
+    color: var(--black) !important;
+    transition: .5s;
+}
+
+button:hover{
+    background-color: var(--black) !important;
+    color: var(--red) !important;
+    border: 1px solid var(--red) !important;
+}
+
