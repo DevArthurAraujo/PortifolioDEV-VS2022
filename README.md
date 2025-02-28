@@ -4,5 +4,5 @@
 - Install SSMS
 - Run BD Script
 - Install Visual Studio 2022
-- Install .net 9
+- Install .net 9 Hosting Bundle
 - Connect BD
