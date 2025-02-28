@@ -1,804 +1,808 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PortifolioDEV.bundle.scp.css",
-      "PackagePath": "staticwebassets\\PortifolioDEV.bundle.scp.css"
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PortifolioDEV.bundle.scp.css",
+      "PackagePath": "staticwebassets\\PortifolioDEV.kva5dy2oi3.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\css\\gerenciamento_index.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\css\\gerenciamento_index.css",
       "PackagePath": "staticwebassets\\css\\gerenciamento_index.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\css\\loader.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\css\\loader.css",
       "PackagePath": "staticwebassets\\css\\loader.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\css\\login.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\css\\login.css",
       "PackagePath": "staticwebassets\\css\\login.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\css\\main.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\css\\main.css",
       "PackagePath": "staticwebassets\\css\\main.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\css\\relatorio.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\css\\relatorio.css",
       "PackagePath": "staticwebassets\\css\\relatorio.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\css\\responsive.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\css\\responsive.css",
       "PackagePath": "staticwebassets\\css\\responsive.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\css\\site.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\css\\submenu.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\css\\submenu.css",
       "PackagePath": "staticwebassets\\css\\submenu.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\favicon.ico",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\About\\About-Image.png",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\About\\About-Image.png",
       "PackagePath": "staticwebassets\\images\\About\\About-Image.png"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\analise-de-dados.jpg",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\analise-de-dados.jpg",
       "PackagePath": "staticwebassets\\images\\Blogs\\analise-de-dados.jpg"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\blog-1.png",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\blog-1.png",
       "PackagePath": "staticwebassets\\images\\Blogs\\blog-1.png"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\blog-2.png",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\blog-2.png",
       "PackagePath": "staticwebassets\\images\\Blogs\\blog-2.png"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\blog-3.png",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\blog-3.png",
       "PackagePath": "staticwebassets\\images\\Blogs\\blog-3.png"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\blog-4.png",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\blog-4.png",
       "PackagePath": "staticwebassets\\images\\Blogs\\blog-4.png"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\blog-5.png",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\blog-5.png",
       "PackagePath": "staticwebassets\\images\\Blogs\\blog-5.png"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\construcao-resize.jpg",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\construcao-resize.jpg",
       "PackagePath": "staticwebassets\\images\\Blogs\\construcao-resize.jpg"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\construcao.webp",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\construcao.webp",
       "PackagePath": "staticwebassets\\images\\Blogs\\construcao.webp"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\dashboard.webp",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\dashboard.webp",
       "PackagePath": "staticwebassets\\images\\Blogs\\dashboard.webp"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\fullstack.png",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\fullstack.png",
       "PackagePath": "staticwebassets\\images\\Blogs\\fullstack.png"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\migrar-nuvem-resize.jpg",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\migrar-nuvem-resize.jpg",
       "PackagePath": "staticwebassets\\images\\Blogs\\migrar-nuvem-resize.jpg"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\migrar-nuvem.webp",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\migrar-nuvem.webp",
       "PackagePath": "staticwebassets\\images\\Blogs\\migrar-nuvem.webp"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\suporte-ao-cliente.jpg",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Blogs\\suporte-ao-cliente.jpg",
       "PackagePath": "staticwebassets\\images\\Blogs\\suporte-ao-cliente.jpg"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Home\\Arthur-2-resize.jpg",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Home\\Arthur-2-resize.jpg",
       "PackagePath": "staticwebassets\\images\\Home\\Arthur-2-resize.jpg"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Home\\Arthur-3.jpg",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Home\\Arthur-3.jpg",
       "PackagePath": "staticwebassets\\images\\Home\\Arthur-3.jpg"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Home\\Home-Image.png",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Home\\Home-Image.png",
       "PackagePath": "staticwebassets\\images\\Home\\Home-Image.png"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\AnaliseDados.jpg",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\AnaliseDados.jpg",
       "PackagePath": "staticwebassets\\images\\Portfolio\\AnaliseDados.jpg"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\Arthur-1.jpg",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\Arthur-1.jpg",
       "PackagePath": "staticwebassets\\images\\Portfolio\\Arthur-1.jpg"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\Arthur-2.jpg",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\Arthur-2.jpg",
       "PackagePath": "staticwebassets\\images\\Portfolio\\Arthur-2.jpg"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\Arthur-3.jpg",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\Arthur-3.jpg",
       "PackagePath": "staticwebassets\\images\\Portfolio\\Arthur-3.jpg"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\Arthur-A.webp",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\Arthur-A.webp",
       "PackagePath": "staticwebassets\\images\\Portfolio\\Arthur-A.webp"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\Arthur-logo-A.png",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\Arthur-logo-A.png",
       "PackagePath": "staticwebassets\\images\\Portfolio\\Arthur-logo-A.png"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\DBA-resize.jpg",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\DBA-resize.jpg",
       "PackagePath": "staticwebassets\\images\\Portfolio\\DBA-resize.jpg"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\DBA.jpg",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\DBA.jpg",
       "PackagePath": "staticwebassets\\images\\Portfolio\\DBA.jpg"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\Design-Grafico.jpg",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\Design-Grafico.jpg",
       "PackagePath": "staticwebassets\\images\\Portfolio\\Design-Grafico.jpg"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\backend-resize.jpg",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\backend-resize.jpg",
       "PackagePath": "staticwebassets\\images\\Portfolio\\backend-resize.jpg"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\backend.webp",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\backend.webp",
       "PackagePath": "staticwebassets\\images\\Portfolio\\backend.webp"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\construcao.webp",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\construcao.webp",
       "PackagePath": "staticwebassets\\images\\Portfolio\\construcao.webp"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\dashboard.jpg",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\dashboard.jpg",
       "PackagePath": "staticwebassets\\images\\Portfolio\\dashboard.jpg"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\frontend-resize.png",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\frontend-resize.png",
       "PackagePath": "staticwebassets\\images\\Portfolio\\frontend-resize.png"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\frontend.png",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\frontend.png",
       "PackagePath": "staticwebassets\\images\\Portfolio\\frontend.png"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\migrar-nuvem.webp",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\migrar-nuvem.webp",
       "PackagePath": "staticwebassets\\images\\Portfolio\\migrar-nuvem.webp"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\portfolio-1.png",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\portfolio-1.png",
       "PackagePath": "staticwebassets\\images\\Portfolio\\portfolio-1.png"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\portfolio-2.png",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\portfolio-2.png",
       "PackagePath": "staticwebassets\\images\\Portfolio\\portfolio-2.png"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\portfolio-3.png",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\portfolio-3.png",
       "PackagePath": "staticwebassets\\images\\Portfolio\\portfolio-3.png"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\portfolio-4.png",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\portfolio-4.png",
       "PackagePath": "staticwebassets\\images\\Portfolio\\portfolio-4.png"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\portfolio-5.png",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\portfolio-5.png",
       "PackagePath": "staticwebassets\\images\\Portfolio\\portfolio-5.png"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\portfolio-6.png",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\portfolio-6.png",
       "PackagePath": "staticwebassets\\images\\Portfolio\\portfolio-6.png"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\projetar.png",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\projetar.png",
       "PackagePath": "staticwebassets\\images\\Portfolio\\projetar.png"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\suporte-resize.jpg",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\suporte-resize.jpg",
       "PackagePath": "staticwebassets\\images\\Portfolio\\suporte-resize.jpg"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\suporte.jpg",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Portfolio\\suporte.jpg",
       "PackagePath": "staticwebassets\\images\\Portfolio\\suporte.jpg"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Testimonials\\pessoa-1.jpg",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Testimonials\\pessoa-1.jpg",
       "PackagePath": "staticwebassets\\images\\Testimonials\\pessoa-1.jpg"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Testimonials\\pessoa-2.jpg",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Testimonials\\pessoa-2.jpg",
       "PackagePath": "staticwebassets\\images\\Testimonials\\pessoa-2.jpg"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Testimonials\\pessoa-3.png",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Testimonials\\pessoa-3.png",
       "PackagePath": "staticwebassets\\images\\Testimonials\\pessoa-3.png"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Testimonials\\pessoa-4.jpg",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Testimonials\\pessoa-4.jpg",
       "PackagePath": "staticwebassets\\images\\Testimonials\\pessoa-4.jpg"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Testimonials\\pessoa-5.jpg",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Testimonials\\pessoa-5.jpg",
       "PackagePath": "staticwebassets\\images\\Testimonials\\pessoa-5.jpg"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Testimonials\\pessoa-6.jpg",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Testimonials\\pessoa-6.jpg",
       "PackagePath": "staticwebassets\\images\\Testimonials\\pessoa-6.jpg"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Testimonials\\pic-1.png",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Testimonials\\pic-1.png",
       "PackagePath": "staticwebassets\\images\\Testimonials\\pic-1.png"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Testimonials\\pic-2.png",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Testimonials\\pic-2.png",
       "PackagePath": "staticwebassets\\images\\Testimonials\\pic-2.png"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Testimonials\\pic-3.png",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Testimonials\\pic-3.png",
       "PackagePath": "staticwebassets\\images\\Testimonials\\pic-3.png"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Testimonials\\pic-4.png",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Testimonials\\pic-4.png",
       "PackagePath": "staticwebassets\\images\\Testimonials\\pic-4.png"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\images\\Testimonials\\pic-5.png",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\images\\Testimonials\\pic-5.png",
       "PackagePath": "staticwebassets\\images\\Testimonials\\pic-5.png"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\js\\blog-slider.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\js\\blog-slider.js",
       "PackagePath": "staticwebassets\\js\\blog-slider.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\js\\counter-up.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\js\\counter-up.js",
       "PackagePath": "staticwebassets\\js\\counter-up.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\js\\portfolio.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\js\\portfolio.js",
       "PackagePath": "staticwebassets\\js\\portfolio.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\js\\script.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\js\\script.js",
       "PackagePath": "staticwebassets\\js\\script.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\js\\scroll-spy.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\js\\scroll-spy.js",
       "PackagePath": "staticwebassets\\js\\scroll-spy.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\js\\site.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\js\\testi-slider.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\js\\testi-slider.js",
       "PackagePath": "staticwebassets\\js\\testi-slider.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\bootstrap-icons.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.json",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.json",
       "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\bootstrap-icons.json"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.min.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\bootstrap-icons.min.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.scss",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.scss",
       "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\bootstrap-icons.scss"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff",
       "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff2",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff2",
       "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff2"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\boxicons\\css\\animations.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\boxicons\\css\\animations.css",
       "PackagePath": "staticwebassets\\lib\\boxicons\\css\\animations.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\boxicons\\css\\boxicons.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\boxicons\\css\\boxicons.css",
       "PackagePath": "staticwebassets\\lib\\boxicons\\css\\boxicons.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\boxicons\\css\\boxicons.min.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\boxicons\\css\\boxicons.min.css",
       "PackagePath": "staticwebassets\\lib\\boxicons\\css\\boxicons.min.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\boxicons\\css\\transformations.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\boxicons\\css\\transformations.css",
       "PackagePath": "staticwebassets\\lib\\boxicons\\css\\transformations.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\boxicons\\fonts\\boxicons.eot",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\boxicons\\fonts\\boxicons.eot",
       "PackagePath": "staticwebassets\\lib\\boxicons\\fonts\\boxicons.eot"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\boxicons\\fonts\\boxicons.svg",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\boxicons\\fonts\\boxicons.svg",
       "PackagePath": "staticwebassets\\lib\\boxicons\\fonts\\boxicons.svg"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\boxicons\\fonts\\boxicons.ttf",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\boxicons\\fonts\\boxicons.ttf",
       "PackagePath": "staticwebassets\\lib\\boxicons\\fonts\\boxicons.ttf"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\boxicons\\fonts\\boxicons.woff",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\boxicons\\fonts\\boxicons.woff",
       "PackagePath": "staticwebassets\\lib\\boxicons\\fonts\\boxicons.woff"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\boxicons\\fonts\\boxicons.woff2",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\boxicons\\fonts\\boxicons.woff2",
       "PackagePath": "staticwebassets\\lib\\boxicons\\fonts\\boxicons.woff2"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\glightbox\\css\\glightbox.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\glightbox\\css\\glightbox.css",
       "PackagePath": "staticwebassets\\lib\\glightbox\\css\\glightbox.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\glightbox\\css\\glightbox.min.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\glightbox\\css\\glightbox.min.css",
       "PackagePath": "staticwebassets\\lib\\glightbox\\css\\glightbox.min.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\glightbox\\css\\plyr.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\glightbox\\css\\plyr.css",
       "PackagePath": "staticwebassets\\lib\\glightbox\\css\\plyr.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\glightbox\\css\\plyr.min.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\glightbox\\css\\plyr.min.css",
       "PackagePath": "staticwebassets\\lib\\glightbox\\css\\plyr.min.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\glightbox\\js\\glightbox.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\glightbox\\js\\glightbox.js",
       "PackagePath": "staticwebassets\\lib\\glightbox\\js\\glightbox.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\glightbox\\js\\glightbox.min.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\glightbox\\js\\glightbox.min.js",
       "PackagePath": "staticwebassets\\lib\\glightbox\\js\\glightbox.min.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\swiper\\swiper-bundle.min.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\swiper\\swiper-bundle.min.css",
       "PackagePath": "staticwebassets\\lib\\swiper\\swiper-bundle.min.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\swiper\\swiper-bundle.min.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\swiper\\swiper-bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\swiper\\swiper-bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\lib\\swiper\\swiper-bundle.min.js.map",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\lib\\swiper\\swiper-bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\swiper\\swiper-bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\all.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\all.css",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\css\\all.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\all.min.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\all.min.css",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\css\\all.min.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\brands.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\brands.css",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\css\\brands.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\brands.min.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\brands.min.css",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\css\\brands.min.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\fontawesome.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\fontawesome.css",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\css\\fontawesome.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\fontawesome.min.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\fontawesome.min.css",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\css\\fontawesome.min.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\regular.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\regular.css",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\css\\regular.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\regular.min.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\regular.min.css",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\css\\regular.min.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\solid.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\solid.css",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\css\\solid.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\solid.min.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\solid.min.css",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\css\\solid.min.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\svg-with-js.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\svg-with-js.css",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\css\\svg-with-js.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\svg-with-js.min.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\svg-with-js.min.css",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\css\\svg-with-js.min.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\v4-shims.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\v4-shims.css",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\css\\v4-shims.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\v4-shims.min.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\css\\v4-shims.min.css",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\css\\v4-shims.min.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\all.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\all.js",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\js\\all.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\all.min.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\all.min.js",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\js\\all.min.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\brands.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\brands.js",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\js\\brands.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\brands.min.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\brands.min.js",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\js\\brands.min.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\conflict-detection.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\conflict-detection.js",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\js\\conflict-detection.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\conflict-detection.min.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\conflict-detection.min.js",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\js\\conflict-detection.min.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\fontawesome.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\fontawesome.js",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\js\\fontawesome.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\fontawesome.min.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\fontawesome.min.js",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\js\\fontawesome.min.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\regular.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\regular.js",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\js\\regular.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\regular.min.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\regular.min.js",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\js\\regular.min.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\solid.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\solid.js",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\js\\solid.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\solid.min.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\solid.min.js",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\js\\solid.min.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\v4-shims.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\v4-shims.js",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\js\\v4-shims.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\v4-shims.min.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\js\\v4-shims.min.js",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\js\\v4-shims.min.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-brands-400.eot",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-brands-400.eot",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\webfonts\\fa-brands-400.eot"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-brands-400.svg",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-brands-400.svg",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\webfonts\\fa-brands-400.svg"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-brands-400.ttf",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-brands-400.ttf",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\webfonts\\fa-brands-400.ttf"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-brands-400.woff",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-brands-400.woff",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\webfonts\\fa-brands-400.woff"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-brands-400.woff2",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-brands-400.woff2",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\webfonts\\fa-brands-400.woff2"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-regular-400.eot",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-regular-400.eot",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\webfonts\\fa-regular-400.eot"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-regular-400.svg",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-regular-400.svg",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\webfonts\\fa-regular-400.svg"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-regular-400.ttf",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-regular-400.ttf",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\webfonts\\fa-regular-400.ttf"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-regular-400.woff",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-regular-400.woff",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\webfonts\\fa-regular-400.woff"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-regular-400.woff2",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-regular-400.woff2",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\webfonts\\fa-regular-400.woff2"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-solid-900.eot",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-solid-900.eot",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\webfonts\\fa-solid-900.eot"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-solid-900.svg",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-solid-900.svg",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\webfonts\\fa-solid-900.svg"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-solid-900.ttf",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-solid-900.ttf",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\webfonts\\fa-solid-900.ttf"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-solid-900.woff",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-solid-900.woff",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\webfonts\\fa-solid-900.woff"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-solid-900.woff2",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-solid-900.woff2",
       "PackagePath": "staticwebassets\\vendors\\font-awesome\\webfonts\\fa-solid-900.woff2"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\jquery\\jquery-3.6.0.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\jquery\\jquery-3.6.0.js",
       "PackagePath": "staticwebassets\\vendors\\jquery\\jquery-3.6.0.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\magnific-popup\\jquery.magnific-popup.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\magnific-popup\\jquery.magnific-popup.js",
       "PackagePath": "staticwebassets\\vendors\\magnific-popup\\jquery.magnific-popup.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\magnific-popup\\magnific-popup.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\magnific-popup\\magnific-popup.css",
       "PackagePath": "staticwebassets\\vendors\\magnific-popup\\magnific-popup.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\swiper\\swiper.css",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\swiper\\swiper.css",
       "PackagePath": "staticwebassets\\vendors\\swiper\\swiper.css"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\swiper\\swiper.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\swiper\\swiper.js",
       "PackagePath": "staticwebassets\\vendors\\swiper\\swiper.js"
     },
     {
-      "Id": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\PortifolioDEV-VS2022\\wwwroot\\vendors\\typed\\typed.js",
+      "Id": "D:\\Github\\PortifolioDEV-VS2022\\wwwroot\\vendors\\typed\\typed.js",
       "PackagePath": "staticwebassets\\vendors\\typed\\typed.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.PortifolioDEV.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.PortifolioDEV.Microsoft.AspNetCore.StaticWebAssets.props",
