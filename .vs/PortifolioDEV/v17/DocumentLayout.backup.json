@@ -3,32 +3,8 @@
   "WorkspaceRootPath": "D:\\Github\\PortifolioDEV-VS2022\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|d:\\github\\portifoliodev-vs2022\\orm\\viewagendamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|solutionrelative:orm\\viewagendamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|d:\\github\\portifoliodev-vs2022\\orm\\tbusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|solutionrelative:orm\\tbusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|d:\\github\\portifoliodev-vs2022\\orm\\tbservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|solutionrelative:orm\\tbservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|d:\\github\\portifoliodev-vs2022\\orm\\tbagendamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|solutionrelative:orm\\tbagendamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|d:\\github\\portifoliodev-vs2022\\orm\\bdportfoliodevcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|solutionrelative:orm\\bdportfoliodevcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|d:\\github\\portifoliodev-vs2022\\repositorios\\dashboardrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|solutionrelative:repositorios\\dashboardrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|d:\\github\\portifoliodev-vs2022\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{21D3B6D4-D14A-436D-9BD4-ED9356666937}|PortifolioDEV.csproj|solutionrelative:views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,92 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ViewAgendamento.cs",
-              "DocumentMoniker": "D:\\Github\\PortifolioDEV-VS2022\\ORM\\ViewAgendamento.cs",
-              "RelativeDocumentMoniker": "ORM\\ViewAgendamento.cs",
-              "ToolTip": "D:\\Github\\PortifolioDEV-VS2022\\ORM\\ViewAgendamento.cs",
-              "RelativeToolTip": "ORM\\ViewAgendamento.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T07:30:21.687Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TbUsuario.cs",
-              "DocumentMoniker": "D:\\Github\\PortifolioDEV-VS2022\\ORM\\TbUsuario.cs",
-              "RelativeDocumentMoniker": "ORM\\TbUsuario.cs",
-              "ToolTip": "D:\\Github\\PortifolioDEV-VS2022\\ORM\\TbUsuario.cs",
-              "RelativeToolTip": "ORM\\TbUsuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T07:30:13.896Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TbServico.cs",
-              "DocumentMoniker": "D:\\Github\\PortifolioDEV-VS2022\\ORM\\TbServico.cs",
-              "RelativeDocumentMoniker": "ORM\\TbServico.cs",
-              "ToolTip": "D:\\Github\\PortifolioDEV-VS2022\\ORM\\TbServico.cs",
-              "RelativeToolTip": "ORM\\TbServico.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T07:30:07.033Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TbAgendamento.cs",
-              "DocumentMoniker": "D:\\Github\\PortifolioDEV-VS2022\\ORM\\TbAgendamento.cs",
-              "RelativeDocumentMoniker": "ORM\\TbAgendamento.cs",
-              "ToolTip": "D:\\Github\\PortifolioDEV-VS2022\\ORM\\TbAgendamento.cs",
-              "RelativeToolTip": "ORM\\TbAgendamento.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T07:30:00.906Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BdPortfolioDevContext.cs",
-              "DocumentMoniker": "D:\\Github\\PortifolioDEV-VS2022\\ORM\\BdPortfolioDevContext.cs",
-              "RelativeDocumentMoniker": "ORM\\BdPortfolioDevContext.cs",
-              "ToolTip": "D:\\Github\\PortifolioDEV-VS2022\\ORM\\BdPortfolioDevContext.cs",
-              "RelativeToolTip": "ORM\\BdPortfolioDevContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T07:29:54.505Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "DashboardRepositorio.cs",
               "DocumentMoniker": "D:\\Github\\PortifolioDEV-VS2022\\Repositorios\\DashboardRepositorio.cs",
               "RelativeDocumentMoniker": "Repositorios\\DashboardRepositorio.cs",
               "ToolTip": "D:\\Github\\PortifolioDEV-VS2022\\Repositorios\\DashboardRepositorio.cs",
               "RelativeToolTip": "Repositorios\\DashboardRepositorio.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAADwvysAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-28T07:18:40.877Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Github\\PortifolioDEV-VS2022\\Views\\Dashboard\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Dashboard\\Index.cshtml",
-              "ToolTip": "D:\\Github\\PortifolioDEV-VS2022\\Views\\Dashboard\\Index.cshtml",
-              "RelativeToolTip": "Views\\Dashboard\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-13T17:35:06.256Z",
               "EditorCaption": ""
             }
           ]
